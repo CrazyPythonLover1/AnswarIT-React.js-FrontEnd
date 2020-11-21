@@ -10,7 +10,7 @@ import image7 from "../../../Image/header-image/1.7.jpg";
 
 const Header = () => {
   return (
-    <div className="container-fluid">
+    <div id="header" className="container-fluid">
       <div
         id="carouselExampleFade"
         class="carousel slide carousel-fade"

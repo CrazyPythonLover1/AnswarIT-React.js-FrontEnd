@@ -1,0 +1,30 @@
+#about{
+    padding: 0 100px !important;
+    margin-bottom: 100px;
+}
+
+#about .about-section{
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+}
+
+#about .about-section .row{
+    margin: 0;
+
+}
+
+#about .about-section .row div{
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+    color: #00AFEF;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    
+}
+
+#about .about-section p{
+    padding: 15px;
+    
+}
