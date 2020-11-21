@@ -28,7 +28,8 @@ const About = () => {
                     <div onClick={()=> coreValue()} className="col col-md-4 .col-sm-12"> <span> Core Values </span> </div>
                 </div>
                 <p>
-                    {about.summary.toString().substring(0, 415)}
+                    {about.summary.toString().substring(0, 415)} <br/> <br/>
+                    <span> Learn More... </span>
                 </p>
             </div>
         </div>

@@ -1,12 +1,13 @@
 import React from "react";
 import "./Header.css";
-import image1 from "../../../Image/header-image/1.1.jpg";
-import image2 from "../../../Image/header-image/1.2.jpg";
-import image3 from "../../../Image/header-image/1.3.jpg";
-import image4 from "../../../Image/header-image/1.4.jpg";
-import image5 from "../../../Image/header-image/1.5.jpg";
-import image6 from "../../../Image/header-image/1.6.jpg";
-import image7 from "../../../Image/header-image/1.7.jpg";
+import image1 from "../../../Image/header/1.1.jpg";
+import image2 from "../../../Image/header/1.2.jpg";
+import image3 from "../../../Image/header/1.3.jpg";
+import image4 from "../../../Image/header/1.4.jpg";
+import image5 from "../../../Image/header/1.5.jpg";
+import image6 from "../../../Image/header/1.6.jpg";
+import image7 from "../../../Image/header/1.7.jpg";
+import image8 from "../../../Image/header/1.8.jpg";
 
 const Header = () => {
   return (
