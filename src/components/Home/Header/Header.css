@@ -1,0 +1,28 @@
+.carousel-control-next, .carousel-control-prev {
+    background-color: #000;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 45px;
+    border-radius: 50px;
+}
+
+.carousel-control-next{
+}
+
+.carousel-control-next-icon{
+    
+}
+
+
+.carousel-item {
+    height: 60% !important;
+}
+
+
+.carousel-img{
+    width: 80%;
+    height: 100% !important;
+}
+
