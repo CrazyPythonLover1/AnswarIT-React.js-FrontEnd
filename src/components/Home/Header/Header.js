@@ -11,57 +11,57 @@ import image8 from "../../../Image/header/1.8.jpg";
 
 const Header = () => {
   return (
-    <div id="header" className="container-fluid">
+    <div id="header" className="">
       <div
         id="carouselExampleFade"
-        class="carousel slide carousel-fade"
+        className="carousel slide carousel-fade"
         data-ride="carousel"
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
             <img
               src={image1}
-              class="d-block w-100 carousel-img"
+              className="d-block w-100 carousel-img"
               style={{ height: "100%" }}
               alt="..."
             />
           </div>
-          <div class="carousel-item">
-            <img src={image2} class="d-block w-100" alt="..." />
+          <div className="carousel-item">
+            <img src={image2} className="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <img src={image3} class="d-block w-100" alt="..." />
+          <div className="carousel-item">
+            <img src={image3} className="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <img src={image4} class="d-block w-100" alt="..." />
+          <div className="carousel-item">
+            <img src={image4} className="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <img src={image5} class="d-block w-100" alt="..." />
+          <div className="carousel-item">
+            <img src={image5} className="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <img src={image6} class="d-block w-100" alt="..." />
+          <div className="carousel-item">
+            <img src={image6} className="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item">
-            <img src={image7} class="d-block w-100" alt="..." />
+          <div className="carousel-item">
+            <img src={image7} className="d-block w-100" alt="..." />
           </div>
         </div>
         <a
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           href="#carouselExampleFade"
           role="button"
           data-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
         </a>
         <a
-          class="carousel-control-next"
+          className="carousel-control-next"
           href="#carouselExampleFade"
           role="button"
           data-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
         </a>
       </div>
 

@@ -1,6 +1,6 @@
 {
-    "services":{
-        "softwareDevelopment": {
+    "services":[
+        {"softwareDevelopment": {
             "BusinessApplication":"Competitiveness in the global marketplace requires speed and agility at every level. Businesses must respond quickly to meet customer demand, improve speed to market, react swiftly to changing market conditions and constantly seek gains in productivity and profitability. A sophisticated business application platform is critical to achieving these objectives. Business Application development software to real-world problems requires leading technology and an expert team. Our professional programmers are developing all sorts of application software may need including games, educational software, office applications, internet software, utilities, text and graphics editors, communication software.",
             "E-CommerceSolution": "PeopleNTech provides customized E-Commerce solutions for local and international clients. Today e-commerce has revolutionized the system of communication and commerce. It has brought dramatic transformation in the way the consumers purchase and consume the goods and services at the online auction sites. PeopleNTech has earned the reputation of being the best provider of internet and e-commerce solutions to a wide range of industries. PeopleNTech designs, develops and manages its client’s website and all these are done in a productive environment to ensure its client’s success.",
             "MISSolution": "Are you looking to make the most of your company's technology investment? Are you seeking progressive, profit-building ways to streamline your process? MIS Solutions can guide you to choose and implement the right technology for your business. PeopleNTech’s MIS Solutions integrate disparate business processes and improve productivity and efficiency within enterprises. Customized MIS solutions may include HR & Payroll Management, Customer Relationship Management, Sales Tracking System, Operations Management, Accounting Management, Asset Management, Projects Management and Admin portal etc.",
@@ -8,30 +8,37 @@
             "webAreas":["Web Application Development", "Web and Enterprise Portal Development", "Web Design and Development"]
             
             
+            }
         },
-        "managementConsulting":{
+        {"managementConsulting":{
             "overview": "Keeping pace with a business environment that is continuously evolving, along with maintaining the quality of operations can be quite a challenging task for any enterprise. In order to manage continuously changing environment, companies need to become more responsive to both external forces and internal complexities. The role of top management is not just restricted to supervising the seamless operations of the business, but also includes being on top of industry trends and to have considerable foresight to stay ahead of its competition.<br/>Given the magnitude and scope of responsibilities with top level managers, PeopleNTech offers seasoned expertise of its specialists who come equipped with the knowledge of industry’s best practices, statistical analysis and an objective view. Using the most optimal mix of the above, we help you take sharper decisions, aimed at improving your bottom-line results.",
             "expertise": "Our consultants, with exposure in some of the best companies of the world in different geographies, come with expertise in management consulting, technology and operation, marketing, and risk. They act as concept integrators along with your team and facilitate forward looking business strategy and decisions that improve operations along with opening up the scope for future growth. Close collaborative work with senior members of client ensures that recommendations are highly strategic and yet deeply practical, which leads to real impact for our clients.",
             "Strategy and Design:": "We, along with your senior executives, meticulously draw business plans with competitive strategies to give robust growth to your business which is designed to enhance your strengths and suit your business objectives and market requirements.", 
             "Risk Management": "Since 2008 regulatory requirements have been evolving and are becoming more stringent. We work with you to mitigate risks for a robust future that evolves with the shifts in regulatory, compliance and economic environment. To deal with fluctuations in regulatory requirements and to overcome human errors, we formulate flexible and transparent strategies, systems, and reporting structures which eventually abate risks and leads to robust growth.",
             "Business Process Improvement and Process modelling": "Evolution is the only key to survival in an ever-changing world. We not only acknowledge this law of nature, but also encourage our employees to consistently learn and grow with the business. Exposed to the competitive world in different geographies, our experts are well aware of how business processes run in some of the best organizations of the world. Hence, they not only work towards over all alignments of business processes, but also advice improvements and synergies that work to your advantage.",
             "Strategy Implementation services": "Our experts ensure focused and well-timed decision implementation along with your teams, in alignment with your objectives, which help you develop and maintain an edge in the market. With exposure to project management tools and techniques along with systematic change management approach, our program and project managers ensure implementation of strategic decisions are not only successful but also pose little or no disturbance to day-to-day operations."
+            }
         },
-        "TechnologyConsulting":{
+        {"TechnologyConsulting":{
             "overview":"Information technology has become one of the central and core element of strategy of any organization. It not only provides seamless integration between various organizational functions, supports day-to-day operations, helps to connect with customers, provides instantaneous reports on health and well-being of an organization but also provides competitive advantage to organization.Our team of established professionals understands the importance of technology in today's dynamic business environment. PeopleNTech offers speciality firms a wide spectrum of services, fine-tuned to achieving higher performance, while accommodating specific client needs."
 
+            }
         },
-        "staffAugmentation":{
+        {"staffAugmentation":{
             "overview": "Information technology has become one of the central and core element of strategy of any organization. It not only provides seamless integration between various organizational functions, supports day-to-day operations, helps to connect with customers, provides instantaneous reports on health and well-being of an organization but also provides competitive advantage to organization.Our team of established professionals understands the importance of technology in today's dynamic business environment. PeopleNTech offers speciality firms a wide spectrum of services, fine-tuned to achieving higher performance, while accommodating specific client needs."
+            }
         },
-        "businessProcessAssurance":{
+        {"businessProcessAssurance":{
             "overview":"Every technology or part of it is developed for the achievement of a particular business objective and to ultimately enhance the end user's experience. To this effect, traditional Quality Assurance has evolved to make way for Business Process Assurance (BPA). While Quality Assurance (QA) takes into account the micro view, BPA has come to take into account the macro view, wherein the effects of a particular change/modification are tested through to the end user's experience. <br/> Our Business Process Assurance lends itself very easily to be tailored to fit any of the development methodologies that one chooses to follow. What matters is implementing the principle in spirit which is - all individuals regardless of their role, should have one and only one aim in mind that is of delivering the business process experience exactly the way the business stakeholders have envisaged it."
+            }
         },
-        "bpo/kpo":{
+        {"bpo/kpo":{
             "overview": "At PeopleNTech, it is our aim to help our clients achieve excellence in their core competencies by supporting them with robust end-to-end solutions for repeatable processes. With a reliable outsourcing partner, your resources can focus wholly on realizing core business objectives, thereby achieving consistent results and positioning your enterprise as a vertical leader. It is all about optimizing your business processes while simplifying them and addressing operational issues like accuracy, efficiency, repeatability, or governance. A dependable and reliable partner can get you there – a partner who has embraced the industry best-in-class processes required to deliver such secure outsourcing services."
+            }
         },
-        "whyAnswarIT":{
+        {"whyAnswarIT":{
             "overview": "We go beyond SLA's in our approach to process outsourcing. With meticulous planning, use of state-of-the-art technology and support from a dedicated team of seasoned professionals, we ensure that our outsourcing partners always stay ahead of their competition. We not only take the time to understand your business process requirements, but also deliver maximum value by levering our knowledge of industry best practices and innovative solutions."
+            }
         }
-    }
+    ]
 }
