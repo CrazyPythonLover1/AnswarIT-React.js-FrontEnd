@@ -8,21 +8,22 @@ import services from "../../../data/services.json";
 const Services = () => {
 
   
+  console.log(services.services[0].overview);
 
   return (
     <div id="Services" className="container-fluid">
-      <div className="row row-cols-1 row-cols-md-3">
+      <h3> SERVICES </h3>
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">
         {
-          services.services?.map((item,index) => (
+          services.services.slice(0,6).map((item,index) => (
             <div key={`services-${index}`} className="col mb-4">
               <div className="card">
-                <img src="..." className="card-img-top" alt="..." />
+              <h5 className="card-title">Card title</h5>
+                
+                <img src={require(`../../../Image/serices/1.${index+1}.jpg`).default} className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                  <p className="card-text text-justify">
+                    {item.overview.substr(0, 250)} .....
                   </p>
                 </div>
               </div>
