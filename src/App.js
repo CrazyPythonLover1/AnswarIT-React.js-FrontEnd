@@ -7,13 +7,17 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import ContactUs from './components/ContactUs/ContactUs';
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/"> 
+        <Route exact path="/"> 
           <Home/>
+       </Route>
+        <Route path="/contactUs">
+          <ContactUs/>
         </Route>
       </Switch>
     </Router>
