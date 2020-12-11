@@ -30,7 +30,7 @@
           
         },
         {   "id":5,
-            "tile": "Business Process Assurance",
+            "title": "Business Process Assurance",
             "overview":"Every technology or part of it is developed for the achievement of a particular business objective and to ultimately enhance the end user's experience. To this effect, traditional Quality Assurance has evolved to make way for Business Process Assurance (BPA). While Quality Assurance (QA) takes into account the micro view, BPA has come to take into account the macro view, wherein the effects of a particular change/modification are tested through to the end user's experience. <br/> Our Business Process Assurance lends itself very easily to be tailored to fit any of the development methodologies that one chooses to follow. What matters is implementing the principle in spirit which is - all individuals regardless of their role, should have one and only one aim in mind that is of delivering the business process experience exactly the way the business stakeholders have envisaged it."
         
         },

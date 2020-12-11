@@ -9,7 +9,7 @@ const Navbar = () => {
                 <div className="inner-nav-container">
                 <Link to="#" class="logo"> AnswarIT<span>+</span></Link>
   <ul class="links">
-    <li><Link to="#">Home</Link></li>
+    <li><Link to="/?             ">Home</Link></li>
     <li><Link to="#">About</Link></li>
     <li class="dropdown"><Link to="#" class="trigger-drop"> Services<i class="arrow"></i></Link>
       <ul class="drop">
@@ -32,7 +32,8 @@ const Navbar = () => {
 
 </nav>
         </div>
-    );
+        
+        );
 };
 
 export default Navbar;

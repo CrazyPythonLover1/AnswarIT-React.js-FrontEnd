@@ -1,0 +1,19 @@
+@import "../../style/variables";
+
+
+#services{
+    padding: 0 40px;
+    .main-title{
+        color: $color-brand;
+        margin-bottom: 20px;
+    }
+
+    .card{
+        border: none;
+
+        .card-title{
+            color: $color-brand;
+        }
+    }
+    
+}
