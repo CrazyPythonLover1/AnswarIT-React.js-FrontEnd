@@ -1,6 +1,11 @@
+@import "../../style/variables";
 #about{
     padding: 0 100px !important;
     margin-bottom: 100px;
+}
+
+.main-title{
+    color: $color-brand;
 }
 
 #about .about-section{
@@ -18,10 +23,9 @@
     border: 1px solid #ddd;
     text-align: center;
     padding: 8px;
-    color: #00AFEF;
+    color: $color-brand;
     background-color: #f4f4f4;
     cursor: pointer;
-    pointer-events: none;
     
 }
 
