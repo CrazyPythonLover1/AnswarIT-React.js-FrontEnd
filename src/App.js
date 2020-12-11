@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Home from './components/Home/Home';
 
 import {
@@ -8,10 +8,15 @@ import {
   Link
 } from "react-router-dom";
 import ContactUs from './components/ContactUs/ContactUs';
+import TopNavbar from './components/Shared/TopNavbar/TopNavbar';
+import Navbar from './components/Shared/Navbar/Navbar';
 
 function App() {
   return (
-    <Router>
+    <div className="app">
+<Router>
+      <TopNavbar/>
+      <Navbar/>
       <Switch>
         <Route exact path="/"> 
           <Home/>
@@ -21,6 +26,8 @@ function App() {
         </Route>
       </Switch>
     </Router>
+    </div>
+    
   );
 }
 
