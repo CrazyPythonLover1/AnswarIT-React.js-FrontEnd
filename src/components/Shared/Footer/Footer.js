@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TopNavbar = () => {
+const Footer = () => {
     return (
         <div>
             <nav class="navbar navbar-expand-md navbar-light text-white" style={{backgroundColor:"#33334d"}}>
@@ -31,4 +31,4 @@ const TopNavbar = () => {
     );
 };
 
-export default TopNavbar;
+export default Footer;

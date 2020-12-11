@@ -1,0 +1,10 @@
+@import "../style/variables";
+
+.contact{
+    max-width: $global-width;
+    margin: 0 auto;
+
+    .row{
+        width: 100%;
+    }
+}

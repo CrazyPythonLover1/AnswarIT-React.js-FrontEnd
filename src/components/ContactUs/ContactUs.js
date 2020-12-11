@@ -1,4 +1,5 @@
 import React from 'react';
+import './ContactUs.scss';
 import contactImg from '../../Image/contact-us.png'
 import ContactForm from './ContactForm';
 import Locations from './Locations/Locations';
@@ -6,9 +7,9 @@ import Locations from './Locations/Locations';
 const ContactUs = () => {
     return (
         <div className="contact">
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-lg-6">
+            <div className="container-fluid ">
+                <div className="row m-0">
+                    <div className="col col-lg-6 col-md-12">
                         <h4> CONTACT US </h4>
                         <h5> Corporate Office </h5>
                          <div className="address">
@@ -23,7 +24,7 @@ const ContactUs = () => {
                          </div>
 
                     </div>
-                    <div className="col-lg-6">
+                    <div className="  col col-lg-6 col-md-12 ">
                     We would like to be easily accessible and to be available to our customers, potential clients and prospective employees. Whenever necessary, you just need to complete the following form. You can, also, visit any of our offices listed below.
 
                     <ContactForm /> 

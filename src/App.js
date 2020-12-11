@@ -10,6 +10,7 @@ import {
 import ContactUs from './components/ContactUs/ContactUs';
 import TopNavbar from './components/Shared/TopNavbar/TopNavbar';
 import Navbar from './components/Shared/Navbar/Navbar';
+import Footer from './components/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <ContactUs/>
         </Route>
       </Switch>
+      <Footer/>
     </Router>
     </div>
     
