@@ -12,7 +12,7 @@ const Services = () => {
 
   return (
     <div id="services" className="container-fluid">
-      <h3 className="main-title"> SERVICES </h3>
+      <h3 className="main-title" > SERVICES </h3>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">
         {
           services.services.slice(0,6).map((item,index) => (

@@ -3,8 +3,42 @@
 .contact{
     max-width: $global-width;
     margin: 0 auto;
+    padding: 40px 40px;
 
     .row{
         width: 100%;
+        .main-title{
+            color: $color-brand;
+        }
+
+        .address{
+            font-size: 1rem;
+
+            .MuiSvgIcon-root{
+                font-size: 14px;
+            }
+            
+        }
     }
+
+    hr{
+        background-image: linear-gradient(to right, transparent, #5454af6e, transparent);
+        // background-image: linear-gradient(to right, purple, #5454af6e, purple);
+        border: 0;
+        height: 1px;
+        margin: 32px 0 32px 0;
+    }
+}
+
+.location{
+    font-size: 1rem;
+
+    .MuiSvgIcon-root{
+        font-size: 14px;
+    }
+
+    .location-title{
+        margin: 20px 0 8px 0;
+    }
+    
 }
