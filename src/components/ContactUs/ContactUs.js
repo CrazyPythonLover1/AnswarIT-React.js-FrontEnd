@@ -17,13 +17,10 @@ const ContactUs = () => {
                         <h4 className="main-title"> CONTACT US </h4>
                         <h5> Corporate Office </h5>
                          <div className="address">
-                             <div> <b> <LocationOnIcon/> Address: </b>  8133 Leesburg Pike, Suite 220, Vienna, VA 22182 </div>
-                             <div> <b> <PhoneIcon/> Phone: </b>  +1 703-291-1001 (Consulting & Recruiting)</div>
-                             <div> <b> <PhoneIcon/> Phone: </b> +1 855-562-7448 (Training) </div>
-                             <div>  <b> <PhoneIcon/> Phone: </b>  +1 917-862-3448 (Employment Verification) </div>
-                             <div> <b> <PhoneIcon/> Phone: </b>  +1 917-862-3448 (Employment Verification)</div>
-                             <div> <b> <PrintIcon/> Fax: </b>  +1 571-766-2629</div>
+                             <div> <b> <LocationOnIcon/> Address: </b>  House: 8/A, Road No: 9, Baridhara, Gulshan, Dhaka-1212 </div>
+                             <div> <b> <PhoneIcon/> Phone: </b> +8801710504157  (Consulting & Recruiting)</div>
                              <div> <b> <EmailIcon/> Email: </b> info@answarit.com </div>
+                             <div> <b> <EmailIcon/> Email: </b> shownahmed6666@gmail.com </div>
                              <img className="img-fluid" src={contactImg} alt=""/>
                          </div>
 
@@ -39,43 +36,37 @@ const ContactUs = () => {
                 <div className="row">
                     
                     <div className="col-md-6">
-                        <Locations title={" Virginia (Vienna) Office "} address={" 8133 Leesburg Pike, Suite 220, Vienna, VA 22182 "} phone={" +1 703-291-1001 "} fax={" +1 571-766-2629 "} email={" info@answarit.com "} />
-                        <Locations title={" Virginia (Vienna) Office "} address={" 8133 Leesburg Pike, Suite 220, Vienna, VA 22182 "} phone={" +1 703-291-1001 "} fax={" +1 571-766-2629 "} email={" info@answarit.com "} />
-                        <Locations title={" Virginia (Vienna) Office "} address={" 8133 Leesburg Pike, Suite 220, Vienna, VA 22182 "} phone={" +1 703-291-1001 "} fax={" +1 571-766-2629 "} email={" info@answarit.com "} />
-                        <Locations title={" Virginia (Vienna) Office "} address={" 8133 Leesburg Pike, Suite 220, Vienna, VA 22182 "} phone={" +1 703-291-1001 "} fax={" +1 571-766-2629 "} email={" info@answarit.com "} />
+                        <Locations title={" New York Office "} address={" 40-20 39th Avenue, Suite #400 Long Island City, NY 11101 "} phone={" +1 855-562-7867 "} fax={" +1 571-766-2629 "} email={" info@answarit.com, shownahmed6666@gmail.com"} />
                         {/* <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} />
                         <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} />
                         <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} /> */}
                     </div>
                     <div className="col-md-6">
-                    <Locations title={" Virginia (Vienna) Office "} address={" 8133 Leesburg Pike, Suite 220, Vienna, VA 22182 "} phone={" +1 703-291-1001 "} fax={" +1 571-766-2629 "} email={" info@answarit.com "} />
-                    <Locations title={" Virginia (Vienna) Office "} address={" 8133 Leesburg Pike, Suite 220, Vienna, VA 22182 "} phone={" +1 703-291-1001 "} fax={" +1 571-766-2629 "} email={" info@answarit.com "} />
-                    <Locations title={" Virginia (Vienna) Office "} address={" 8133 Leesburg Pike, Suite 220, Vienna, VA 22182 "} phone={" +1 703-291-1001 "} fax={" +1 571-766-2629 "} email={" info@answarit.com "} />
+                    <Locations title={" New York Office "} address={" 40-20 39th Avenue, Suite #400 Long Island City, NY 11101 "} phone={" +1 855-562-7867 "} fax={" +1 571-766-2629 "} email={" info@answarit.com, shownahmed6666@gmail.com"} />
                         {/* <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} />
                         <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} />
                         <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} /> */}
                     </div>
                 </div>
                 <hr></hr>
-                <h4 className="main-title" > GLOBAL LOCATIONS </h4>
+                {/* <h4 className="main-title" > GLOBAL LOCATIONS </h4>
                 <div className="row">
                     
                     <div className="col-md-6">
                         <Locations title={" Virginia (Vienna) Office "} address={" 8133 Leesburg Pike, Suite 220, Vienna, VA 22182 "} phone={" +1 703-291-1001 "} fax={" +1 571-766-2629 "} email={" info@answarit.com "} />
                         <Locations title={" Virginia (Vienna) Office "} address={" 8133 Leesburg Pike, Suite 220, Vienna, VA 22182 "} phone={" +1 703-291-1001 "} fax={" +1 571-766-2629 "} email={" info@answarit.com "} />
-                        {/* <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} />
                         <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} />
-                        <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} /> */}
+                        <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} />
+                        <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} />
                     </div>
                     <div className="col-md-6">
                     <Locations title={" Virginia (Vienna) Office "} address={" 8133 Leesburg Pike, Suite 220, Vienna, VA 22182 "} phone={" +1 703-291-1001 "} fax={" +1 571-766-2629 "} email={" info@answarit.com "} />
                     <Locations title={" Virginia (Vienna) Office "} address={" 8133 Leesburg Pike, Suite 220, Vienna, VA 22182 "} phone={" +1 703-291-1001 "} fax={" +1 571-766-2629 "} email={" info@answarit.com "} />
-                        {/* <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} />
                         <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} />
-                        <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} /> */}
+                        <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} />
+                        <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} />
                     </div>
-                </div>
-                <hr></hr>
+                </div> */}
             </div>
         </div>
     );

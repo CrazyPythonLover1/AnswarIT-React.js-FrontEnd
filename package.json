@@ -1,5 +1,6 @@
 {
   "name": "answar-it-react.js",
+  "homepage": "https://answarit.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
