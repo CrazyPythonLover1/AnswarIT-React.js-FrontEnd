@@ -11,6 +11,7 @@ import ContactUs from './components/ContactUs/ContactUs';
 import TopNavbar from './components/Shared/TopNavbar/TopNavbar';
 import Navbar from './components/Shared/Navbar/Navbar';
 import Footer from './components/Shared/Footer/Footer';
+import About from './components/About/About';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
       <Switch>
         <Route exact path="/"> 
           <Home/>
+       </Route>
+       <Route path="/about"> 
+          <About/>
        </Route>
         <Route path="/contactUs">
           <ContactUs/>
