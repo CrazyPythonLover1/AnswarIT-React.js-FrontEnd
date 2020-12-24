@@ -6,18 +6,18 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <ul className="list-unstyled">
-                <li>
-                    <div class="button"></div>
-                    <NavLink className="" to="overview "><span>  OVERVIEW </span></NavLink>
-                </li>
-                <li>
-                <div class="button"></div>
-                    <NavLink to="mission "><span> MISSION & VISION </span></NavLink>
-                </li>
-                <li>
-                <div class="button"></div>
-                    <NavLink to="/core-value "><span> CORE VALUES </span></NavLink>
-                </li>
+                
+                    
+                    <NavLink activeClassName="selected" className="selected" to="overview ">  <li> <div class="button"></div> <span>  OVERVIEW </span> </li></NavLink>
+                
+           
+                
+                    <NavLink activeClassName="selected" to="mission "> <li> <div class="button"></div> <span> MISSION & VISION </span> </li>  </NavLink>
+            
+             
+                
+                    <NavLink activeClassName="selected" to="/core-value "> <li> <div class="button"></div> <span> CORE VALUES </span> </li>   </NavLink>
+              
                
             </ul>
         </div>
