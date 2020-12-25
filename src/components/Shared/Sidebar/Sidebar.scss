@@ -45,6 +45,10 @@
                     left: 0px;
                   
                   }
+
+                  &:hover{
+                      background-color: #ddd;
+                  }
                 
             }
         }
@@ -53,9 +57,4 @@
         
         
     }
-}
-
-
-ul > a:hover li{
-    background: #ddd;
 }

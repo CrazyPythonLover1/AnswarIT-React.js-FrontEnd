@@ -12,6 +12,9 @@ import TopNavbar from './components/Shared/TopNavbar/TopNavbar';
 import Navbar from './components/Shared/Navbar/Navbar';
 import Footer from './components/Shared/Footer/Footer';
 import About from './components/About/About';
+import Overview from './components/About/Overview/Overview';
+import MissionVision from './components/About/MissionVision/MissionVision';
+import CoreValue from './components/About/CoreValue/CoreValue';
 
 function App() {
   return (
@@ -25,6 +28,15 @@ function App() {
        </Route>
        <Route path="/about"> 
           <About/>
+       </Route>
+       <Route path="/overview"> 
+          <Overview/>
+       </Route>
+       <Route path="/missionVision"> 
+          <MissionVision/>
+       </Route>
+       <Route path="/core-value"> 
+          <CoreValue/>
        </Route>
         <Route path="/contactUs">
           <ContactUs/>
