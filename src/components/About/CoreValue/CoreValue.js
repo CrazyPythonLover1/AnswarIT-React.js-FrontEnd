@@ -12,7 +12,7 @@ const CoreValue = () => {
         <div>
             <div className="row w-100 m-0">
                 <div className="col-lg-4 col-md-12 col-sm-12">
-                    <Sidebar/>
+                    <Sidebar />
                 </div>
                 <div className="col-lg-8 col-md-12 col-sm-12">
                     <h3>  CORE VALUES </h3>
