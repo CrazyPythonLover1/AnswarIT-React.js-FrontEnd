@@ -16,9 +16,7 @@ const About = () => {
                 </div>
             </div>
 
-            <p>
-                {aboutData?.about[0]}
-            </p>
+           
         </div>
     );
 };
