@@ -11,9 +11,9 @@ const Navbar = () => {
   <ul class="links">
     <li><Link to="/">Home</Link></li>
     <li><Link to="/overview">About</Link></li>
-    <li class="dropdown"><Link to="#" class="trigger-drop"> Services<i class="arrow"></i></Link>
+    <li class="dropdown"><Link to="/SoftwareDevelopment" class="trigger-drop"> Services<i class="arrow"></i></Link>
       <ul class="drop">
-        <li><Link to="#"> Software Development </Link></li>
+        <li><Link to="/SoftwareDevelopment"> Software Development </Link></li>
         <li><Link to="#"> Management Consulting </Link></li>
         <li><Link to="#"> Technology Consulting </Link></li>
         <li><Link to="#"> Staff Augmentation </Link></li>

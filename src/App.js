@@ -15,6 +15,7 @@ import About from './components/About/About/About';
 import Overview from './components/About/Overview/Overview';
 import MissionVision from './components/About/MissionVision/MissionVision';
 import CoreValue from './components/About/CoreValue/CoreValue';
+import Services from './components/Services/Services/Services';
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
         </Route>
         <Route path="/core-value"> 
             <CoreValue/>
+        </Route>
+        <Route path="/SoftwareDevelopment">
+          <Services />
         </Route>
           <Route path="/contactUs">
             <ContactUs/>
