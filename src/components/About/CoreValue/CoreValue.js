@@ -20,7 +20,7 @@ const CoreValue = () => {
                         <h3>  CORE VALUES </h3>
                         <p> <strong> <i> What we believe in </i> </strong></p>
                         <p> {summary} </p>
-                        <br />
+                        <br /> <br />
                         
                             {
                                 feature.map((item,index) => <CoreValueItem key={index} feature={item} /> )
