@@ -4,7 +4,7 @@ import Sidebar from '../../Shared/Sidebar/Sidebar';
 const Overview = () => {
     return (
         <div className="overview">
-            <div className="row w-100 m-0">
+            <div className="row w-100 " style={{ padding: "0px 60px"}}>
                 <div className="col-lg-4 col-md-12 col-sm-12">
                     <Sidebar/>
                 </div>

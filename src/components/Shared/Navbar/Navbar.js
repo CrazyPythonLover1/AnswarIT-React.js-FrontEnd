@@ -10,7 +10,7 @@ const Navbar = () => {
                 <Link to="#" class="logo"> AnswarIT<span>+</span></Link>
   <ul class="links">
     <li><Link to="/">Home</Link></li>
-    <li><Link to="/about">About</Link></li>
+    <li><Link to="/overview">About</Link></li>
     <li class="dropdown"><Link to="#" class="trigger-drop"> Services<i class="arrow"></i></Link>
       <ul class="drop">
         <li><Link to="#"> Software Development </Link></li>
