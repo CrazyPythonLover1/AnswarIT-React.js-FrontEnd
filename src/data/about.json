@@ -17,30 +17,38 @@
         "coreValue":{
             "summary":"Answar IT is governed by its Core Values. They form an integral part of who we are, how we operate and provide a sound basis to make decisions. These values define our culture and help shape the character of our company. They help us create value for our clients, our people and our organization as a whole.",
             "type":"CORE VALUES",
-            "customer support": {
-                "text":"Our business depends on healthy relationships with clients and business partners. We build and nurture strong relationships that are mutually beneficial, making sure that we deeply understand the people we deal with, so that we can anticipate their needs and always aim to exceed their expectations. Everyone in our organization contributes to the quality of the relationships we build.",
-                "img":"1.1"
-            },
-            "Agility": {
-                "text": "We believe in being alert to change and moving quickly and decisively to meet the challenges that emerge from such change, so that we provide our clients and ourselves with a competitive edge. We aim at providing the right solutions at the right place and the right time.",
-                "img": "1.2"
-            },
-            "integrity":{
-                "text": "We believe that integrity is the foundation of our individual and corporate actions that drives an organization. We are committed to the protection of the environment and compliance with laws, regulations, and company policies. We honor our commitments. We are accountable for our actions, successes, and failures.",
-                "img": "1.3"
-            },
-            "EMPLOYEE CENTRIC": {
-                "text": "People are the heart of our organization. We are professional, high performing team players focused on delivering and drawing on our expertise. We aim to attract, develop and retain the best people, treating each other with honesty, compassion and respect. We create a stimulating, fun and open work culture that promotes personal development and work/life balance, rewards competitively and celebrates success.",
-                "img": "1.4"
-            },
-            "LEADERSHIP IN TECHNOLOGY": {
-                "text": "We strive to be the frontrunners in technology in this dynamic environment with immense competition. We believe that business processes need to be reviewed to achieve business objectives in the scenario of continuous change requirements, business trends and keeping pace with the technology advancement. We devise newer technology platforms, frameworks, and software products to transform IT systems and applications.", 
-                "img": "1.5"
-            },
-            "flexibility":{
-                "text": "We have the ability to adapt, change and rise to new challenges set forth by the dynamic business environment in which we operate. We actively drive change in order to adapt to future trends and needs. We are open-minded, and seek out opportunities and take calculated risks.",
-                "img": "1.6"
-            }
+            "feature":[
+                {
+                    "title":"customer support",
+                    "text":"Our business depends on healthy relationships with clients and business partners. We build and nurture strong relationships that are mutually beneficial, making sure that we deeply understand the people we deal with, so that we can anticipate their needs and always aim to exceed their expectations. Everyone in our organization contributes to the quality of the relationships we build.",
+                    "img":"1.1"
+                },
+                {
+                    "title": "Agility",
+                    "text": "We believe in being alert to change and moving quickly and decisively to meet the challenges that emerge from such change, so that we provide our clients and ourselves with a competitive edge. We aim at providing the right solutions at the right place and the right time.",
+                    "img": "1.2"
+                },
+                {
+                    "title": "integrity",
+                    "text": "We believe that integrity is the foundation of our individual and corporate actions that drives an organization. We are committed to the protection of the environment and compliance with laws, regulations, and company policies. We honor our commitments. We are accountable for our actions, successes, and failures.",
+                    "img": "1.3"
+                },
+                {
+                    "title": "EMPLOYEE CENTRIC",
+                    "text": "People are the heart of our organization. We are professional, high performing team players focused on delivering and drawing on our expertise. We aim to attract, develop and retain the best people, treating each other with honesty, compassion and respect. We create a stimulating, fun and open work culture that promotes personal development and work/life balance, rewards competitively and celebrates success.",
+                    "img": "1.4"
+                },
+                {
+                    "title": "LEADERSHIP IN TECHNOLOGY",
+                    "text": "We strive to be the frontrunners in technology in this dynamic environment with immense competition. We believe that business processes need to be reviewed to achieve business objectives in the scenario of continuous change requirements, business trends and keeping pace with the technology advancement. We devise newer technology platforms, frameworks, and software products to transform IT systems and applications.", 
+                    "img": "1.5"
+                },
+                {
+                    "title": "flexibility",
+                    "text": "We have the ability to adapt, change and rise to new challenges set forth by the dynamic business environment in which we operate. We actively drive change in order to adapt to future trends and needs. We are open-minded, and seek out opportunities and take calculated risks.",
+                    "img": "1.6"
+                }
+            ]
         }
     }
 }

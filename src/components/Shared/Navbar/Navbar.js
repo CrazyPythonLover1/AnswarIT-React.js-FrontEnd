@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="navbar-container">
             <nav id="navigation">
                 <div className="inner-nav-container">
-                <Link to="#" class="logo"> AnswarIT<span>+</span></Link>
+                <Link to="#" class="logo"> AnswarIT <span>+</span></Link>
   <ul class="links">
     <li><Link to="/">Home</Link></li>
     <li><Link to="/overview">About</Link></li>

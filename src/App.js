@@ -30,12 +30,12 @@ function App() {
         <Route path="/overview"> 
             <Overview/>
         </Route>
-        {/* <Route path="/missionVision"> 
+        <Route path="/missionVision"> 
             <MissionVision/>
         </Route>
         <Route path="/core-value"> 
             <CoreValue/>
-        </Route> */}
+        </Route>
           <Route path="/contactUs">
             <ContactUs/>
           </Route> 

@@ -19,11 +19,11 @@ const Sidebar = () => {
                 
            
                 
-                    <NavLink activeClassName="selected" to={`${url}/missionVision`} > <li> <div class="button"></div> <span> MISSION & VISION </span> </li>  </NavLink>
+                    <NavLink activeClassName="selected" to={`/missionVision`} > <li> <div class="button"></div> <span> MISSION & VISION </span> </li>  </NavLink>
             
              
                 
-                    <NavLink activeClassName="selected" to={`${url}/core-value`} > <li> <div class="button"></div> <span> CORE VALUES </span> </li>   </NavLink>
+                    <NavLink activeClassName="selected" to="/core-value" > <li> <div class="button"></div> <span> CORE VALUES </span> </li>   </NavLink>
               
                
             </ul>
