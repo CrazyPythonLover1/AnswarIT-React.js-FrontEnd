@@ -56,8 +56,8 @@ const Services = () => {
   return (
     <Router>
       <div style={{ maxWidth:"1300px", padding:" 20px 60px", margin:"0 auto"}}>
-        <div className="row w-100">
-          <div className="col-md-3">
+        <div className="row w-100 m-0">
+          <div className="col-lg-4 col-md-5">
             <div className="sidebar">
               <ul style={{ listStyleType: "none", padding: 0 }}>
                   <NavLink activeClassName="selected" className="selected" to="/softwareDevelopment">  <li> <div class="button"></div> <span>  SOFTWARE DEVELOPMENT </span> </li></NavLink>
@@ -71,7 +71,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="col-md-9">
+          <div className="col-lg-8 col-md-7">
             <div style={{ flex: 1, padding: "10px" }}>
               <Switch>
                 {routes.map((route, index) => (

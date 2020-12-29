@@ -4,6 +4,7 @@ const ManagementConsulting = () => {
     return (
         <div>
             <h1> ManagementConsulting </h1>
+            <p> <b> </b> </p>
         </div>
     );
 };
