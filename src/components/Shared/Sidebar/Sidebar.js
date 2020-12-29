@@ -13,7 +13,7 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <ul className="list-unstyled">
-                    <NavLink activeClassName="selected" className="selected" to={`/overview`} >  <li> <div class="button"></div> <span>  OVERVIEW </span> </li></NavLink>
+                    <NavLink activeClassName="selected"  to={`/overview`} >  <li> <div class="button"></div> <span>  OVERVIEW </span> </li></NavLink>
                 
            
                 

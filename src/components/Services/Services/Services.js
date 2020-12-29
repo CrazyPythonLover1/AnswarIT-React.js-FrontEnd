@@ -60,10 +60,10 @@ const Services = () => {
           <div className="col-lg-4 col-md-5">
             <div className="sidebar">
               <ul style={{ listStyleType: "none", padding: 0 }}>
-                  <NavLink activeClassName="selected" className="selected" to="/softwareDevelopment">  <li> <div class="button"></div> <span>  SOFTWARE DEVELOPMENT </span> </li></NavLink>
+                  <NavLink activeClassName="selected"  to="/softwareDevelopment">  <li> <div class="button"></div> <span>  SOFTWARE DEVELOPMENT </span> </li></NavLink>
                   <NavLink activeClassName="selected" to={`/managementConsulting`} > <li> <div class="button"></div> <span> MANAGEMENT CONSULTING </span> </li>  </NavLink>
                   <NavLink activeClassName="selected" to="/technologyConsulting" > <li> <div class="button"></div> <span> TECHNOLOGY CONSULTING  </span> </li>   </NavLink>
-                  <NavLink activeClassName="selected" className="selected" to={`/staffAugmentation`} >  <li> <div class="button"></div> <span>  STAFF AUGMENTATION </span> </li></NavLink>
+                  <NavLink activeClassName="selected"  to={`/staffAugmentation`} >  <li> <div class="button"></div> <span>  STAFF AUGMENTATION </span> </li></NavLink>
                   <NavLink activeClassName="selected" to={`/businessProcess`} > <li> <div class="button"></div> <span> BUSINESS PROCESS ASSURANCE </span> </li>  </NavLink>
                   <NavLink activeClassName="selected" to="/BpoKpo" > <li> <div class="button"></div> <span> BPO/KPO </span> </li>   </NavLink>
                   <NavLink activeClassName="selected" to="/whyAnswarIT" > <li> <div class="button"></div> <span> WHY ANSWARIT </span> </li>   </NavLink>

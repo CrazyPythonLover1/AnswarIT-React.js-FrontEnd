@@ -3,13 +3,13 @@ import React from 'react';
 const TopNavbar = () => {
     return (
         <div>
-            <nav class="navbar navbar-expand-md navbar-light text-white" style={{backgroundColor:"#33334d"}}>
+            <nav class="navbar navbar-expand-md navbar-light text-white" style={{backgroundColor:"#5c10e3"}}>
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse " style={{maxWidth:"1200px",margin: "0 auto", padding: " 0 15px", }} id="navbarNav">
-  <a class="navbar-brand font-italic" href="#" style={{color: "white"}} >Networking People with the Latest Technologies...</a>
+  <a class="navbar-brand font-italic" href="#" style={{color: "white"}} > Out of Thinking.....</a>
     <ul class="navbar-nav ml-auto" style={{color: "white"}}>
     
       <li class="nav-item active">

@@ -11,8 +11,8 @@ const CoreValue = () => {
     
     return (
         <div>
-            <div style={{ maxWidth:"1300px", padding:" 20px 60px", margin:"0 auto"}} >
-                <div className="row w-100" style={{  }} >
+            <div style={{ maxWidth:"1300px",  margin:"0 auto"}} >
+                <div className="row w-100" style={{ padding:" 20px 60px", }} >
                     <div className="col-lg-4 col-md-12 col-sm-12">
                         <Sidebar />
                     </div>

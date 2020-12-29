@@ -2,16 +2,20 @@
 .sidebar{
     min-width: 270px;
     ul{
-        
         width: 100%;
-        a{
-            color: #acacac ;
+        box-shadow: -1px 5px 40px 1px #0a011a8c;
 
-           
+        .selected li{
+            background-color: #6a2ad8;
+        }
+        a{
+            color: #e1e1e1 ;
+
+        
 
             li{
             
-                border-bottom: 1px solid #ddd;
+                border-bottom: 1px solid #8157ca;
                 background: $color-brand;
                 padding: 8px 0px !important;
                 padding-left: 10px !important;
@@ -22,9 +26,7 @@
                 
                 
                
-                .selected{
-                    
-                }
+                
 
                 .button {
                     border: 0;
@@ -34,7 +36,7 @@
                     height: 1px;
                     padding: 0 10px !important;
                     
-                    border-color: transparent transparent transparent #202020;
+                    border-color: transparent transparent transparent #f8f8f8;
                     cursor: pointer;
                     
                     // play state
@@ -47,7 +49,7 @@
                   }
 
                   &:hover{
-                      background-color: #ddd;
+                      background-color: #6a2ad8;
                   }
                 
             }
