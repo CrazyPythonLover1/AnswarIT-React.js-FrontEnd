@@ -5,7 +5,7 @@ const Footer = () => {
     return (
       <section class="footer-area" id="footer" style={{position: "relative"}}>
       <div class="container">
-        <div class="row">
+        <div class="row m-0">
           <div style={{zIndex: "1"}} class="col-lg-4 col-md-6 col-sm-12">
             <h4 class="f-heading">About Us</h4>
             <div class="ulink f-contact">
