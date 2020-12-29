@@ -3,7 +3,7 @@ import React from 'react';
 const SoftwareDevelopment = () => {
     return (
         <div>
-            <h1> Software Development </h1>
+            <h4> <strong> Software Development </strong>  </h4>
         </div>
     );
 };
