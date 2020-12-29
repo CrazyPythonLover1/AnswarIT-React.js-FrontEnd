@@ -53,51 +53,44 @@ const routes = [
   } 
 ];
 const Services = () => {
-    return (
-        <Router>
-      <div style={{ display: "flex" }}>
-        <div
-          style={{
-            padding: "10px",
-            width: "40%",
-            background: "#f0f0f0"
-          }}
-        >
-          <ul style={{ listStyleType: "none", padding: 0 }}>
-          
-              <NavLink activeClassName="selected" className="selected" to="/softwareDevelopment">  <li> <div class="button"></div> <span>  SOFTWARE DEVELOPMENT </span> </li></NavLink>
-                
-                <NavLink activeClassName="selected" to={`/managementConsulting`} > <li> <div class="button"></div> <span> MANAGEMENT CONSULTING </span> </li>  </NavLink>
-            
-                <NavLink activeClassName="selected" to="/technologyConsulting" > <li> <div class="button"></div> <span> TECHNOLOGY CONSULTING  </span> </li>   </NavLink>
-                <NavLink activeClassName="selected" className="selected" to={`/staffAugmentation`} >  <li> <div class="button"></div> <span>  STAFF AUGMENTATION </span> </li></NavLink>
-                
-                <NavLink activeClassName="selected" to={`/businessProcess`} > <li> <div class="button"></div> <span> BUSINESS PROCESS ASSURANCE </span> </li>  </NavLink>
+  return (
+    <Router>
+      <div style={{ maxWidth:"1300px", padding:" 20px 60px", margin:"0 auto"}}>
+        <div className="row w-100">
+          <div className="col-md-3">
+            <div className="sidebar">
+              <ul style={{ listStyleType: "none", padding: 0 }}>
+                  <NavLink activeClassName="selected" className="selected" to="/softwareDevelopment">  <li> <div class="button"></div> <span>  SOFTWARE DEVELOPMENT </span> </li></NavLink>
+                  <NavLink activeClassName="selected" to={`/managementConsulting`} > <li> <div class="button"></div> <span> MANAGEMENT CONSULTING </span> </li>  </NavLink>
+                  <NavLink activeClassName="selected" to="/technologyConsulting" > <li> <div class="button"></div> <span> TECHNOLOGY CONSULTING  </span> </li>   </NavLink>
+                  <NavLink activeClassName="selected" className="selected" to={`/staffAugmentation`} >  <li> <div class="button"></div> <span>  STAFF AUGMENTATION </span> </li></NavLink>
+                  <NavLink activeClassName="selected" to={`/businessProcess`} > <li> <div class="button"></div> <span> BUSINESS PROCESS ASSURANCE </span> </li>  </NavLink>
+                  <NavLink activeClassName="selected" to="/BpoKpo" > <li> <div class="button"></div> <span> BPO/KPO </span> </li>   </NavLink>
+                  <NavLink activeClassName="selected" to="/whyAnswarIT" > <li> <div class="button"></div> <span> WHY ANSWARIT </span> </li>   </NavLink>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col-md-9">
+            <div style={{ flex: 1, padding: "10px" }}>
+              <Switch>
+                {routes.map((route, index) => (
+                  <Route
+                    key={index}
+                    path={route.path}
+                    exact={route.exact}
+                    children={<route.main />}
+                  />
+                ))}
+              </Switch>
+            </div>
+          </div>
+
+        </div>
         
-                <NavLink activeClassName="selected" to="/BpoKpo" > <li> <div class="button"></div> <span> BPO/KPO </span> </li>   </NavLink>
-                <NavLink activeClassName="selected" to="/whyAnswarIT" > <li> <div class="button"></div> <span> WHY ANSWARIT </span> </li>   </NavLink>
-          </ul>
-
-         
-        </div>
-
-        <div style={{ flex: 1, padding: "10px" }}>
-          <Switch>
-            {routes.map((route, index) => (
-              // Render more <Route>s with the same paths as
-              // above, but different components this time.
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                children={<route.main />}
-              />
-            ))}
-          </Switch>
-        </div>
       </div>
     </Router>
-    );
+  );
 };
 
 export default Services;

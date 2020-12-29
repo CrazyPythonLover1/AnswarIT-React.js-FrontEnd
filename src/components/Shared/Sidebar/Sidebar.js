@@ -13,8 +13,6 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <ul className="list-unstyled">
-                
-                    
                     <NavLink activeClassName="selected" className="selected" to={`/overview`} >  <li> <div class="button"></div> <span>  OVERVIEW </span> </li></NavLink>
                 
            
@@ -24,21 +22,8 @@ const Sidebar = () => {
              
                 
                     <NavLink activeClassName="selected" to="/core-value" > <li> <div class="button"></div> <span> CORE VALUES </span> </li>   </NavLink>
-              
-               
             </ul>
-            {/* <Switch>
-        
-        <Route path={`${path}/overview`}>
-          <Overview />
-        </Route>
-        <Route path={`${path}/missionVision`}>
-          <MissionVision />
-        </Route>
-        <Route path={`${path}/core-value`}>
-          <CoreValue />
-        </Route>
-      </Switch> */}
+            
         </div>
     );
 };
