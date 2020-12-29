@@ -8,7 +8,7 @@ const MissionVision = () => {
     return (
         <div className="missionVision">
             <div style={{ maxWidth:"1300px", margin:"0 auto"}}> 
-                <div className="row w-100 m-0" style={{ padding: "20px 60px"}}>
+                <div className="row w-100" style={{ padding: "20px 60px"}}>
                     <div className="col-lg-4 col-md-12 col-sm-12">
                         <Sidebar/>
                     </div>

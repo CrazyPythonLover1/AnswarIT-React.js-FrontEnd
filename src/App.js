@@ -11,7 +11,6 @@ import ContactUs from './components/ContactUs/ContactUs';
 import TopNavbar from './components/Shared/TopNavbar/TopNavbar';
 import Navbar from './components/Shared/Navbar/Navbar';
 import Footer from './components/Shared/Footer/Footer';
-import About from './components/About/About/About';
 import Overview from './components/About/Overview/Overview';
 import MissionVision from './components/About/MissionVision/MissionVision';
 import CoreValue from './components/About/CoreValue/CoreValue';
