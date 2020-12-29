@@ -3,7 +3,7 @@ import React from 'react';
 const SoftwareDevelopment = () => {
     return (
         <div>
-            <h4> <strong> Software Development </strong>  </h4>
+            <h4 className="title" > <strong> SOFTWARE DEVELOPMENT </strong>  </h4>
             <p> <em> Your quick, customized, and successful solutions delivery </em></p>
             <img className="img-fluid" src={require(`../../../Image/serices/1.1.jpg`).default} alt=""/> <br/> <br/>
             <p> <b> Business Application: </b> Competitiveness in the global marketplace requires speed and agility at every level. Businesses must respond quickly to meet customer demand, improve speed to market, react swiftly to changing market conditions and constantly seek gains in productivity and profitability. A sophisticated business application platform is critical to achieving these objectives. Business Application development software to real-world problems requires leading technology and an expert team. Our professional programmers are developing all sorts of application software may need including games, educational software, office applications, internet software, utilities, text and graphics editors, communication software.</p>
@@ -13,7 +13,7 @@ const SoftwareDevelopment = () => {
             <p>  AnswarIT web development focusing areas are:</p>
             <ul>
                 <li> Web Application Development </li>
-                <li> Web and Enterprise Portal Developmen </li>
+                <li> Web and Enterprise Portal Development </li>
                 <li> Web Design and Development </li>
             </ul>
         </div>

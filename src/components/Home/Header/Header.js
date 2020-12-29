@@ -66,7 +66,7 @@ const Header = () => {
       </div>
 
       <p>
-      PeopleNTech is a global IT and Engineering solutions provider whose business focus is in Development, Outsourcing, and Consulting. We are a Global Technology company with Customer Focus as one of our Core Values. We are Agile. We are always present with the right solutions at the right place and the right time to meet your requirements. Our offerings are IP oriented, tried and tested over time. We strive to ensure that our Clients are the front runners and equipped with latest technologies.
+      AnswarIT is a global IT and Engineering solutions provider whose business focus is in Development, Outsourcing, and Consulting. We are a Global Technology company with Customer Focus as one of our Core Values. We are Agile. We are always present with the right solutions at the right place and the right time to meet your requirements. Our offerings are IP oriented, tried and tested over time. We strive to ensure that our Clients are the front runners and equipped with latest technologies.
       </p>
     </div>
   );
