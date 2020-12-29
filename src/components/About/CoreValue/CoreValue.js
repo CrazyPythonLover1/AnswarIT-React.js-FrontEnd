@@ -17,7 +17,7 @@ const CoreValue = () => {
                         <Sidebar />
                     </div>
                     <div className="col-lg-8 col-md-12 col-sm-12">
-                        <h3>  CORE VALUES </h3>
+                        <h4 className="title" > <strong> CORE VALUES </strong>  </h4>
                         <p> <strong> <i> What we believe in </i> </strong></p>
                         <p> {summary} </p>
                         <br /> <br />

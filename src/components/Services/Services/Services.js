@@ -1,4 +1,5 @@
 import React from 'react';
+import './Services.scss';
 import { NavLink, Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
 import SoftwareDevelopment from '../SoftwareDevelopment/SoftwareDevelopment';
 import ManagementConsulting from '../ManagementConsulting/ManagementConsulting';
@@ -55,7 +56,7 @@ const routes = [
 const Services = () => {
   return (
     <Router>
-      <div style={{ maxWidth:"1300px", padding:" 20px 60px", margin:"0 auto"}}>
+      <div className="services" style={{ maxWidth:"1300px", padding:" 20px 60px", margin:"0 auto"}}>
         <div className="row w-100 m-0">
           <div className="col-lg-4 col-md-5">
             <div className="sidebar">
@@ -72,7 +73,7 @@ const Services = () => {
           </div>
 
           <div className="col-lg-8 col-md-7">
-            <div style={{ flex: 1, padding: "10px" }}>
+            <div className="service-details" style={{ flex: 1, padding: "10px" }}>
               <Switch>
                 {routes.map((route, index) => (
                   <Route

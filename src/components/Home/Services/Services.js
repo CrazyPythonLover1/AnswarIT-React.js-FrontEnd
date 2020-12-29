@@ -23,7 +23,7 @@ const Services = () => {
                 <img src={require(`../../../Image/serices/1.${index+1}.jpg`).default} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <p className="card-text text-justify">
-                    {item.overview.substr(0, 250)} .....
+                    {item.overview.substr(0, 220)} .....
                   </p>
                 </div>
               </div>

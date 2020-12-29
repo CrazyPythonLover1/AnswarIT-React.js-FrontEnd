@@ -11,7 +11,7 @@ const Navbar = () => {
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse " style={{maxWidth:"1200px",margin: "0 auto", padding: " 0 15px", }} id="navbarNav">
-  <NavLink class="navbar-brand " to="/" style={{color: "#232323",fontWeight:"900", fontSize:"1.4rem"}} > ANSWARIT </NavLink>
+  <NavLink class="navbar-brand " to="/" style={{color: "#232323",fontWeight:"900", fontSize:"1.6rem"}} > ANSWARIT </NavLink>
     <ul class="navbar-nav ml-auto" style={{color: "white"}}>
     
       <li class="nav-item active">
