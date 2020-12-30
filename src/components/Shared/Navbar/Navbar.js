@@ -4,7 +4,6 @@ import './Navbar.scss';
 
 const Navbar = () => {
   let {pathname} = useLocation();
-  console.log( pathname)
   
     return (
         <div className="navbar-container">

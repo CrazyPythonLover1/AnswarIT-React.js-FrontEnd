@@ -8,8 +8,10 @@ import image5 from "../../../Image/header/1.5.jpg";
 import image6 from "../../../Image/header/1.6.jpg";
 import image7 from "../../../Image/header/1.7.jpg";
 import image8 from "../../../Image/header/1.8.jpg";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
+  let {pathname} = useLocation();
   return (
     <div id="header" className="">
       <div
@@ -64,6 +66,16 @@ const Header = () => {
           <span className="sr-only">Next</span>
         </a>
       </div>
+
+      { pathname === "/" && <section class="page-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+
+						</div>
+					</div>
+				</div>
+			</section>}
 
       <p className="header-text">
       AnswarIT is a global IT and Engineering solutions provider whose business focus is in Development, Outsourcing, and Consulting. We are a Global Technology company with Customer Focus as one of our Core Values. We are Agile. We are always present with the right solutions at the right place and the right time to meet your requirements. Our offerings are IP oriented, tried and tested over time. We strive to ensure that our Clients are the front runners and equipped with latest technologies.
