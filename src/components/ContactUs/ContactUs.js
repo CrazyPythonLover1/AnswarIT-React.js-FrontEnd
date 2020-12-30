@@ -25,7 +25,7 @@ const ContactUs = () => {
                          </div>
 
                     </div>
-                    <div className="  col col-lg-6 col-md-12 ">
+                    <div className="  col col-lg-6 col-md-12 col-sm-12 pt-sm-4 ">
                     <b> We would like to be easily accessible and to be available to our customers, potential clients and prospective employees. Whenever necessary, you just need to complete the following form. You can, also, visit any of our offices listed below. </b> <br/> <br/>
 
                     <ContactForm /> 
