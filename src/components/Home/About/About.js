@@ -5,7 +5,7 @@ import aboutData from '../../../data/about.json';
 
 const About = () => {
     const [about, setAbout] = useState(aboutData.about.overview)
-    
+    console.log(about)
 
     const overview = () => {
         setAbout(aboutData.about.overview)
@@ -20,12 +20,12 @@ const About = () => {
     }
     return (
         <div id="about" className="container-fluid">
-            <h3 className=" main-title "> ABOUT US </h3>
+            <h2 className=" main-title "> ABOUT US </h2>
             <div className="about-section">
                 <div className="row">
-                    <div onClick={()=> overview()} className="col col-md-4 .col-sm-12"> <span> Overview </span> </div>
-                    <div onClick={()=> mission()} className=" col col-md-4 .col-sm-12">  <span> Mission & Vision </span> </div>
-                    <div onClick={()=> coreValue()} className="col col-md-4 .col-sm-12"> <span> Core Values </span> </div>
+                    <div onClick={()=> overview()} className={`col col-md-4 .col-sm-12 ${about.type==="OVERVIEW"}`} > <span> Overview </span> </div>
+                    <div onClick={()=> mission()} className={`col col-md-4 .col-sm-12 ${about.type==="MISSION-VISION"}`} >  <span> Mission & Vision </span> </div>
+                    <div onClick={()=> coreValue()} className={`col col-md-4 .col-sm-12 ${about.type==="CORE-VALUE"}`}> <span> Core Values </span> </div>
                 </div>
                 <p>
                     {about.summary.toString().substring(0, 415)} <br/> <br/>

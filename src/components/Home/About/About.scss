@@ -7,6 +7,8 @@
 
 .main-title{
     color: $color-brand;
+    padding: 20px 0;
+    font-weight: 700;
 }
 
 #about .about-section{
@@ -18,14 +20,27 @@
 #about .about-section .row{
     margin: 0;
 
+    .col{
+        
+    }
+
+    .true{
+        border-top: 5px solid $color-brand;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    span{
+        font-weight: 600;
+    }
+
 }
 
 #about .about-section .row div{
-    border: 1px solid #ddd;
+    border: 1px solid #eeeeee;
     text-align: center;
     padding: 8px;
     color: $color-brand;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     cursor: pointer;
     
 }
