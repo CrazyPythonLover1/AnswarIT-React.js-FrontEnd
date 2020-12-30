@@ -15,6 +15,7 @@ import Overview from './components/About/Overview/Overview';
 import MissionVision from './components/About/MissionVision/MissionVision';
 import CoreValue from './components/About/CoreValue/CoreValue';
 import Services from './components/Services/Services/Services';
+import TermsOfUse from './components/TermsOfUse/TermsOfUse';
 
 function App() {
   return (
@@ -59,7 +60,10 @@ function App() {
         </Route>
           <Route path="/contactUs">
             <ContactUs/>
-          </Route> 
+          </Route>
+          <Route path="/terms-of-use">
+            <TermsOfUse/>
+          </Route>
         </Switch>
       </div>
         

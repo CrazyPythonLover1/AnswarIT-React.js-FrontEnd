@@ -12,7 +12,7 @@ const MissionVision = () => {
                     <div className="col-lg-4 col-md-12 col-sm-12">
                         <Sidebar/>
                     </div>
-                    <div className="col-lg-8 col-md-12 col-sm-12">
+                    <div className="col-lg-8 col-md-12 col-sm-12 pt-sm-4">
                         <h4 className="title"> <strong> MISSION AND VISION </strong> </h4>
                         <p> <strong> <i> What we think </i> </strong></p>
                         {summary.map((item, index) => <p key={index}> {item}</p>)}

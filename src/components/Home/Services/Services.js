@@ -1,14 +1,12 @@
 import React from "react";
 import "./Services.scss"
 import services from "../../../data/services.json";
+import { Link } from "react-router-dom";
 
 
 
 
 const Services = () => {
-
-  
-  console.log(services.services[0].overview);
 
   return (
     <div id="services" className="container-fluid">
@@ -17,16 +15,17 @@ const Services = () => {
         {
           services.services.slice(0,6).map((item,index) => (
             <div key={`services-${index}`} className="col mb-4">
-              <div className="card">
-                
-                <img src={require(`../../../Image/serices/1.${index+1}.jpg`).default} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <p className="card-text text-justify">
-                  <h4 className="card-title mx-auto"> {item.title} </h4>
-                    {item.overview.substr(0, 220)} .....
-                  </p>
+              <a href={item.url}> 
+                <div className="card">
+                  <img src={require(`../../../Image/serices/1.${index+1}.jpg`).default} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <p className="card-text text-justify">
+                    <h4 className="card-title mx-auto"> {item.title} </h4>
+                      {item.overview.substr(0, 220)} .....
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           ))
         }

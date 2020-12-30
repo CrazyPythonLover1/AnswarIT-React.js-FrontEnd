@@ -1,4 +1,13 @@
+@import "../../style/variables";
+
 .topnavbar{
+
+    .top-nav{
+        max-width: $max-width; 
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+    
     .nav-item{
         margin: 0 3px;
         a{

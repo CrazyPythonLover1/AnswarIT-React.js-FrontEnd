@@ -1,0 +1,11 @@
+@import "../style/variables";
+.terms-of-use{
+    p{
+        line-height: 22px;
+        text-align: justify;
+
+    }
+    padding: 10px 60px;
+    max-width: $max-width;
+    margin: 0 auto;
+}

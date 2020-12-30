@@ -7,7 +7,7 @@ const Navbar = () => {
   
     return (
         <div className="mainNavbar">
-            <nav class="navbar navbar-expand-md navbar-light text-white nav-container p-0" style={{backgroundColor:""}} >
+            <nav class="navbar navbar-expand-md navbar-light text-white nav-container p-0 " style={{backgroundColor:""}} >
             <NavLink class="navbar-brand  " to="/" style={{color: "#232323",fontWeight:"900", fontSize:"1.6rem"}} > ANSWARIT </NavLink>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

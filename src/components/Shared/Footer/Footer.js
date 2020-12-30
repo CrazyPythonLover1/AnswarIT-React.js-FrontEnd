@@ -17,15 +17,15 @@ const Footer = () => {
               <ul class="widget__list">
                 <li>
                   <i class="fa fa-tty" aria-hidden="true"></i>
-                  <a href="#">Contact</a>
+                  <Link to="/contactUs">Contact</Link>
                 </li>
                 <li>
                   <i class="fa fa-list-alt" aria-hidden="true"></i>
-                  <a href="#">Terms of Use</a>
+                  <Link to="/terms-of-use">Terms of Use</Link>
                 </li>
                 <li>
                   <i class="fa fa-sitemap" aria-hidden="true"></i>
-                  <a href="#">Site map</a>
+                  <Link to="#">Site map</Link>
                 </li>
               </ul>
             </div>
@@ -36,35 +36,35 @@ const Footer = () => {
               <ul class="list-unstyled quick-links">
                 <li>
                   <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                  <a href="#"> Training (USA)</a>
+                  <Link to="#"> Training (USA)</Link>
                 </li>
                 <li>
                   <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                  <a href="#"> Training (BD)</a>
+                  <Link to="#"> Training (BD)</Link>
                 </li>
                 <li>
                   <i class="fa fa-envelope-o" aria-hidden="true" style={{marginRight: "6px"}} ></i>
-                  <a href="#"> Jobsite</a>
+                  <Link to="#"> Jobsite</Link>
                 </li>
                 <li>
                   <i class="fa fa-envelope-o" aria-hidden="true" style={{marginRight: "6px"}} ></i>
-                  <a href="#"> Job Placement Agency</a>
+                  <Link to="#"> Job Placement Agency</Link>
                 </li>
                 <li>
                   <i class="fa fa-cogs" aria-hidden="true" style={{marginRight: "4px"}} ></i>
-                  <a href="#"> Software Development</a>
+                  <Link to="#"> Software Development</Link>
                 </li>
                 <li>
                   <i class="fa fa-bell" aria-hidden="true" style={{marginRight: "4px"}} ></i>
-                  <a href="#"> Digital Marketing Agency</a>
+                  <Link to="#"> Digital Marketing Agency</Link>
                 </li>
                 <li>
                   <i class="fa fa-file-text-o" aria-hidden="true" style={{marginRight: "6px"}} ></i>
-                  <a href="#"> Amar Quiz</a>
+                  <Link to="#"> Amar Quiz</Link>
                 </li>
                 <li>
                   <i class="fa fa-file-text-o" aria-hidden="true" style={{marginRight: "6px"}} ></i>
-                  <a href="#"> Upscale Learning</a>
+                  <Link to="#"> Upscale Learning</Link>
                 </li>
               </ul>
             </div>
@@ -83,8 +83,8 @@ const Footer = () => {
         <div style={{zIndex: "1"}} class="row copyright">
           <div style={{zIndex: "1"}} class="col-md-6">
             <div class="">
-              © Copyright 2019 - 2020. Developed by <a href="#" target="">
-                AnswarIT </a>
+              © Copyright 2019 - 2020. Developed by <Link to="#" target="">
+                AnswarIT </Link>
             </div>
           </div>
           <div class="col-md-6">
