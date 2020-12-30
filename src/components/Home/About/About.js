@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './About.scss';
 import aboutData from '../../../data/about.json';
+import { Link } from 'react-router-dom';
 
 
 const About = () => {
@@ -27,9 +28,9 @@ const About = () => {
                     <div onClick={()=> mission()} className={`col col-md-4 .col-sm-12 ${about.type==="MISSION-VISION"}`} >  <span> Mission & Vision </span> </div>
                     <div onClick={()=> coreValue()} className={`col col-md-4 .col-sm-12 ${about.type==="CORE-VALUE"}`}> <span> Core Values </span> </div>
                 </div>
-                <p>
+                <p className="about-summary">
                     {about.summary.toString().substring(0, 415)} <br/> <br/>
-                    <span> Learn More... </span>
+                    <span> <a href={`${about.url}`}>  Learn More... </a> </span>
                 </p>
             </div>
         </div>

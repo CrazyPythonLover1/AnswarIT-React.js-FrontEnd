@@ -2,7 +2,8 @@
     "about":{
         "overview":{
             "summary":"AnswarIT is a global IT and Engineering solutions provider catering to a diverse customer base. We ensure to empower our clients with innovative solutions that add measurable value to business, while adhering to global quality standards. We offer an optimal blend of business processes in varied domains to enable our customers to meet their corporate goals. Our combination of deep industry knowledge and expertise in building capabilities on short notice makes us a strategic partner for our customers. Partnering with AnswarIT gives our customers access to some of the finest talent in the industry. Our highly qualified team of professionals leverages their skills and experiences in order to design and integrate exceptionally successful products and strategies. These strategies are built with the aim to empower our customers with the right tools and processes needed to achieve operating and financial goals. Our seasoned professionals come experienced in a broad spectrum of technologies that range from cutting-edge technologies to legacy systems, enabling us to successfully service a wide variety of customers.Our primary goal is to facilitate the success of our customers by ensuring the delivery of highly advanced solutions that reduce project risks, enhance capabilities and create value, while managing within tight budgets and timelines.",
-            "type":"OVERVIEW"
+            "type":"OVERVIEW",
+            "url":"/overview"
         },
         "mission":{
             "summary":[
@@ -12,11 +13,13 @@
             "We are a Global Technology company with Customer Focus as one of our Core Values. We believe and ensure that the Business and Financial Goals of our Clients are met by providing them Technology Solutions that are customized based on the need and requirements of our Clients. Our Management consists of Technocrat Entrepreneur's with great People skills and Passion to Win. We are Agile. We are always present with the right solutions at the right place and the right time to meet your requirements. Our offerings are IP oriented, tried and tested over time. We strive to ensure that our Clients are the front runners and equipped with the latest technology. Our processes help saving cost and reduce risk",
             "The world is changing around us. Therefore, it is crucial that we look ahead, understand the trends and forces that will shape our business in the future and move swiftly to prepare for what is ahead. We must get ready for tomorrow, today! Our Mission & Vision creates a destination for our business and provides us with a Roadmap for winning together with our esteemed partners."
             ],
-            "type":"MISSION-VISION"
+            "type":"MISSION-VISION",
+            "url":"/missionVision"
         },
         "coreValue":{
             "summary":"Answar IT is governed by its Core Values. They form an integral part of who we are, how we operate and provide a sound basis to make decisions. These values define our culture and help shape the character of our company. They help us create value for our clients, our people and our organization as a whole.",
             "type":"CORE-VALUE",
+            "url":"/core-value",
             "feature":[
                 {
                     "title":"customer support",
