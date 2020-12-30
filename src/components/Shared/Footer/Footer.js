@@ -11,7 +11,7 @@ const Footer = () => {
       <section class="footer-area" id="footer" style={{position: "relative"}}>
       <div class="container">
         <div class="row m-0">
-          <div style={{zIndex: "1"}} class="col-lg-4 col-md-6 col-sm-12">
+          <div style={{zIndex: "1"}} class="col-lg-6 col-md-6 col-sm-12">
             <h4 class="f-heading">About Us</h4>
             <div class="ulink f-contact">
               <ul class="widget__list">
@@ -25,12 +25,12 @@ const Footer = () => {
                 </li>
                 <li>
                   <i class="fa fa-sitemap" aria-hidden="true"></i>
-                  <Link to="#">Site map</Link>
+                  {/* <Link to="#">Site map</Link> */}
                 </li>
               </ul>
             </div>
           </div>
-          <div style={{zIndex: "1"}} class="col-lg-4 col-md-6 col-sm-12">
+          {/* <div style={{zIndex: "1"}} class="col-lg-4 col-md-6 col-sm-12">
             <h4 class="f-heading">Our Sister Concern</h4>
             <div class="ulink f-contact">
               <ul class="list-unstyled quick-links">
@@ -68,12 +68,11 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
-          <div style={{zIndex: "1"}} class="col-lg-4 col-md-6 col-sm-12">
+          </div> */}
+          <div style={{zIndex: "1"}} class="col-lg-6 col-md-6 col-sm-12">
             <h4 class="f-heading">Corporate Office</h4>
             <div class="f-contact">
-              <span><i class="fa fa-location-arrow" aria-hidden="true"></i> Address: 40-20 39th Avenue, Suite #400 Long Island City, NY 11101
-                220, Vienna, VA 22182</span><br />
+              <span><i class="fa fa-location-arrow" aria-hidden="true"></i> Address: House: 8/A (1st Floor), Road No: 9, Baridhara, Gulshan, Dhaka-1212</span><br />
               <span><i class="fa fa-phone" aria-hidden="true"></i> Phone: +8801710504157 (Consulting & Recruiting)</span><br/>
               
               <span><i class="fa fa-envelope-o" aria-hidden="true"></i> Email: info@answarit.com, shownahmed6666@gmail.com </span>
@@ -84,7 +83,7 @@ const Footer = () => {
           <div style={{zIndex: "1"}} class="col-md-6">
             <div class="">
               © Copyright 2019 - 2020. Developed by <Link to="#" target="">
-                AnswarIT </Link>
+                Answar IT Software </Link>
             </div>
           </div>
           <div class="col-md-6">

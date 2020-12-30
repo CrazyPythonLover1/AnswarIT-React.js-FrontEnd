@@ -8,4 +8,12 @@
     padding: 10px 60px;
     max-width: $max-width;
     margin: 0 auto;
+
+    hr{
+        background-image: linear-gradient(to right, transparent, #5454af6e, transparent);
+        // background-image: linear-gradient(to right, purple, #5454af6e, purple);
+        border: 0;
+        height: 1px;
+        margin: 32px 0 32px 0;
+    }
 }

@@ -37,6 +37,7 @@ The User's right to privacy is of paramount importance to PeopleNTech. Any infor
 
 The Site provides links to websites and access to content, products and services from third parties, including users, advertisers, affiliates and sponsors of the Site. You agree that PeopleNTech is not responsible for the availability of, and content provided on, third party websites. The User is requested to peruse the policies posted by other websites regarding privacy and other topics before use. PeopleNTech is not responsible for third party content accessible through the Site, including opinions, advice, statements and advertisements, and User shall bear all risks associated with the use of such content. PeopleNTech is not responsible for any loss or damage of any sort User may incur from dealing with any third party.<div style={{margin: "10px"}}></div>
             </p>
+            <hr></hr>
         </div>
     );
 };

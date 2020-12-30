@@ -11,9 +11,9 @@ const ContactForm = () => {
       <label for="inputState"> Choose a Country </label>
       <select id="inputState" class="form-control">
         <option selected> USA </option>
+        <option> Uk  </option>
         <option> CANADA  </option>
-        <option> INDIA  </option>
-        <option> BANGLADESH  </option>
+        <option> AUSTRALIA  </option>
       </select>
     </div>
 
