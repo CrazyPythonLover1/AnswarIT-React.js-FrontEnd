@@ -6,14 +6,52 @@ const Navbar = () => {
   let {pathname} = useLocation();
   
     return (
-        <div className="navbar-container">
-          <nav class="navbar navbar-expand-md navbar-light text-white" style={{color:"#232323", height:"70px"}}>
-  
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div className="mainNavbar">
+            <nav class="navbar navbar-expand-md navbar-light text-white nav-container p-0" style={{backgroundColor:""}} >
+            <NavLink class="navbar-brand  " to="/" style={{color: "#232323",fontWeight:"900", fontSize:"1.6rem"}} > ANSWARIT </NavLink>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse " style={{maxWidth:"1200px",margin: "0 auto", padding: " 0 15px", }} id="navbarNav">
-  <NavLink class="navbar-brand " to="/" style={{color: "#232323",fontWeight:"900", fontSize:"1.6rem"}} > ANSWARIT </NavLink>
+  <div class="collapse navbar-collapse "id="navbarNav">
+  
+    <ul class="navbar-nav ml-auto" style={{color: "white"}}>
+    
+      <li class="nav-item ">
+        <NavLink class="nav-link " to="/" style={{color: "#232323"}} > HOME  </NavLink>
+      </li>
+      <li class="nav-item dropdown">
+      <NavLink class="nav-link " to="/overview" class="trigger-drop" > ABOUT US <i class="arrow"></i> </NavLink>
+      <ul class="drop">
+        <li><NavLink to="/overview"> Overview </NavLink></li>
+        <li><NavLink to="/missionVision"> Mission & Vision</NavLink></li>
+        <li><NavLink to="/core-value"> Core Values </NavLink></li>
+      </ul>
+      </li>
+      <li class="nav-item dropdown">
+      <NavLink class="nav-link " to="/softwareDevelopment" class="trigger-drop" > SERVICES <i class="arrow"></i> </NavLink>
+      <ul class="drop">
+        <li><NavLink to="/softwareDevelopment"> SOFTWARE DEVELOPMENT </NavLink></li>
+        <li><NavLink to="/managementConsulting"> MANAGEMENT CONSULTING </NavLink></li>
+        <li><NavLink to="/technologyConsulting"> TECHNOLOGY CONSULTING</NavLink></li>
+        <li><NavLink to="/staffAugmentation"> STAFF AUGMENTATION  </NavLink></li>
+        <li><NavLink to="/businessProcess"> BUSINESS PROCESS ASSURANCE </NavLink></li>
+        <li><NavLink to="/BpoKpo"> BPO/KPO </NavLink></li>
+        <li><NavLink to="/whyAnswarIT"> WHY ANSWARIT</NavLink></li>
+      </ul>
+      </li>
+      <li class="nav-item">
+        <NavLink class="nav-link " to="/contactUs" style={{color: "#232323"}} > CONTACT US  </NavLink>
+      </li>
+    </ul>
+  </div>
+</nav>
+          {/* <nav class="navbar navbar-expand-md navbar-light text-white" style={{backgroundColor:"#",color:"#232323", height:"70px"}}>
+          <NavLink class="navbar-brand " to="/" style={{color: "#232323",fontWeight:"900", fontSize:"1.6rem"}} > ANSWARIT </NavLink>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavMain" aria-controls="navbarNavMain" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " style={{maxWidth:"1200px",margin: "0 auto", padding: " 0 15px", }} id="navbarNavMain">
+
     <ul class="navbar-nav ml-auto" style={{color: "white"}}>
     
       <li class="nav-item active">
@@ -22,15 +60,21 @@ const Navbar = () => {
       <li class="nav-item">
         <NavLink to="/overview">About</NavLink>
       </li>
-      <li class="nav-item">
-        <NavLink to="/SoftwareDevelopment" class="trigger-drop"> Services<i class="arrow"></i></NavLink>
+      <li class="nav-item dropdown">
+        <NavLink to="/SoftwareDevelopment" class="trigger-drop" > Services<i class="arrow"></i></NavLink>
+        <ul class="drop">
+        <li><NavLink to="/SoftwareDevelopment"> Software Development </NavLink></li>
+        <li><NavLink to="#"> Management Consulting </NavLink></li>
+        <li><NavLink to="#"> Technology Consulting </NavLink></li>
+        <li><NavLink to="#"> Staff Augmentation </NavLink></li>
+      </ul>
       </li>
       <li class="nav-item">
         <NavLink to="/contactUs"> Contact Us</NavLink>
       </li>
     </ul>
   </div>
-</nav>
+</nav> */}
             {/* <nav id="navigation">
                 <div className="inner-nav-container">
                 <Link to="#" class="logo"> AnswarIT <span>+</span></Link>

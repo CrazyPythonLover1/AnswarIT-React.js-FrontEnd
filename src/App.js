@@ -36,7 +36,25 @@ function App() {
         <Route path="/core-value"> 
             <CoreValue/>
         </Route>
-        <Route path="/SoftwareDevelopment">
+        <Route path="/softwareDevelopment">
+          <Services />
+        </Route>
+        <Route path="/managementConsulting">
+          <Services />
+        </Route>
+        <Route path="/technologyConsulting">
+          <Services />
+        </Route>
+        <Route path="/staffAugmentation">
+          <Services />
+        </Route>
+        <Route path="/businessProcess">
+          <Services />
+        </Route>
+        <Route path="/BpoKpo">
+          <Services />
+        </Route>
+        <Route path="/whyAnswarIT">
           <Services />
         </Route>
           <Route path="/contactUs">

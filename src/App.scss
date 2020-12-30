@@ -8,3 +8,16 @@ $color-accent: desaturate(navy,80%);
     text-align: justify;
     background-color: #f3f5f9;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .topnavbar {
+      display: none;
+    }
+    .nav-container{
+        background: #5c10e3;
+        a{
+            color: white !important;
+        }
+    }
+  }
