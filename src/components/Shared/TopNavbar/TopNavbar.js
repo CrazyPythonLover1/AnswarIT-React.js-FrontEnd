@@ -8,7 +8,7 @@ const TopNavbar = () => {
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse " style={{maxWidth:"1200px",margin: "0 auto", padding: " 0 15px", }} id="">
+  <div class="collapse navbar-collapse " style={{maxWidth:"1200px",margin: "0 auto", padding: " 0 55px", }} id="">
   <a class="navbar-brand font-italic" href="#" style={{color: "white"}} > Think out of the box.....</a>
     <ul class="navbar-nav ml-auto" style={{color: "white"}}>
     
