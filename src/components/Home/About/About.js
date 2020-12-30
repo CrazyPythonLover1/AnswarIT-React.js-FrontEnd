@@ -20,7 +20,7 @@ const About = () => {
     }
     return (
         <div id="about" className="container-fluid">
-            <h3 className=" main-title "> Want to know more about us </h3>
+            <h3 className=" main-title "> ABOUT US </h3>
             <div className="about-section">
                 <div className="row">
                     <div onClick={()=> overview()} className="col col-md-4 .col-sm-12"> <span> Overview </span> </div>

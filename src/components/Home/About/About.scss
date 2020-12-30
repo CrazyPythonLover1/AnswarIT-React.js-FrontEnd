@@ -1,7 +1,8 @@
 @import "../../style/variables";
 #about{
     padding: 0 80px !important;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+    max-width: $max-width;
 }
 
 .main-title{

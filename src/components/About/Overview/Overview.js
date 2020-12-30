@@ -3,7 +3,7 @@ import Sidebar from '../../Shared/Sidebar/Sidebar';
 
 const Overview = () => {
     return (
-        <div className="overview">
+        <div className="overview about">
             <div style={{ maxWidth:"1300px", margin:"0 auto"}}> 
                 <div className="row w-100 " style={{ padding: "20px 60px"}} >
                     <div className="col-lg-4 col-md-12 col-sm-12">

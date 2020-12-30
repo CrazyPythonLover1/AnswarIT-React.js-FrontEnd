@@ -6,7 +6,7 @@ const MissionVision = () => {
     console.log(aboutData.about.mission.summary)
     const {summary} = aboutData.about.mission;
     return (
-        <div className="missionVision">
+        <div className="missionVision about">
             <div style={{ maxWidth:"1300px", margin:"0 auto"}}> 
                 <div className="row w-100" style={{ padding: "20px 60px"}}>
                     <div className="col-lg-4 col-md-12 col-sm-12">

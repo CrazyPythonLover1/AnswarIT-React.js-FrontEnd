@@ -1,8 +1,11 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import {  NavLink, useLocation } from 'react-router-dom';
 import './Navbar.scss';
 
 const Navbar = () => {
+  let {pathname} = useLocation();
+  console.log( pathname)
+  
     return (
         <div className="navbar-container">
           <nav class="navbar navbar-expand-md navbar-light text-white" style={{color:"#232323", height:"70px"}}>
@@ -56,7 +59,7 @@ const Navbar = () => {
 
 </nav> */}
 
-<section class="page-top">
+{ pathname !== "/" && <section class="page-top">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -64,7 +67,7 @@ const Navbar = () => {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section>}
 
         </div>
         

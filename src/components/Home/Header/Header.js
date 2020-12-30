@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./Header.scss";
 import image1 from "../../../Image/header/1.1.jpg";
 import image2 from "../../../Image/header/1.2.jpg";
 import image3 from "../../../Image/header/1.3.jpg";
@@ -65,7 +65,7 @@ const Header = () => {
         </a>
       </div>
 
-      <p>
+      <p className="header-text">
       AnswarIT is a global IT and Engineering solutions provider whose business focus is in Development, Outsourcing, and Consulting. We are a Global Technology company with Customer Focus as one of our Core Values. We are Agile. We are always present with the right solutions at the right place and the right time to meet your requirements. Our offerings are IP oriented, tried and tested over time. We strive to ensure that our Clients are the front runners and equipped with latest technologies.
       </p>
     </div>

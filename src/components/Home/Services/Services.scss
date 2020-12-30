@@ -2,7 +2,8 @@
 
 
 #services{
-    padding: 0 40px;
+    padding: 60px 80px !important;
+    max-width: $max-width;
     .main-title{
         color: $color-brand;
         margin-bottom: 20px;
@@ -10,16 +11,16 @@
 
     .card{
         border: none;
-        border-radius: 10px ;
-        padding: 10px 0;
+        border-radius: 5px ;
         transition: all 1s;
+        box-shadow: 0px 9px 14px 1px rgba(0, 0, 0, 0.04);
 
         &:hover{
             transform: scale(1.05);
         }
 
         .card-title{
-            color: $color-brand;
+            color: #232323;
         }
     }
     
