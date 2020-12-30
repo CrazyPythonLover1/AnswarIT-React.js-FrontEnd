@@ -1,4 +1,9 @@
 import React from 'react';
+import "./TopNavbar.scss";
+import PhoneIcon from '@material-ui/icons/Phone';
+import MailIcon from '@material-ui/icons/Mail';
+import PrintIcon from '@material-ui/icons/Print';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const TopNavbar = () => {
     return (
@@ -13,16 +18,16 @@ const TopNavbar = () => {
     <ul class="navbar-nav ml-auto" style={{color: "white"}}>
     
       <li class="nav-item active">
-        <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-white" href="#">  <PhoneIcon /> <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#">Features</a>
+        <a class="nav-link text-white" href="#"> <MailIcon /> </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#">Pricing</a>
+        <a class="nav-link text-white" href="#"> <PrintIcon /> </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-link text-white" > <LinkedInIcon /> </a>
       </li>
     </ul>
   </div>

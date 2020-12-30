@@ -90,11 +90,11 @@ const Footer = () => {
           <div class="col-md-6">
             <div class="row f-social">
               
-<Link to="/"> < FacebookIcon />
-</Link> <Link to="/"> < LinkedInIcon />
-</Link> <Link to="/"> < InstagramIcon /></Link>               
-<Link to="/"> < TwitterIcon />
- </Link>            </div>
+            <Link to="/"> < FacebookIcon />  </Link> 
+            <Link to="/"> < LinkedInIcon />  </Link> 
+            <Link to="/"> < InstagramIcon /> </Link>               
+            <Link to="/"> < TwitterIcon />   </Link>            
+            </div>
           </div>
         </div>
       </div>
