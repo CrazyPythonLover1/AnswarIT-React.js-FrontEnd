@@ -46,6 +46,15 @@ $color-accent: desaturate(navy,80%);
             
     }
 
+    .featured-box{
+        flex-direction: column;
+
+        .thumbnail{
+            margin: 10px auto ;
+
+        }
+    }
+
     
   }
 
