@@ -6,8 +6,8 @@ const Navbar = () => {
   let {pathname} = useLocation();
   
     return (
-        <div className="mainNavbar">
-            <nav class="navbar navbar-expand-md navbar-light text-white nav-container p-0 " style={{backgroundColor:""}} >
+        <div className="mainNavbar" style={{width:"100%"}}>
+            <nav class="navbar navbar-expand-md navbar-light text-white nav-container " style={{backgroundColor:"", }} >
             <NavLink class="navbar-brand  " to="/" style={{color: "#232323",fontWeight:"900", fontSize:"1.6rem"}} > ANSWARIT </NavLink>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -28,8 +28,8 @@ const Navbar = () => {
       </ul>
       </li>
       <li class="nav-item dropdown">
-      <NavLink class="nav-link " to="/softwareDevelopment" class="trigger-drop" > SERVICES <i class="arrow"></i> </NavLink>
-      <ul class="drop">
+      <NavLink class="nav-link " to="/softwareDevelopment" class="trigger-drop" > SERVICES </NavLink>
+      {/* <ul class="drop">
         <li><NavLink to="/softwareDevelopment"> SOFTWARE DEVELOPMENT </NavLink></li>
         <li><NavLink to="/managementConsulting"> MANAGEMENT CONSULTING </NavLink></li>
         <li><NavLink to="/technologyConsulting"> TECHNOLOGY CONSULTING</NavLink></li>
@@ -37,7 +37,7 @@ const Navbar = () => {
         <li><NavLink to="/businessProcess"> BUSINESS PROCESS ASSURANCE </NavLink></li>
         <li><NavLink to="/BpoKpo"> BPO/KPO </NavLink></li>
         <li><NavLink to="/whyAnswarIT"> WHY ANSWARIT</NavLink></li>
-      </ul>
+      </ul> */}
       </li>
       <li class="nav-item">
         <NavLink class="nav-link " to="/contactUs" style={{color: "#232323"}} > CONTACT US  </NavLink>

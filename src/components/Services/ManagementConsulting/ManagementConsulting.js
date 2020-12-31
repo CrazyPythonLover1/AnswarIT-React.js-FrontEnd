@@ -4,8 +4,8 @@ const ManagementConsulting = () => {
     return (
         <div>
             <h4 className="title" > <strong> MANAGEMENT CONSULTING </strong>  </h4>
-            <p> <em> Your strategic partners in success </em></p>
-            <img className="img-fluid" src={require(`../../../Image/serices/1.2.jpg`).default} alt=""/> <br/> <br/> 
+            <p> <em> <b>Your strategic partners in success</b> </em></p>
+            <img className="img-fluid" src={require(`../../../Image/services/1.2.jpg`).default} alt=""/> <br/> <br/> 
             <p>Keeping pace with a business environment that is continuously evolving, along with maintaining the quality of operations can be quite a challenging task for any enterprise. In order to manage continuously changing environment, companies need to become more responsive to both external forces and internal complexities. The role of top management is not just restricted to supervising the seamless operations of the business, but also includes being on top of industry trends and to have considerable foresight to stay ahead of its competition.<br/><br/>Given the magnitude and scope of responsibilities with top level managers, AnswarIT offers seasoned expertise of its specialists who come equipped with the knowledge of industry’s best practices, statistical analysis and an objective view. Using the most optimal mix of the above, we help you take sharper decisions, aimed at improving your bottom-line results.</p>
 
             <p> <b> Expertise: </b> Our consultants, with exposure in some of the best companies of the world in different geographies, come with expertise in management consulting, technology and operation, marketing, and risk. They act as concept integrators along with your team and facilitate forward looking business strategy and decisions that improve operations along with opening up the scope for future growth. Close collaborative work with senior members of client ensures that recommendations are highly strategic and yet deeply practical, which leads to real impact for our clients.</p>

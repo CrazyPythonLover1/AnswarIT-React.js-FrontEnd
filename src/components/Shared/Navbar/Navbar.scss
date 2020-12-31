@@ -6,7 +6,7 @@
 }
 
 .mainNavbar{
-  width: 100vw !important;
+  
 }
 
 .nav-container{
@@ -21,54 +21,6 @@
 
 a,a:hover{color:$color-accent; text-decoration : none; font-weight:600;}
 
-nav{
-  position: relative;
-  left:0;right:0;top:initial;
-  
-  background:$color-base;
-  z-index:1000;
-  min-width:580px;
-  
-
-  .inner-nav-container{
-      max-width: $max-width;
-      margin: 0 auto;
-
-
-
-     
-      
-      .links{
-        float:right;
-        margin-right: 0px;   
-        padding-right: 5px; 
-        position:relative;
-        
-        li{
-          float:left;
-          list-style:none;
-          position:relative;
-          margin:10px;
-          display:inline-block;      
-          
-          &>a{
-            position:relative;
-            display:inline-block;            
-            padding:0 10px;
-            line-height:30px;
-            height:30px;        
-            
-            &:hover{
-              color:$color-base;
-              background:$color-accent;
-              border-radius:2px;
-            } 
-          }
-        }
-      }
-  }
-     
-}
 
 
  .mainNavbar  .nav-item{

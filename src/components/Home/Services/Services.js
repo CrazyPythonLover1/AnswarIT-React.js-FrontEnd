@@ -17,11 +17,11 @@ const Services = () => {
             <div key={`services-${index}`} className="col mb-4">
               <a href={item.url}> 
                 <div className="card">
-                  <img src={require(`../../../Image/serices/1.${index+1}.jpg`).default} className="card-img-top" alt="..." />
+                  <img src={require(`../../../Image/services/1.${index+1}.jpg`).default} className="card-img-top" alt="..." />
                   <div className="card-body">
                     <p className="card-text text-justify">
                     <h4 className="card-title mx-auto"> {item.title} </h4>
-                      {item.overview.substr(0, 220)} .....
+                      <p style={{fontWeight:"400"}}> {item.overview.substr(0, 220)}... <br/> <span style={{color: "#232323", fontWeight:" 600 "}}> Learn More </span> </p>
                     </p>
                   </div>
                 </div>

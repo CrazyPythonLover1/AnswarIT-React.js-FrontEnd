@@ -4,8 +4,8 @@ const TechnologyConsulting = () => {
     return (
         <div>
              <h4 className="title" > <strong> TECHNOLOGY CONSULTING </strong>  </h4>
-            <p> <em> Tech Solutions for smarter and faster growth </em></p>
-            <img className="img-fluid" src={require(`../../../Image/serices/1.3.jpg`).default} alt=""/> <br/> <br/> 
+            <p> <em> <b>Tech Solutions for smarter and faster growth</b> </em></p>
+            <img className="img-fluid" src={require(`../../../Image/services/1.3.jpg`).default} alt=""/> <br/> <br/> 
             <p>Information technology has become one of the central and core element of strategy of any organization. It not only provides seamless integration between various organizational functions, supports day-to-day operations, helps to connect with customers, provides instantaneous reports on health and well-being of an organization but also provides competitive advantage to organization.<br/><br/>Our team of established professionals understands the importance of technology in today's dynamic business environment. AnswarIT offers speciality firms a wide spectrum of services, fine-tuned to achieving higher performance, while accommodating specific client needs.</p>
 
             <h5 className="p-1"> How does opting for AnswarIT's Technology Solutions benefit you? </h5>

@@ -19,6 +19,7 @@ import TermsOfUse from './components/TermsOfUse/TermsOfUse';
 
 function App() {
   return (
+    <div className="" style={{width:"100%"}}>
 <Router>
       <TopNavbar/>
       <Navbar/>
@@ -69,6 +70,8 @@ function App() {
         
       <Footer/>
     </Router>
+    </div>
+
     
   );
 }

@@ -5,7 +5,7 @@ const BpoKpo = () => {
         <div>
             <h4 className="title" > <strong> BPO/KPO </strong> </h4>
             <p> <em> <b> Optimizing your processes </b> </em></p>
-            <img className="img-fluid" src={require(`../../../Image/serices/1.6.jpg`).default} alt=""/> <br/> <br/> 
+            <img className="img-fluid" src={require(`../../../Image/services/1.6.jpg`).default} alt=""/> <br/> <br/> 
             <p>At AnswarIT, it is our aim to help our clients achieve excellence in their core competencies by supporting them with robust end-to-end solutions for repeatable processes. With a reliable outsourcing partner, your resources can focus wholly on realizing core business objectives, thereby achieving consistent results and positioning your enterprise as a vertical leader. <br/><br/> It is all about optimizing your business processes while simplifying them and addressing operational issues like accuracy, efficiency, repeatability, or governance. A dependable and reliable partner can get you there – a partner who has embraced the industry best-in-class processes required to deliver such secure outsourcing services. </p>
 
            

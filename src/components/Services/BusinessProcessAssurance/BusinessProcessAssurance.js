@@ -5,7 +5,7 @@ const BusinessProcessAssurance = () => {
         <div>
             <h4 className="title" > <strong> BUSINESS PROCESS ASSURANCE</strong>  </h4>
             <p> <em> <b> Getting it right every time</b> </em></p>
-            <img className="img-fluid" src={require(`../../../Image/serices/1.2.jpg`).default} alt=""/> <br/> <br/> 
+            <img className="img-fluid" src={require(`../../../Image/services/1.2.jpg`).default} alt=""/> <br/> <br/> 
             <p>Every technology or part of it is developed for the achievement of a particular business objective and to ultimately enhance the end user's experience. To this effect, traditional Quality Assurance has evolved to make way for Business Process Assurance (BPA). While Quality Assurance (QA) takes into account the micro view, BPA has come to take into account the macro view, wherein the effects of a particular change/modification are tested through to the end user's experience.<br/><br/>Our Business Process Assurance lends itself very easily to be tailored to fit any of the development methodologies that one chooses to follow. What matters is implementing the principle in spirit which is - all individuals regardless of their role, should have one and only one aim in mind that is of delivering the business process experience exactly the way the business stakeholders have envisaged it.</p>
 
 

@@ -5,7 +5,7 @@ const StaffAugmentation = () => {
         <div>
             <h4 className="title" > <strong> STAFF AUGMENTATION </strong>  </h4>
             <p> <em> <b> We create value finest talent for a cutting edge performance and with flexibility you need </b>  </em></p>
-            <img className="img-fluid" src={require(`../../../Image/serices/1.4.jpg`).default} alt=""/> <br/> <br/>
+            <img className="img-fluid" src={require(`../../../Image/services/1.4.jpg`).default} alt=""/> <br/> <br/>
             <p>With companies adopting more aggressive growth and expansion strategies, the need to augment efficient staff at an accelerated pace has become the need of the hour. Many organizations today seek both the flexibility to obtain resources when and where needed and the ability to “gear up” for projects that require specialized application skills that don’t exist or can’t be leveraged internally.<br/> <br/>Staff augmentation can help you achieve a number of business goals including aggressive time-to-market, industry and technical experience that accelerates the quality and speed of development, and avoiding the cost and time required for internal training and skill development. <br/> <br />This sudden surge in the demand for highly talented manpower calls for the assistance of a specialist. AnswarIT offers flexibility to your HR function, by providing the services of a highly dedicated team, on demand, that can help augment top talent in a time efficient manner.</p>
 
             <h5 className="p-1"> How AnswarIT Brings You the Best Staff Augmentation Solution? </h5>
