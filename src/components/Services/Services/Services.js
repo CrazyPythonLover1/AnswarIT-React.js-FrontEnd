@@ -56,7 +56,7 @@ const routes = [
 const Services = () => {
   return (
     <Router>
-      <div className="services" style={{ maxWidth:"1300px", padding:" 20px 60px", margin:"0 auto"}}>
+      <div className="services" style={{ maxWidth:"1300px", padding:" 40px 60px", margin:"0 auto"}}>
         <div className="row w-100 m-0">
           <div className="col-lg-4 col-md-5">
             <div className="sidebar">

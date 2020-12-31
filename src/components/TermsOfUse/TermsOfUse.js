@@ -4,7 +4,7 @@ import './TermsOfUse.scss';
 const TermsOfUse = () => {
     return (
         <div className="terms-of-use">
-            <div className=" py-1 pt-2">
+            <div className=" py-1 pt-3">
             <h4 className="title" > <strong>TERMS OF USE </strong>  </h4>
             </div>
             
