@@ -79,7 +79,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div style={{zIndex: "1"}} class="row copyright">
+        <div style={{zIndex: "1"}} class="row m-0 copyright">
           <div style={{zIndex: "1"}} class="col-md-6">
             <div class="">
               © Copyright 2019 - 2020. Developed by <Link to="#" target="">

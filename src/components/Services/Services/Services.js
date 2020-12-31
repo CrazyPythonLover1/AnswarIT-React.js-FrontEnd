@@ -73,7 +73,7 @@ const Services = () => {
           </div>
 
           <div className="col-lg-8 col-md-7">
-            <div className="service-details" style={{ flex: 1, padding: "10px" }}>
+            <div className="service-details" style={{ flex: 1, padding: "0px" }}>
               <Switch>
                 {routes.map((route, index) => (
                   <Route

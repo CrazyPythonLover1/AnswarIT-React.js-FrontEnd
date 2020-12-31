@@ -51,7 +51,24 @@ $color-accent: desaturate(navy,80%);
 
         .thumbnail{
             margin: 10px  auto ;
+        }
 
+        .box-content{
+            margin-left: 0 !important;
+        }
+    }
+
+    .service-details, .about{
+        .title{
+            margin-top: 30px !important;
+        }
+        
+    }
+
+    #footer{
+        .f-social{
+            padding-top: 10px;
+            padding-left: 5px;
         }
     }
 
@@ -84,9 +101,9 @@ $color-accent: desaturate(navy,80%);
         padding: 40px 20px !important;
     }
 
-    .service-details, .about, .terms-of-use{
+    .service-details, .about{
         .title{
-            margin-top: 20px;
+            margin-top: 30px !important;
         }
         
     }
@@ -97,6 +114,14 @@ $color-accent: desaturate(navy,80%);
         .row{
             flex-direction: column;
         }
+    }
+
+    .terms-of-use{
+        padding: 20px 20px !important;
+    }
+
+    .nav-container{
+        padding: 0 20px !important;
     }
     
   }
