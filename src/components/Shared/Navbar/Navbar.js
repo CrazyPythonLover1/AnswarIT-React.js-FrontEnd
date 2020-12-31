@@ -1,6 +1,7 @@
 import React from 'react';
 import {  NavLink, useLocation } from 'react-router-dom';
 import './Navbar.scss';
+import logo from '../../../Image/logo/Answar-IT.jpg'
 
 const Navbar = () => {
   let {pathname} = useLocation();
@@ -8,6 +9,7 @@ const Navbar = () => {
     return (
         <div className="mainNavbar" style={{width:"100%"}}>
             <nav class="navbar navbar-expand-md navbar-light text-white nav-container " style={{backgroundColor:"", }} >
+            <img src={logo} alt="logo" style={{width:"1.5rem",height:"1.5rem" ,borderRadius:"100%"}} />
             <NavLink class="navbar-brand  " to="/" style={{color: "#232323",fontWeight:"900", fontSize:"1.6rem"}} > ANSWARIT </NavLink>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
