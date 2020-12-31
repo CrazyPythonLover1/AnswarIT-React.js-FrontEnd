@@ -9,8 +9,10 @@ const Navbar = () => {
     return (
         <div className="mainNavbar" style={{width:"100%"}}>
             <nav class="navbar navbar-expand-md navbar-light text-white nav-container " style={{backgroundColor:"", }} >
-            <img src={logo} alt="logo" style={{width:"1.5rem",height:"1.5rem" ,borderRadius:"100%"}} />
+            <div style={{display:"flex", alignItems:"center"}}>
+            <img src={logo} alt="logo" style={{width:"1.6rem",height:"1.6rem" ,borderRadius:"100%", marginRight:" 3px"}} />
             <NavLink class="navbar-brand  " to="/" style={{color: "#232323",fontWeight:"900", fontSize:"1.6rem"}} > ANSWARIT </NavLink>
+            </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
