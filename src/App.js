@@ -16,6 +16,7 @@ import MissionVision from './components/About/MissionVision/MissionVision';
 import CoreValue from './components/About/CoreValue/CoreValue';
 import Services from './components/Services/Services/Services';
 import TermsOfUse from './components/TermsOfUse/TermsOfUse';
+import Admin from './components/Admin/Admin';
 
 function App() {
   return (
@@ -61,6 +62,9 @@ function App() {
         </Route>
           <Route path="/contactUs">
             <ContactUs/>
+          </Route>
+          <Route path="/admin">
+            <Admin/>
           </Route>
           <Route path="/terms-of-use">
             <TermsOfUse/>

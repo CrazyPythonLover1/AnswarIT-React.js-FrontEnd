@@ -46,6 +46,9 @@ const Navbar = () => {
       <li class="nav-item">
         <NavLink class="nav-link " to="/contactUs" style={{color: "#232323"}} > CONTACT US  </NavLink>
       </li>
+      <li class="nav-item">
+        <NavLink class="nav-link " to="/admin" style={{color: "#232323"}} > ADMIN  </NavLink>
+      </li>
     </ul>
   </div>
 </nav>
