@@ -17,6 +17,13 @@ import CoreValue from './components/About/CoreValue/CoreValue';
 import Services from './components/Services/Services/Services';
 import TermsOfUse from './components/TermsOfUse/TermsOfUse';
 import Admin from './components/Admin/Admin';
+import SoftwareDevelopment from './components/Services/SoftwareDevelopment/SoftwareDevelopment';
+import ManagementConsulting from './components/Services/ManagementConsulting/ManagementConsulting';
+import TechnologyConsulting from './components/Services/TechnologyConsulting/TechnologyConsulting';
+import StaffAugmentation from './components/Services/StaffAugmentation/StaffAugmentation';
+import BusinessProcessAssurance from './components/Services/BusinessProcessAssurance/BusinessProcessAssurance';
+import BpoKpo from './components/Services/BpoKpo/BpoKpo';
+import WhyAnswarIT from './components/Services/WhyAnswarIT/WhyAnswarIT';
 
 function App() {
   return (
@@ -40,25 +47,25 @@ function App() {
             <CoreValue/>
         </Route>
         <Route path="/softwareDevelopment">
-          <Services />
+          <SoftwareDevelopment />
         </Route>
         <Route path="/managementConsulting">
-          <Services />
+          <ManagementConsulting />
         </Route>
         <Route path="/technologyConsulting">
-          <Services />
+          <TechnologyConsulting />
         </Route>
         <Route path="/staffAugmentation">
-          <Services />
+          <StaffAugmentation />
         </Route>
         <Route path="/businessProcess">
-          <Services />
+          <BusinessProcessAssurance />
         </Route>
         <Route path="/BpoKpo">
-          <Services />
+          <BpoKpo />
         </Route>
         <Route path="/whyAnswarIT">
-          <Services />
+          <WhyAnswarIT />
         </Route>
           <Route path="/contactUs">
             <ContactUs/>

@@ -1,8 +1,20 @@
-import React from 'react';
+import React from "react";
+import Sidebar from "../Services/Sidebar/Sidebar";
 
 const TechnologyConsulting = () => {
-    return (
-        <div>
+  return (
+    <div
+      className="services"
+      style={{ maxWidth: "1300px", padding: " 40px 60px", margin: "0 auto" }}
+    >
+      <div className="row w-100 m-0">
+        <div className="col-lg-4 col-md-5">
+          <Sidebar></Sidebar>
+        </div>
+
+        <div className="col-lg-8 col-md-7">
+          <div className="service-details" style={{ flex: 1, padding: "0px" }}>
+          <div>
              <h4 className="title" > <strong> TECHNOLOGY CONSULTING </strong>  </h4>
             <p> <em> <b>Tech Solutions for smarter and faster growth</b> </em></p>
             <img className="img-fluid" src={require(`../../../Image/services/1.3.jpg`).default} alt=""/> <br/> <br/> 
@@ -38,7 +50,11 @@ const TechnologyConsulting = () => {
 
             <p> At AnswarIT, we ensure to offer IT services that are tailor-made and feature unique methodologies to help you leapfrog competition, be it in the domain of banking, insurance, risk management, or other business domains. Our services are aimed at equipping you with cost effective, timely and flawless technology solutions that is in line with your organizational objectives with utmost respect for privacy, we not only ensure complete confidentiality, but also adhere to our client's data security policies. </p>
         </div>
-    );
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default TechnologyConsulting;

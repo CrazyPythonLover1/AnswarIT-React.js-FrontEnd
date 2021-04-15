@@ -84,15 +84,15 @@ const Navbar = () => {
                 {" "}
                 SERVICES{" "}
               </NavLink>
-              {/* <ul class="drop">
-        <li><NavLink to="/softwareDevelopment"> SOFTWARE DEVELOPMENT </NavLink></li>
-        <li><NavLink to="/managementConsulting"> MANAGEMENT CONSULTING </NavLink></li>
-        <li><NavLink to="/technologyConsulting"> TECHNOLOGY CONSULTING</NavLink></li>
-        <li><NavLink to="/staffAugmentation"> STAFF AUGMENTATION  </NavLink></li>
-        <li><NavLink to="/businessProcess"> BUSINESS PROCESS ASSURANCE </NavLink></li>
-        <li><NavLink to="/BpoKpo"> BPO/KPO </NavLink></li>
-        <li><NavLink to="/whyAnswarIT"> WHY ANSWARIT</NavLink></li>
-      </ul> */}
+              <ul class="drop">
+                <li><NavLink to="/softwareDevelopment"> SOFTWARE DEVELOPMENT </NavLink></li>
+                <li><NavLink to="/managementConsulting"> MANAGEMENT CONSULTING </NavLink></li>
+                <li><NavLink to="/technologyConsulting"> TECHNOLOGY CONSULTING</NavLink></li>
+                <li><NavLink to="/staffAugmentation"> STAFF AUGMENTATION  </NavLink></li>
+                <li><NavLink to="/businessProcess"> BUSINESS PROCESS ASSURANCE </NavLink></li>
+                <li><NavLink to="/BpoKpo"> BPO/KPO </NavLink></li>
+                <li><NavLink to="/whyAnswarIT"> WHY ANSWARIT</NavLink></li>
+              </ul>
             </li>
             <li class="nav-item">
               <NavLink

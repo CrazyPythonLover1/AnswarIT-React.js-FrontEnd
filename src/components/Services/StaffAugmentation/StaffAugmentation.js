@@ -1,8 +1,20 @@
 import React from 'react';
+import Sidebar from '../Services/Sidebar/Sidebar';
 
 const StaffAugmentation = () => {
     return (
-        <div>
+        <div
+      className="services"
+      style={{ maxWidth: "1300px", padding: " 40px 60px", margin: "0 auto" }}
+    >
+      <div className="row w-100 m-0">
+        <div className="col-lg-4 col-md-5">
+          <Sidebar></Sidebar>
+        </div>
+
+        <div className="col-lg-8 col-md-7">
+          <div className="service-details" style={{ flex: 1, padding: "0px" }}>
+          <div>
             <h4 className="title" > <strong> STAFF AUGMENTATION </strong>  </h4>
             <p> <em> <b> We create value finest talent for a cutting edge performance and with flexibility you need </b>  </em></p>
             <img className="img-fluid" src={require(`../../../Image/services/1.4.jpg`).default} alt=""/> <br/> <br/>
@@ -37,6 +49,12 @@ const StaffAugmentation = () => {
                 <li> Customized Solutions as per client needs </li>
             </ul>
         </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        
     );
 };
 

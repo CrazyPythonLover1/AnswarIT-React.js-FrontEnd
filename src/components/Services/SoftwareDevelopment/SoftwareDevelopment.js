@@ -1,8 +1,17 @@
 import React from 'react';
+import Sidebar from '../Services/Sidebar/Sidebar';
 
 const SoftwareDevelopment = () => {
     return (
-        <div>
+        <div className="services" style={{ maxWidth:"1300px", padding:" 40px 60px", margin:"0 auto"}}>
+        <div className="row w-100 m-0">
+          <div className="col-lg-4 col-md-5">
+            <Sidebar></Sidebar>
+          </div>
+
+          <div className="col-lg-8 col-md-7">
+            <div className="service-details" style={{ flex: 1, padding: "0px" }}>
+            <div>
             <h4 className="title" > <strong> SOFTWARE DEVELOPMENT </strong>  </h4>
             <p> <em> <b> Your quick, customized, and successful solutions delivery  </b></em></p>
             <img className="img-fluid" src={require(`../../../Image/services/1.1.jpg`).default} alt=""/> <br/> <br/>
@@ -17,6 +26,14 @@ const SoftwareDevelopment = () => {
                 <li> Web Design and Development </li>
             </ul>
         </div>
+              
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+        
     );
 };
 

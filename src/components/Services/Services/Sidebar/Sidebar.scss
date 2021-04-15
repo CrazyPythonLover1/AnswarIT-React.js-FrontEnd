@@ -1,0 +1,62 @@
+@import '../../../style/variables';
+.sidebar{
+    min-width: 220px;
+    ul{
+        width: 100%;
+        box-shadow: -1px 2px 20px 0px #0a011a8c;
+
+        .selected li{
+            background-color: #6a2ad8;
+        }
+        a{
+            color: #e1e1e1 ;
+
+        
+
+            li{
+            
+                border-bottom: 1px solid #8157ca;
+                background: $color-brand;
+                padding: 8px 0px !important;
+                padding-left: 10px !important;
+                
+                span{
+                    padding-left: 10px;
+                }
+                
+                
+               
+                
+
+                .button {
+                    border: 0;
+                    background: transparent;
+                    box-sizing: border-box;
+                    width: 0;
+                    height: 1px;
+                    padding: 0 10px !important;
+                    
+                    border-color: transparent transparent transparent #f8f8f8;
+                    cursor: pointer;
+                    
+                    // play state
+                    border-style: solid;
+                    border-width: 4px 0 4px 7px;
+                    position: relative;
+                    top: 16px;
+                    left: 0px;
+                  
+                  }
+
+                  &:hover{
+                      background-color: #6a2ad8;
+                  }
+                
+            }
+        }
+
+        
+        
+        
+    }
+}

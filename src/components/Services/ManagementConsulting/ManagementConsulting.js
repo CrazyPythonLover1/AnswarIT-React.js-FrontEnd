@@ -1,8 +1,17 @@
 import React from 'react';
+import Sidebar from '../Services/Sidebar/Sidebar';
 
 const ManagementConsulting = () => {
     return (
-        <div>
+        <div className="services" style={{ maxWidth:"1300px", padding:" 40px 60px", margin:"0 auto"}}>
+        <div className="row w-100 m-0">
+          <div className="col-lg-4 col-md-5">
+            <Sidebar></Sidebar>
+          </div>
+
+          <div className="col-lg-8 col-md-7">
+            <div className="service-details" style={{ flex: 1, padding: "0px" }}>
+            <div>
             <h4 className="title" > <strong> MANAGEMENT CONSULTING </strong>  </h4>
             <p> <em> <b>Your strategic partners in success</b> </em></p>
             <img className="img-fluid" src={require(`../../../Image/services/1.2.jpg`).default} alt=""/> <br/> <br/> 
@@ -21,6 +30,14 @@ const ManagementConsulting = () => {
             <p> <b> Strategy Implementation services:  </b> Our experts ensure focused and well-timed decision implementation along with your teams, in alignment with your objectives, which help you develop and maintain an edge in the market. With exposure to project management tools and techniques along with systematic change management approach, our program and project managers ensure implementation of strategic decisions are not only successful but also pose little or no disturbance to day-to-day operations.</p>
 
         </div>
+              
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+        
     );
 };
 

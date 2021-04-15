@@ -1,6 +1,6 @@
 import React from 'react';
 import './Services.scss';
-import { NavLink, Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
+import { NavLink, Route, BrowserRouter as Router, Switch, Link, useLocation } from 'react-router-dom';
 import SoftwareDevelopment from '../SoftwareDevelopment/SoftwareDevelopment';
 import ManagementConsulting from '../ManagementConsulting/ManagementConsulting';
 import TechnologyConsulting from '../TechnologyConsulting/TechnologyConsulting';
@@ -8,6 +8,7 @@ import StaffAugmentation from '../StaffAugmentation/StaffAugmentation';
 import BusinessProcessAssurance from '../BusinessProcessAssurance/BusinessProcessAssurance';
 import BpoKpo from '../BpoKpo/BpoKpo';
 import WhyAnswarIT from '../WhyAnswarIT/WhyAnswarIT';
+import Sidebar from './Sidebar/Sidebar';
 
 const routes = [
   {
@@ -54,6 +55,7 @@ const routes = [
   } 
 ];
 const Services = () => {
+  const location = useLocation();
   return (
     <Router>
       <div className="services" style={{ maxWidth:"1300px", padding:" 40px 60px", margin:"0 auto"}}>
@@ -70,11 +72,12 @@ const Services = () => {
                   <NavLink activeClassName="selected" to="/whyAnswarIT" > <li> <div class="button"></div> <span> WHY ANSWARIT </span> </li>   </NavLink>
               </ul>
             </div>
+            {/* <Sidebar></Sidebar> */}
           </div>
 
           <div className="col-lg-8 col-md-7">
             <div className="service-details" style={{ flex: 1, padding: "0px" }}>
-              <Switch>
+              {/* <Switch>
                 {routes.map((route, index) => (
                   <Route
                     key={index}
@@ -83,7 +86,16 @@ const Services = () => {
                     children={<route.main />}
                   />
                 ))}
-              </Switch>
+              </Switch> */}
+              {
+                (location.pathname === '/softwareDevelopment') &&
+                <SoftwareDevelopment/>
+              }
+              {
+                (location.pathname === '/managementConsulting') &&
+                <ManagementConsulting/>
+              }
+              
             </div>
           </div>
 
