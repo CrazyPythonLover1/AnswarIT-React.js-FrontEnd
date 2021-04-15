@@ -1,5 +1,4 @@
 import React from "react";
-import './Admin.css';
 import AdminData from "./AdminData";
 import samimSir from "./image/samim-sir.jpg";
 import shownSir from "./image/shown-sir.jpg"
@@ -7,22 +6,23 @@ import shownSir from "./image/shown-sir.jpg"
 const projects = [
   {
     id: 1,
-    name: "Mr. Shamim Ahmed Dhali",
-    title: "International Business Man",
-    image: samimSir,
+    name: "Mr. H S M Shown Ahmed",
+    title: "Founder & Chairman",
+    image: shownSir,
     description:
-      "Mr. Shamim Ahmed Dhali was born on 20 May in the year 1969 in Narayangonj district. His village house is at Kadomtoli next to Adamjee Jute Mill (present EPZ) under Siddhirganj police station in the Narayangonj district. His father was the late Abdul Hashem Dhali and his mother’s name is Mosa: Khairunnesa. He is the father of two children.",
-    desc2: "He accomplished his education at Adamjee High School and Munshiganj Haraganga College. Later, in the year 2001, he had gone to Cyprus which is a European country, for higher education, and there he had engaged in the business of restaurant. In the year 2010, he returned to his homeland without a higher degree because of the people of his beloved country. Then, he started an export and import business with several countries like China, Thailand, India and established “Dhali Fashion” in Keraniganj, Dhaka. “London Boy” is one of the largest showrooms in the country. He is the founder and chairman of a large E-commerce organization in Bangladesh which is called Dhali Collection. Besides he is also working with the United States, London, Canada, Australia on several issues of information technology. He is also thinking and working extensively about 5-G. He has been working relentlessly to fetch agriculture under technology with creating employment for the people of the country. He seeks the aid and blessings of everybody.",
+      "Mr. H S M Shown Ahmed was born on 12 December in the year 1984 in Rajbin district. His father Mr. Answar Ali Sheikh was a government employer (now retired) and his mother Mrs: Hajera Begum is also a housewife.",
+    desc2: "He studied at Kazi Abdul Majed Government Primary School, Kazi Abdul Majed High School, Pangsha George Pilot High School, Pangsha University College, Sylhet Jalalabad College and Sylhet M C University College. Though he was a student of the department of science, he was bewitched with exceptions and technology from an early age. During his student life and career, he accomplished several IT courses successfully from Sylhet Government Technical Training Center, KOICA, Sylhet Shahjalal University of Science and Technology, Bangladesh German Technical Training Center, Dhaka University, and many other government and non-government institutions. Instead of working as a freelancer in the world’s largest online market Up-Work, he began working with several companies with software and he is also doing business with several countries of the world such as the USA, UK, Australia, Canada. People around the world are thinking and working on 5-G with the destination of creating the condition of people easier and safer and destroying poverty of the people. He is the founder and Co-chairman of Dhali Collection which is one of the largest E-commerce companies in Bangladesh. He has been working relentlessly to fetch agriculture under technology with creating employment for the people of the country. He seeks the aid and blessings of everybody.",
   },
   {
     id: 2,
-    name: "Mr. HSM Shown Ahmed",
-    title: "Software Designer, Business Man, Programmer",
-    image: shownSir,
+    name: "Mr. Shamim Ahmed Dhali",
+    title: "Director",
+    image: samimSir,
     description:
-      "Mr. HSM Shown Ahmed was born on 12 December in the year 1984 in Parnarayanpur village under Pangsha police station of Rajbin Parnarayanpur village under Pangsha police station of Rajbari district. His father Mr. Anshar Ali Sheik was a government employer (now retired) and his mother Mosa: Hajera Begum is also a housewife. He is the father of two children in his married life.",
-    desc2: "He studied at Kazi Abdul Majed Government Primary School, Kazi Abdul Majed High School, Pangsha George Pilot High School, Pansha University College, Sylhet Jalalabad College, and Sylhet MC University College. Though he was a student of the department of science, he was bewitched with exceptions and technology from an early age. During his student life and career, he accomplished several IT courses successfully from Sylhet Government Technical Training Center, Korea Bangladesh Co-operation Essence, Shahjalal University of Science and Technology, Bangladesh German Technical Training Center, Dhaka University, and much other government and non-government institutions. Instead of working as a freelancer in the world’s largest online market Up-Work, he began working with several companies with software and he is also doing business with several countries of the world such as the USA, London, Canada, Australia. People around the world are thinking and working on 5-G with the destination of creating the condition of people easier and safer and destroying poverty of the people. He is the founder and chairman of Dhali Collection which is one of the largest E-commerce companies in Bangladesh. He has been working relentlessly to fetch agriculture under technology with creating employment for the people of the country. He seeks the aid and blessings of everybody.",
+      "Mr. Shamim Ahmed Dhali was born on 20 May in the year 1969 in Narayangonj district. His village house is at Kadomtoli next to Adamjee Jute Mill (present EPZ) under Siddhirganj police station in the Narayangonj district. His father was the late Abdul Hashem Dhali and his mother’s name is Mosa: Khairunnesa. He is the father of two children.",
+    desc2: "He accomplished his education at Adamjee High School and Munshiganj Haraganga College. Later, in the year 2001, he had gone to Cyprus which is a European country, for higher education, and there he had engaged in the business of restaurant. In the year 2010, he returned to his homeland without a higher degree because of the people of his beloved country. Then, he started an export and import business with several countries like China, Thailand, India and established “Dhali Fashion” in Keraniganj, Dhaka. “London Boy” is one of the largest showrooms in the country. He is the founder and chairman of a large E-commerce organization in Bangladesh which is called Dhali Collection. Besides he is also working with the United States, London, Canada, Australia on several issues of information technology. He is also thinking and working extensively about 5-G. He has been working relentlessly to fetch agriculture under technology with creating employment for the people of the country. He seeks the aid and blessings of everybody",
   },
+  
 //   {
 //     id: 3,
 //     name: "MR. KAMAL",

@@ -5,12 +5,12 @@ const AdminData = (props) => {
   const mainSection = { marginTop: "25px" };
   const { name, image, title, description, desc2 } = props.singleData;
   return (
-    <section style={mainSection} className=" container-fluid w-100">
+    <section style={mainSection} className=" container-fluid w-100 mb-5">
         <div className="inner-section row">
-            <div className="col-md-4 img-container">
-                <img className="img-fluid w-100 img" src={image} alt="" />
+            <div className="col-lg-4 col-md-12 img-container">
+                <img className="img-fluid  img" src={image} alt="" />
             </div>
-        <div className="col-md-8">
+        <div className="col-md-12 col-lg-8">
             <h2
             style={{ color: "#5c10e3", lineHeight: "17px" }}
             className="nameDesign"

@@ -14,7 +14,7 @@ const TopNavbar = () => {
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse top-nav " style={{ }} id="">
-  <a class="navbar-brand font-italic" href="#" style={{color: "white"}} > Think out of the box.....</a>
+  <a class="navbar-brand font-italic" href="#" style={{color: "white"}} > out of thinking... </a>
     <ul class="navbar-nav ml-auto" style={{color: "white"}}>
     
       <li class="nav-item active">

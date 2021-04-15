@@ -1,39 +1,90 @@
-import React from 'react';
-import {  NavLink, useLocation } from 'react-router-dom';
-import './Navbar.scss';
-import logo from '../../../Image/logo/Answar-IT.jpg'
+import React from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import "./Navbar.scss";
+import logo from "../../../Image/logo/Answar-IT.jpg";
 
 const Navbar = () => {
-  let {pathname} = useLocation();
-  
-    return (
-        <div className="mainNavbar" style={{width:"100%"}}>
-            <nav class="navbar navbar-expand-md navbar-light text-white nav-container " style={{backgroundColor:"", }} >
-            <div style={{display:"flex", alignItems:"center"}}>
-            <img src={logo} alt="logo" style={{width:"1.6rem",height:"1.6rem" ,borderRadius:"100%", marginRight:" 3px"}} />
-            <NavLink class="navbar-brand  " to="/" style={{color: "#232323",fontWeight:"900", fontSize:"1.6rem"}} > ANSWARIT </NavLink>
-            </div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse "id="navbarNav">
-  
-    <ul class="navbar-nav ml-auto" style={{color: "white"}}>
-    
-      <li class="nav-item ">
-        <NavLink class="nav-link " to="/" style={{color: "#232323"}} > HOME  </NavLink>
-      </li>
-      <li class="nav-item dropdown">
-      <NavLink class="nav-link " to="/overview" class="trigger-drop" > ABOUT US <i class="arrow"></i> </NavLink>
-      <ul class="drop">
-        <li><NavLink to="/overview"> Overview </NavLink></li>
-        <li><NavLink to="/missionVision"> Mission & Vision</NavLink></li>
-        <li><NavLink to="/core-value"> Core Values </NavLink></li>
-      </ul>
-      </li>
-      <li class="nav-item dropdown">
-      <NavLink class="nav-link " to="/softwareDevelopment" class="trigger-drop" > SERVICES </NavLink>
-      {/* <ul class="drop">
+  let { pathname } = useLocation();
+
+  return (
+    <div className="mainNavbar" style={{ width: "100%" }}>
+      <nav
+        class="navbar navbar-expand-md navbar-light text-white nav-container "
+        style={{ backgroundColor: "" }}
+      >
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img
+            src={logo}
+            alt="logo"
+            style={{
+              width: "1.6rem",
+              height: "1.6rem",
+              borderRadius: "100%",
+              marginRight: " 3px",
+            }}
+          />
+          <NavLink
+            class="navbar-brand  "
+            to="/"
+            style={{ color: "#232323", fontWeight: "900", fontSize: "1.6rem" }}
+          >
+            {" "}
+          </NavLink>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ml-auto" style={{ color: "white" }}>
+            <li class="nav-item ">
+              <NavLink class="nav-link " to="/" style={{ color: "#33334d", fontWeight: "500px", letterSpacing:"1px", padding: "0px 20px" }}>
+                HOME
+              </NavLink>
+            </li>
+            <li class="nav-item">
+              <NavLink
+                class="nav-link "
+                to="/admin"
+                style={{ color: "#33334d", fontWeight: "500px", letterSpacing:"1px", padding: "0px 20px" }}
+              >
+                ADMIN
+              </NavLink>
+            </li>
+            <li class="nav-item dropdown">
+              <NavLink class="nav-link " to="/overview" class="trigger-drop">
+                {" "}
+                ABOUT US <i class="arrow"></i>{" "}
+              </NavLink>
+              <ul class="drop">
+                <li>
+                  <NavLink to="/overview"> Overview </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/missionVision"> Mission & Vision</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/core-value"> Core Values </NavLink>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <NavLink
+                class="nav-link "
+                to="/softwareDevelopment"
+                class="trigger-drop"
+              >
+                {" "}
+                SERVICES{" "}
+              </NavLink>
+              {/* <ul class="drop">
         <li><NavLink to="/softwareDevelopment"> SOFTWARE DEVELOPMENT </NavLink></li>
         <li><NavLink to="/managementConsulting"> MANAGEMENT CONSULTING </NavLink></li>
         <li><NavLink to="/technologyConsulting"> TECHNOLOGY CONSULTING</NavLink></li>
@@ -42,17 +93,21 @@ const Navbar = () => {
         <li><NavLink to="/BpoKpo"> BPO/KPO </NavLink></li>
         <li><NavLink to="/whyAnswarIT"> WHY ANSWARIT</NavLink></li>
       </ul> */}
-      </li>
-      <li class="nav-item">
-        <NavLink class="nav-link " to="/contactUs" style={{color: "#232323"}} > CONTACT US  </NavLink>
-      </li>
-      <li class="nav-item">
-        <NavLink class="nav-link " to="/admin" style={{color: "#232323"}} > ADMIN  </NavLink>
-      </li>
-    </ul>
-  </div>
-</nav>
-          {/* <nav class="navbar navbar-expand-md navbar-light text-white" style={{backgroundColor:"#",color:"#232323", height:"70px"}}>
+            </li>
+            <li class="nav-item">
+              <NavLink
+                class="nav-link "
+                to="/contactUs"
+                style={{ color: "#232323" }}
+              >
+                {" "}
+                CONTACT US{" "}
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      {/* <nav class="navbar navbar-expand-md navbar-light text-white" style={{backgroundColor:"#",color:"#232323", height:"70px"}}>
           <NavLink class="navbar-brand " to="/" style={{color: "#232323",fontWeight:"900", fontSize:"1.6rem"}} > ANSWARIT </NavLink>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavMain" aria-controls="navbarNavMain" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -82,7 +137,7 @@ const Navbar = () => {
     </ul>
   </div>
 </nav> */}
-            {/* <nav id="navigation">
+      {/* <nav id="navigation">
                 <div className="inner-nav-container">
                 <Link to="#" class="logo"> AnswarIT <span>+</span></Link>
   <ul class="links">
@@ -109,19 +164,17 @@ const Navbar = () => {
 
 </nav> */}
 
-{ pathname !== "/" && <section class="page-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-
-						</div>
-					</div>
-				</div>
-			</section>}
-
-        </div>
-        
-        );
+      {pathname !== "/" && (
+        <section class="page-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+        </section>
+      )}
+    </div>
+  );
 };
 
 export default Navbar;
