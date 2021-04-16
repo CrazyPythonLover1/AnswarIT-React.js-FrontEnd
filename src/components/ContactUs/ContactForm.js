@@ -8,7 +8,7 @@ const ContactForm = () => {
             <div class="form-row">
     
     <div class="form-group col-md-6">
-      <label for="inputState"> Choose a Country </label>
+      <label for="inputState"> <b> Choose a Country *</b> </label>
       <select id="inputState" class="form-control">
         <option selected> USA </option>
         <option> Uk  </option>
@@ -18,28 +18,28 @@ const ContactForm = () => {
     </div>
 
     <div class="form-group col-md-6">
-      <label for="inputCity"> Your Name </label>
-      <input type="text" class="form-control" id="inputCity" />
+      <label for="inputCity"> <b> Your Name * </b></label>
+      <input type="text" class="form-control" id="inputCity" required />
     </div>
   </div>
   <div class="form-row">
   <div class="form-group col-md-6">
-      <label for="inputPassword4"> Phone </label>
-      <input type="tel" class="form-control" id="inputPassword4" />
+      <label for="inputPassword4"> <b> Phone *</b> </label>
+      <input type="tel" class="form-control" id="inputPassword4" required />
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" />
+      <label for="inputEmail4"><b>Email *</b></label>
+      <input type="email" class="form-control" id="inputEmail4" required />
     </div>
     
   </div>
   <div class="form-group">
-    <label for="inputAddress"> Subject  </label>
-    <input type="text" class="form-control" id="inputAddress" placeholder=" " />
+    <label for="inputAddress"> <b>Subject *</b>  </label>
+    <input type="text" class="form-control" id="inputAddress" placeholder=" " required />
   </div>
   <div class="form-group">
-    <label for="inputAddress2"> Message </label>
-    <textarea type="text" rows="6" class="form-control" id="inputAddress2" placeholder=" " />
+    <label for="inputAddress2"> <b>Message *</b> </label>
+    <textarea type="text" rows="6" class="form-control" id="inputAddress2" placeholder=" " required />
   </div>
   
  

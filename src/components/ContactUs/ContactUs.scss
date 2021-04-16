@@ -30,6 +30,32 @@
     }
 }
 
+.card {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 10px 0 #00000026;
+    box-shadow: 0 0 10px 0 #00000026;
+    border: transparent;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+
+.card:hover {
+    -webkit-transform: translateY(-10px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    box-shadow: 0px 2px 2px #bcbcbc;
+    // background: linear-gradient(45deg, #8353d5 0.01%, #5706e4 100.01%);
+    background: #5d10e390;
+    .form-container> b{
+        color: white;
+    }
+}
+
+
+
 .location{
     font-size: 1rem;
 
