@@ -18,11 +18,11 @@ const AdminData = (props) => {
             {name}
             </h2>
             <h5 style={{ margin:"1rem 0"}}>{title}</h5>
-            <p style={{ lineHeight: "30px" }}>
+            <p style={{ lineHeight: "30px", textAlign:"justify"}}>
                 {description}
             </p>
 
-            <p style={{ lineHeight: "30px" }}>
+            <p style={{ lineHeight: "30px", textAlign:"justify" }}>
                 {desc2}
             </p>
         </div>
