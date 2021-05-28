@@ -45,15 +45,41 @@ const Navbar = () => {
         <div class="collapse navbar-collapse " id="navbarNav">
           <ul class="navbar-nav ml-auto" style={{ color: "white" }}>
             <li class="nav-item ">
-              <NavLink class="nav-link " to="/" style={{ color: "#33334d", fontWeight: "500px", letterSpacing:"1px", padding: "0px 20px" }}>
+              <NavLink
+                class="nav-link "
+                to="/"
+                style={{
+                  color: "#33334d",
+                  fontWeight: "500px",
+                  letterSpacing: "1px",
+                  padding: "0px 20px",
+                }}
+              >
                 HOME
               </NavLink>
             </li>
+
+            <li class="nav-item">
+              <NavLink
+                class="nav-link "
+                to="/course"
+                style={{ color: "#232323" }}
+              >
+                {" "}
+                Traning & Course{" "}
+              </NavLink>
+            </li>
+
             <li class="nav-item">
               <NavLink
                 class="nav-link "
                 to="/admin"
-                style={{ color: "#33334d", fontWeight: "500px", letterSpacing:"1px", padding: "0px 20px" }}
+                style={{
+                  color: "#33334d",
+                  fontWeight: "500px",
+                  letterSpacing: "1px",
+                  padding: "0px 20px",
+                }}
               >
                 ADMIN
               </NavLink>
@@ -85,13 +111,42 @@ const Navbar = () => {
                 SERVICES{" "}
               </NavLink>
               <ul class="drop">
-                <li><NavLink to="/softwareDevelopment"> SOFTWARE DEVELOPMENT </NavLink></li>
-                <li><NavLink to="/managementConsulting"> MANAGEMENT CONSULTING </NavLink></li>
-                <li><NavLink to="/technologyConsulting"> TECHNOLOGY CONSULTING</NavLink></li>
-                <li><NavLink to="/staffAugmentation"> STAFF AUGMENTATION  </NavLink></li>
-                <li><NavLink to="/businessProcess"> BUSINESS PROCESS ASSURANCE </NavLink></li>
-                <li><NavLink to="/BpoKpo"> BPO/KPO </NavLink></li>
-                <li><NavLink to="/whyAnswarIT"> WHY ANSWARIT</NavLink></li>
+                <li>
+                  <NavLink to="/softwareDevelopment">
+                    {" "}
+                    SOFTWARE DEVELOPMENT{" "}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/managementConsulting">
+                    {" "}
+                    MANAGEMENT CONSULTING{" "}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/technologyConsulting">
+                    {" "}
+                    TECHNOLOGY CONSULTING
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/staffAugmentation">
+                    {" "}
+                    STAFF AUGMENTATION{" "}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/businessProcess">
+                    {" "}
+                    BUSINESS PROCESS ASSURANCE{" "}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/BpoKpo"> BPO/KPO </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/whyAnswarIT"> WHY ANSWARIT</NavLink>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
