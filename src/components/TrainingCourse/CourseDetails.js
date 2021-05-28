@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
@@ -26,6 +26,13 @@ const CourseDetails = (props) => {
     },
   }));
   const classes = useStyles();
+
+  const [toggleState, setToggleState] = useState(1);
+
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
+
   return (
     <div className={classes.root}>
       <Accordion>
@@ -34,15 +41,14 @@ const CourseDetails = (props) => {
           aria-controls="panel1a-content"
           id="panel1a-header"
           className="main-box"
+          // activeClassName="selected selectedBox"
         >
           <Typography className={classes.heading}>
             <h5>{module}</h5>
           </Typography>
         </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            <li>{description}</li>
-          </Typography>
+        <AccordionDetails style={{ backgroundColor: "lightgray" }}>
+          <Typography>{description}</Typography>
         </AccordionDetails>
       </Accordion>
     </div>
