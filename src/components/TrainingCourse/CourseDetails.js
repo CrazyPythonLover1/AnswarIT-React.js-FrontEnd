@@ -12,14 +12,14 @@ const CourseDetails = (props) => {
     root: {
       width: "80%",
       margin: "0px auto",
-      paddingTop: "10px",
+      paddingTop: "15px",
     },
     heading: {
       fontSize: theme.typography.pxToRem(15),
       fontWeight: theme.typography.fontWeightRegular,
     },
     icon: {
-      color: "white",
+      color: "black",
       "&:hover": {
         color: "black",
       },
@@ -47,8 +47,14 @@ const CourseDetails = (props) => {
             <h5>{module}</h5>
           </Typography>
         </AccordionSummary>
-        <AccordionDetails style={{ backgroundColor: "lightgray" }}>
-          <Typography>{description}</Typography>
+        <AccordionDetails className="descriptionStyle">
+          <Typography>
+            {description.map((liData) => (
+              <>
+                <li> {liData} </li> <br />
+              </>
+            ))}
+          </Typography>
         </AccordionDetails>
       </Accordion>
     </div>
