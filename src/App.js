@@ -24,6 +24,7 @@ import StaffAugmentation from './components/Services/StaffAugmentation/StaffAugm
 import BusinessProcessAssurance from './components/Services/BusinessProcessAssurance/BusinessProcessAssurance';
 import BpoKpo from './components/Services/BpoKpo/BpoKpo';
 import WhyAnswarIT from './components/Services/WhyAnswarIT/WhyAnswarIT';
+import Training from './components/Training/Training';
 
 function App() {
   return (
@@ -67,6 +68,9 @@ function App() {
         <Route path="/whyAnswarIT">
           <WhyAnswarIT />
         </Route>
+        <Route path="/training">
+            <Training/>
+          </Route>
           <Route path="/contactUs">
             <ContactUs/>
           </Route>

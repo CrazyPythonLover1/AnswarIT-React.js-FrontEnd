@@ -97,6 +97,15 @@ const Navbar = () => {
             <li class="nav-item">
               <NavLink
                 class="nav-link "
+                to="/training"
+                style={{ color: "#33334d", fontWeight: "500px", letterSpacing:"1px", padding: "0px 20px" }}
+              >
+                TRAINING
+              </NavLink>
+            </li>
+            <li class="nav-item">
+              <NavLink
+                class="nav-link "
                 to="/contactUs"
                 style={{ color: "#232323" }}
               >
