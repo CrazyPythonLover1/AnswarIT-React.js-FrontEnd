@@ -1,7 +1,14 @@
-.main-box:hover {
-  background-color: #6726d6 !important;
+#panel1a-header:hover {
+  color: white;
+  background-color: #5d10e3 !important;
+}
+.descriptionStyle {
+  background-color: #edefff;
+}
+.your_className {
+  background-color: #5d10e3 !important;
   color: white !important;
 }
-/* .descriptionStyle {
-  background-color: gray;
-} */
+.iconDsn {
+  color: white !important;
+}

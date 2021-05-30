@@ -6,8 +6,9 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import "../TrainingCourse/CourseDetails.css";
+
 const CourseDetails = (props) => {
-  const { id, module, description } = props.singleCourse;
+  const { module, description } = props.singleCourse;
   const useStyles = makeStyles((theme) => ({
     root: {
       width: "80%",
@@ -18,12 +19,12 @@ const CourseDetails = (props) => {
       fontSize: theme.typography.pxToRem(15),
       fontWeight: theme.typography.fontWeightRegular,
     },
-    icon: {
-      color: "black",
-      "&:hover": {
-        color: "black",
-      },
-    },
+    // icon: {
+    //   color: "white",
+    //   "&:hover": {
+    //     color: "black",
+    //   },
+    // },
   }));
   const classes = useStyles();
 
@@ -33,14 +34,24 @@ const CourseDetails = (props) => {
     setToggleState(index);
   };
 
+  const [isActive, setActive] = useState(false);
+
+  const toggleClass = () => {
+    setActive(!isActive);
+  };
   return (
     <div className={classes.root}>
       <Accordion>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon className={classes.icon} />}
+          expandIcon={
+            <ExpandMoreIcon className={isActive ? "iconDsn" : null} />
+          }
           aria-controls="panel1a-content"
           id="panel1a-header"
-          className="main-box"
+          // className="main-box"
+          className={isActive ? "your_className" : null}
+          onClick={toggleClass}
+
           // activeClassName="selected selectedBox"
         >
           <Typography className={classes.heading}>
