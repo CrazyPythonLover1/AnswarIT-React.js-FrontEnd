@@ -81,7 +81,7 @@ function App() {
             </Route> */}
 
             <Route exact path="/career">
-              <CommingSoon title="Career is" />
+              <CommingSoon title="Our company will appointed 100 expert software engineer and block chain developer" />
             </Route>
 
             <Route path="/terms-of-use">
