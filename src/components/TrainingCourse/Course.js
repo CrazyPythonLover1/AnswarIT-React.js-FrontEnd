@@ -4,6 +4,7 @@ import CourseDetails from "./CourseDetails";
 import courseImg from "../../Image/header/course2.jpg";
 const Course = () => {
   const [courseData, setCourseData] = useState(data);
+
   return (
     <section>
       <div>
