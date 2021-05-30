@@ -59,7 +59,15 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            
+            <li class="nav-item">
+              <NavLink
+                class="nav-link "
+                to="/course"
+                style={{ color: "#232323" }}
+              >
+                Training & Course
+              </NavLink>
+            </li>
 
             <li class="nav-item">
               <NavLink
@@ -153,18 +161,13 @@ const Navbar = () => {
             <li class="nav-item">
               <NavLink
                 class="nav-link "
-                to="/training-&-course"
-                style={{ color: "#232323" }}
-              >
-                {" "}
-                Traning & Course{" "}
-              </NavLink>
-            </li>
-            <li class="nav-item">
-              <NavLink
-                class="nav-link "
                 to="/career"
-                style={{ color: "#33334d", fontWeight: "500px", letterSpacing:"1px", padding: "0px 20px" }}
+                style={{
+                  color: "#33334d",
+                  fontWeight: "500px",
+                  letterSpacing: "1px",
+                  padding: "0px 20px",
+                }}
               >
                 CAREER
               </NavLink>

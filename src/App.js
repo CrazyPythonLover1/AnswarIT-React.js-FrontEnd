@@ -71,8 +71,7 @@ function App() {
               <Admin />
             </Route>
 
-            <Route path="/training-&-course">
-              <CommingSoon title="Software Development Course is" />
+            <Route path="/course">
               <Course />
             </Route>
 
