@@ -44,7 +44,7 @@ const CourseDetails = (props) => {
       <Accordion>
         <AccordionSummary
           expandIcon={
-            <ExpandMoreIcon className={isActive ? "iconDsn" : null} />
+            <ExpandMoreIcon className={isActive ? "iconActiveDsn" : null} />
           }
           aria-controls="panel1a-content"
           id="panel1a-header"

@@ -1,5 +1,5 @@
 #panel1a-header:hover {
-  color: white;
+  color: white !important;
   background-color: #5d10e3 !important;
 }
 .descriptionStyle {
@@ -9,6 +9,6 @@
   background-color: #5d10e3 !important;
   color: white !important;
 }
-.iconDsn {
+.iconActiveDsn {
   color: white !important;
 }
