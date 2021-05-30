@@ -51,8 +51,6 @@ const CourseDetails = (props) => {
           // className="main-box"
           className={isActive ? "your_className" : null}
           onClick={toggleClass}
-
-          // activeClassName="selected selectedBox"
         >
           <Typography className={classes.heading}>
             <h5>{module}</h5>
