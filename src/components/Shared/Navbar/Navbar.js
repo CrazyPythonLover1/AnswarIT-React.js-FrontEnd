@@ -62,16 +62,6 @@ const Navbar = () => {
             <li class="nav-item">
               <NavLink
                 class="nav-link "
-                to="/course"
-                style={{ color: "#232323" }}
-              >
-                Training & Course
-              </NavLink>
-            </li>
-
-            <li class="nav-item">
-              <NavLink
-                class="nav-link "
                 to="/admin"
                 style={{
                   color: "#33334d",
@@ -148,6 +138,17 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
+
+            <li class="nav-item">
+              <NavLink
+                class="nav-link "
+                to="/course"
+                style={{ color: "#232323" }}
+              >
+                Training & Course
+              </NavLink>
+            </li>
+
             {/* <li class="nav-item">
               <NavLink
                 class="nav-link "
