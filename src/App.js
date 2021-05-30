@@ -20,6 +20,7 @@ import BusinessProcessAssurance from "./components/Services/BusinessProcessAssur
 import BpoKpo from "./components/Services/BpoKpo/BpoKpo";
 import WhyAnswarIT from "./components/Services/WhyAnswarIT/WhyAnswarIT";
 import Course from "./components/TrainingCourse/Course";
+import CommingSoon from "./components/CommingSoon/CommingSoon";
 
 function App() {
   return (
@@ -70,8 +71,17 @@ function App() {
               <Admin />
             </Route>
 
-            <Route path="/course">
+            <Route path="/training-&-course">
+              <CommingSoon title="Software Development Course is" />
               <Course />
+            </Route>
+
+            {/* <Route exact path="/training">
+              <CommingSoon title="Software Development Course is"/>
+            </Route> */}
+
+            <Route exact path="/career">
+              <CommingSoon title="Career is" />
             </Route>
 
             <Route path="/terms-of-use">
