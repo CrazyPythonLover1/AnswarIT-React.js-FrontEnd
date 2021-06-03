@@ -6,6 +6,7 @@ import topImg from "../../Image/header/1.6.jpg";
 import ModalForm from "./ModalForm";
 import Modal from "react-modal";
 import CloseIcon from "@material-ui/icons/Close";
+import "./TrainingCourse.css";
 
 const customStyles = {
   content: {
@@ -63,11 +64,17 @@ const TrainingCourse = () => {
           style={{
             textAlign: "center",
             color: "rgb(92,16,227)",
-            // marginTop: "20px",
+            marginTop: "20px",
           }}
         >
           {" "}
-          <b>ALL OUR COURSES </b>
+          <b
+            style={{
+              borderBottom: "3px solid rgb(92,16,227)",
+            }}
+          >
+            ALL OUR COURSES{" "}
+          </b>
         </h1>
       </div>
       <div className="container">

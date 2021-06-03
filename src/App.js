@@ -84,7 +84,7 @@ function App() {
               <SoftwareDevelopment />
             </Route>
 
-            <Route exact path="/blockchain">
+            <Route exact path="/blockchainCourse">
               <Blockchain title="Blockchain is" />
             </Route>
 
