@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import data from "../TrainingCourse/CourseData";
 import CourseDetails from "./CourseDetails";
 import courseImg from "../../Image/header/course2.jpg";
+
 const Course = () => {
   const [courseData, setCourseData] = useState(data);
 
@@ -23,7 +24,7 @@ const Course = () => {
         }}
       >
         <h1 style={{ fontWeight: "500", textAlign: "center" }}>
-          Software Testing with QTP/UFT
+          Software Development
         </h1>
       </div>
       <div>

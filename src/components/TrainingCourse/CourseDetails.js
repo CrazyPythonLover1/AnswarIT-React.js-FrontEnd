@@ -35,7 +35,6 @@ const CourseDetails = (props) => {
   };
 
   const [isActive, setActive] = useState(false);
-
   const toggleClass = () => {
     setActive(!isActive);
   };
