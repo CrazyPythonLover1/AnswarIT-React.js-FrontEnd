@@ -73,7 +73,7 @@ const TrainingCourse = () => {
               borderBottom: "3px solid rgb(92,16,227)",
             }}
           >
-            ALL OUR COURSES{" "}
+            OUR ALL COURSES{" "}
           </b>
         </h1>
       </div>

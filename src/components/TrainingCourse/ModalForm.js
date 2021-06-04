@@ -8,6 +8,17 @@ const ModalForm = (props) => {
 
   const handleChange = (e) => {
     const userInfo = { ...orderInfo };
+    // this is the solving data when we send it mongodb as a default value without clicking
+    if (userInfo.courseName === undefined) {
+      if (id === 1) {
+        userInfo["courseName"] = "Software Development Course";
+      } else if (id === 2) {
+        userInfo["courseName"] = "Blockchain Course";
+      } else {
+        userInfo["courseName"] = "Digital Marketing Course";
+      }
+    }
+
     userInfo[e.target.name] = e.target.value;
     setOrderInfo(userInfo);
   };
@@ -43,14 +54,14 @@ const ModalForm = (props) => {
           <input
             name="courseName"
             onChange={handleChange}
-            // value={
-            //   id === 1
-            //     ? "Software Development Course"
-            //     : id === 2
-            //     ? "Blockchain Training Course"
-            //     : "Digital Marketing Course"
-            // }
-            placeholder="Your course name"
+            value={
+              id === 1
+                ? "Software Development Course"
+                : id === 2
+                ? "Blockchain Training Course"
+                : "Digital Marketing Course"
+            }
+            // placeholder="Your course name"
             type="text"
             tabindex="1"
             required
@@ -64,7 +75,7 @@ const ModalForm = (props) => {
             onChange={handleChange}
             placeholder="Your name"
             type="text"
-            tabindex="1"
+            tabindex="2"
             required
             autofocus
           />
@@ -75,7 +86,7 @@ const ModalForm = (props) => {
             onChange={handleChange}
             placeholder="Your Email Address"
             type="email"
-            tabindex="2"
+            tabindex="3"
             required
           />
         </fieldset>
@@ -85,7 +96,7 @@ const ModalForm = (props) => {
             onChange={handleChange}
             placeholder="Your Phone Number"
             type="tel"
-            tabindex="3"
+            tabindex="4"
             required
           />
         </fieldset>
@@ -95,7 +106,7 @@ const ModalForm = (props) => {
             onChange={handleChange}
             placeholder="Your Education"
             type="text"
-            tabindex="4"
+            tabindex="5"
             required
           />
         </fieldset>
@@ -108,7 +119,7 @@ const ModalForm = (props) => {
             name="q1"
             placeholder="whit is your purpose?"
             type="text"
-            tabindex="4"
+            tabindex="6"
             required
           />
         </fieldset>
@@ -119,7 +130,7 @@ const ModalForm = (props) => {
             name="q2"
             placeholder="whit is your purpose?"
             type="text"
-            tabindex="4"
+            tabindex="7"
             required
           />
         </fieldset>
@@ -130,7 +141,7 @@ const ModalForm = (props) => {
             name="q3"
             placeholder="whit is your purpose?"
             type="text"
-            tabindex="4"
+            tabindex="8"
             required
           />
         </fieldset>
@@ -141,7 +152,7 @@ const ModalForm = (props) => {
             name="q4"
             placeholder="whit is your purpose?"
             type="text"
-            tabindex="4"
+            tabindex="9"
             required
           />
         </fieldset>
@@ -153,7 +164,7 @@ const ModalForm = (props) => {
             name="q5"
             placeholder="whit is your purpose?"
             type="text"
-            tabindex="4"
+            tabindex="10"
             required
           />
         </fieldset>
@@ -165,7 +176,7 @@ const ModalForm = (props) => {
             name="q6"
             placeholder="whit is your purpose?"
             type="text"
-            tabindex="4"
+            tabindex="11"
             required
           />
         </fieldset>
@@ -177,7 +188,7 @@ const ModalForm = (props) => {
             name="q7"
             placeholder="whit is your purpose?"
             type="text"
-            tabindex="4"
+            tabindex="12"
             required
           />
         </fieldset>
@@ -189,7 +200,7 @@ const ModalForm = (props) => {
             name="q8"
             placeholder="whit is your purpose?"
             type="text"
-            tabindex="4"
+            tabindex="13"
             required
           />
         </fieldset>
@@ -200,7 +211,7 @@ const ModalForm = (props) => {
             name="q9"
             placeholder="whit is your purpose?"
             type="text"
-            tabindex="4"
+            tabindex="14"
             required
           />
         </fieldset>
@@ -211,7 +222,7 @@ const ModalForm = (props) => {
             name="q10"
             placeholder="whit is your purpose?"
             type="text"
-            tabindex="4"
+            tabindex="15"
             required
           />
         </fieldset>
