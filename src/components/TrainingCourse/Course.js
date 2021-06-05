@@ -23,7 +23,7 @@ const Course = () => {
         }}
       >
         <h1 style={{ fontWeight: "500", textAlign: "center" }}>
-          Software Testing with QTP/UFT
+          Software Development
         </h1>
       </div>
       <div>
