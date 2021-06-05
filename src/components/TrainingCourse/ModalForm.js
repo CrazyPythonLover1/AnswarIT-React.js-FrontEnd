@@ -113,44 +113,50 @@ const ModalForm = (props) => {
 
         {/* this is question section */}
         <fieldset>
-          <p>Q:1: what is your purpose?</p>
+          <p>Q:1: What is smallest unit of the information? </p>
           <input
             onChange={handleChange}
             name="q1"
-            placeholder="whit is your purpose?"
+            placeholder=" What is smallest unit of the information? "
             type="text"
             tabindex="6"
             required
           />
         </fieldset>
         <fieldset>
-          <p>Q:2: what is your purpose?</p>
+          <p>Q:2: How is the data stored on the diskette? </p>
           <input
             onChange={handleChange}
             name="q2"
-            placeholder="whit is your purpose?"
+            placeholder="How is the data stored on the diskette? "
             type="text"
             tabindex="7"
             required
           />
         </fieldset>
         <fieldset>
-          <p>Q:3: what is your purpose?</p>
+          <p>Q:3: What is the smallest visual element on a video monitor?</p>
           <input
             onChange={handleChange}
             name="q3"
-            placeholder="whit is your purpose?"
+            placeholder="Which of the following is the smallest visual element on a video monitor?"
             type="text"
             tabindex="8"
             required
           />
         </fieldset>
         <fieldset>
-          <p>Q:4: what is your purpose?</p>
+          <p>Q:4: Which one of the following groups contains graphical file extensions?
+            <br />
+            a.JPG, CPX, GCM <br />
+            b.GIF, TCE, WMF <br />
+            c.TCP, JPG, BMP <br />
+            d.JPG, GIF, BMP <br />
+          </p>
           <input
             onChange={handleChange}
             name="q4"
-            placeholder="whit is your purpose?"
+            placeholder=" Select your Answer"
             type="text"
             tabindex="9"
             required
@@ -158,11 +164,11 @@ const ModalForm = (props) => {
         </fieldset>
 
         <fieldset>
-          <p>Q:5: what is your purpose?</p>
+          <p>Q:5: What is the speed of computer measured in? </p>
           <input
             onChange={handleChange}
             name="q5"
-            placeholder="whit is your purpose?"
+            placeholder="What is the speed of computer measured in?"
             type="text"
             tabindex="10"
             required
@@ -170,11 +176,11 @@ const ModalForm = (props) => {
         </fieldset>
 
         <fieldset>
-          <p>Q:6: what is your purpose?</p>
+          <p>Q:6: What is the full form of RAM? </p>
           <input
             onChange={handleChange}
             name="q6"
-            placeholder="whit is your purpose?"
+            placeholder="What is the full form of RAM?"
             type="text"
             tabindex="11"
             required
@@ -182,11 +188,11 @@ const ModalForm = (props) => {
         </fieldset>
 
         <fieldset>
-          <p>Q:7: what is your purpose?</p>
+          <p>Q:7: What is five main components of a computer system? </p>
           <input
             onChange={handleChange}
             name="q7"
-            placeholder="whit is your purpose?"
+            placeholder="What is five main components of a computer system?"
             type="text"
             tabindex="12"
             required
@@ -194,33 +200,33 @@ const ModalForm = (props) => {
         </fieldset>
 
         <fieldset>
-          <p>Q:8: what is your purpose?</p>
+          <p>Q:8: What is a single dot on a computer screen called? </p>
           <input
             onChange={handleChange}
             name="q8"
-            placeholder="whit is your purpose?"
+            placeholder="What is a single dot on a computer screen called? "
             type="text"
             tabindex="13"
             required
           />
         </fieldset>
         <fieldset>
-          <p>Q:9: what is your purpose?</p>
+          <p>Q:9: The cache memory works between _______. </p>
           <input
             onChange={handleChange}
             name="q9"
-            placeholder="whit is your purpose?"
+            placeholder="The cache memory works between _______."
             type="text"
             tabindex="14"
             required
           />
         </fieldset>
         <fieldset>
-          <p>Q:10: what is your purpose?</p>
+          <p>Q:10: Which memory is very fast memory in a computer? </p>
           <input
             onChange={handleChange}
             name="q10"
-            placeholder="whit is your purpose?"
+            placeholder="Which memory is very fast memory in a computer? "
             type="text"
             tabindex="15"
             required
