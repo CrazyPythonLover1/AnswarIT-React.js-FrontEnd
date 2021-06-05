@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import course1 from "../../Image/course/Software Development Course.jpg";
 import course2 from "../../Image/course/Blockchain training Course.jpg";
 import course3 from "../../Image/course/Digital marketing course.jpg";
+import topbg from "../../Image/course/bg_sub-header.png";
 import topImg from "../../Image/header/1.6.jpg";
 import ModalForm from "./ModalForm";
 import Modal from "react-modal";
@@ -59,6 +60,13 @@ const TrainingCourse = () => {
 
   return (
     <section>
+      <div className="traning-header">
+        <div className="text-section">
+          <h1> Build your career </h1>
+          <h3> Improve your skill with AnswarIT Training </h3>
+          <p> Get Hands On Experience in Real World Software Development from Industry Experts Through Practical and Real World Courses. </p>
+        </div>
+      </div>
       <div>
         <h1
           style={{
@@ -67,13 +75,12 @@ const TrainingCourse = () => {
             marginTop: "20px",
           }}
         >
-          {" "}
           <b
             style={{
               borderBottom: "3px solid rgb(92,16,227)",
             }}
           >
-            OUR ALL COURSES{" "}
+            OUR ALL COURSES
           </b>
         </h1>
       </div>
@@ -121,7 +128,7 @@ const TrainingCourse = () => {
             marginBottom: "10px",
           }}
         >
-          <h2>FROM FILL UP</h2>
+          <h2> TEST YOUR IQ</h2>
           <button onClick={closeModal} className="btn btn-danger">
             {" "}
             <CloseIcon />{" "}
