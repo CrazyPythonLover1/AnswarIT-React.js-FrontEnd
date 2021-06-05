@@ -21,6 +21,9 @@ import BpoKpo from "./components/Services/BpoKpo/BpoKpo";
 import WhyAnswarIT from "./components/Services/WhyAnswarIT/WhyAnswarIT";
 import Course from "./components/TrainingCourse/Course";
 import CommingSoon from "./components/CommingSoon/CommingSoon";
+import TrainingCourse from "./components/TrainingCourse/TrainingCourse";
+import Blockchain from "./components/TrainingCourse/Blockchain";
+import DigitalMarketing from "./components/TrainingCourse/DigitalMarketing";
 
 function App() {
   return (
@@ -43,9 +46,15 @@ function App() {
             <Route path="/core-value">
               <CoreValue />
             </Route>
-            <Route path="/softwareDevelopment">
-              <SoftwareDevelopment />
+            <Route path="/course">
+              {/* <Course /> */}
+              <TrainingCourse />
             </Route>
+
+            <Route path="/softwareCourse">
+              <Course />
+            </Route>
+
             <Route path="/managementConsulting">
               <ManagementConsulting />
             </Route>
@@ -71,8 +80,16 @@ function App() {
               <Admin />
             </Route>
 
-            <Route path="/course">
-              <Course />
+            <Route path="/softwareDevelopment">
+              <SoftwareDevelopment />
+            </Route>
+
+            <Route exact path="/blockchainCourse">
+              <Blockchain title="Blockchain is" />
+            </Route>
+
+            <Route exact path="/digitalMarketing">
+              <DigitalMarketing title="Digital Marketing is" />
             </Route>
 
             {/* <Route exact path="/training">
