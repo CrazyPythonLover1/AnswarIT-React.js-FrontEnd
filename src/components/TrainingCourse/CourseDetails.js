@@ -11,7 +11,7 @@ const CourseDetails = (props) => {
   const { module, description } = props.singleCourse;
   const useStyles = makeStyles((theme) => ({
     root: {
-      width: "80%",
+      width: "100%",
       margin: "0px auto",
       paddingTop: "15px",
     },
