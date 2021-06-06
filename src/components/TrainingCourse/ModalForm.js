@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
 import "./ModalForm.css";
-const ModalForm = (props) => {
-  const { id, title, img } = props.saveCourse;
+const ModalForm = ({id}) => {
   const history = useHistory();
   const [orderInfo, setOrderInfo] = useState([""]);
 

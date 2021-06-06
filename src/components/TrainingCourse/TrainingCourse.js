@@ -5,11 +5,12 @@ import course3 from "../../Image/course/Digital marketing course.jpg";
 import topbg from "../../Image/course/bg_sub-header.png";
 import topbg1 from "../../Image/course/hero-bg.svg";
 import topImg from "../../Image/header/1.6.jpg";
-import ModalForm from "./ModalForm";
-import Modal from "react-modal";
-import CloseIcon from "@material-ui/icons/Close";
+// import ModalForm from "./ModalForm";
+// import Modal from "react-modal";
+// import CloseIcon from "@material-ui/icons/Close";
 import "./TrainingCourse.css";
 import { Link } from "react-router-dom";
+import ModalDialog from "./Modal";
 
 const customStyles = {
   content: {
@@ -22,7 +23,7 @@ const customStyles = {
     width: "500px",
   },
 };
-Modal.setAppElement("#root");
+// Modal.setAppElement("#root");
 
 const AllCardData = [
   {
@@ -70,13 +71,9 @@ const TrainingCourse = () => {
     setIsOpen(true);
   }
 
-  function closeModal() {
-    setIsOpen(false);
-  }
-  // this is AllCardData passing
-  const [saveCourse, setSaveCourse] = useState([]);
-  const handleCourseData = (e, info) => {
-    setSaveCourse(info);
+  const [courseId, setCourseId] = useState(0);
+  const handleCourseData = (e, id) => {
+    setCourseId(id);
     openModal();
     e.preventDefault();
   };
@@ -139,7 +136,7 @@ const TrainingCourse = () => {
                 </div>
                 <button
                   class="btn btn-primary"
-                  onClick={(e) => handleCourseData(e, data)}
+                  onClick={(e) => handleCourseData(e, data.id)}
                 >
                   {/* REGISTRATION */}
                   Enroll Now
@@ -151,7 +148,7 @@ const TrainingCourse = () => {
         </div>
       </div>
       {/* <!-- Modal --> */}
-      <Modal
+      {/* <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
@@ -170,8 +167,9 @@ const TrainingCourse = () => {
             <CloseIcon />{" "}
           </button>
         </div>
-        <ModalForm saveCourse={saveCourse} />
-      </Modal>
+        <ModalForm id={saveCourse} />
+      </Modal> */}
+      <ModalDialog modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} courseId={courseId} />
     </section>
   );
 };
