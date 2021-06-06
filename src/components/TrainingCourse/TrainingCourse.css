@@ -1,32 +1,40 @@
 .traning-header {
   /* background: linear-gradient(#6726d6 0.01%, #5c10e3 100.01%); */
-  background-image: url('../../Image/course/bg_sub-header.png'), linear-gradient(#6726d685 0.01%, #5d10e386 100.01%);
-  background-image: url('../../Image/course/bg_sub-header.png'), -moz-linear-gradient(#6726d685 0.01%, #5d10e386 100.01%);
-  background-image: url('../../Image/course/bg_sub-header.png'), -webkit-linear-gradient(#6726d685 0.01%, #5d10e386 100.01%);
+  /* background-image: url('../../Image/course/bg_sub-header.png'), linear-gradient(#6726d685 0.01%, #5d10e386 100.01%);
+  background-image: url('../../Image/course/bg_sub-header.png'), -moz-linear-gradient(#6726d685 0.01%, #5d10e386 100.01%); */
+  background: #040d21 url('../../Image/course/hero-bg.svg') no-repeat center center;
   height: 600px;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 66% 93%, 27% 79%, 0 100%);
-  padding-top: 80px;
+  padding-top: 60px;
+  /* margin-top: -400px; */
+  
 }
 
 .text-section{
+  color: #c0cce0;
   text-align: center;
-  padding: 60px 20px;
-  width: 70%;
+  padding: 50px 20px;
+  width: 67%;
   margin: auto;
   
-  background-color: #f3f5f9;
+  background-color: #8193b234;
   border-radius: 16px;
 }
 
 .text-section > h1 {
-  color: #5c10e3;
+  color: #ffffff;
   text-transform: uppercase;
+  font-size: 72px;
   font-weight: 700;
 }
 
+.text-section > h3 {
+  font-size: 38px;
+}
+
 .text-section > p {
-  font-size: 20px;
-  padding: 20px 160px
+  font-size: 24px;
+  padding: 10px 120px 0px 120px
 }
 
 .card {
@@ -55,7 +63,7 @@
   border-top-right-radius: 0px;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 0px;
-  font-family: Baloo Da;
+  /* font-family: Baloo Da; */
   font-weight: 700;
   max-width: 100%;
   height: 30px;

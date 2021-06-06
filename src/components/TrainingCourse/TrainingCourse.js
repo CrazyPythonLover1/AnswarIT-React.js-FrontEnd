@@ -3,6 +3,7 @@ import course1 from "../../Image/course/Software Development Course.jpg";
 import course2 from "../../Image/course/Blockchain training Course.jpg";
 import course3 from "../../Image/course/Digital marketing course.jpg";
 import topbg from "../../Image/course/bg_sub-header.png";
+import topbg1 from "../../Image/course/hero-bg.svg";
 import topImg from "../../Image/header/1.6.jpg";
 import ModalForm from "./ModalForm";
 import Modal from "react-modal";

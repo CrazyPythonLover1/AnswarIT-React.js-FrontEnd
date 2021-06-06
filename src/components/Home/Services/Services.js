@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Services = () => {
 
   return (
-    <div id="services" className="container-fluid">
+    <div id="services" className="container-fluid" data-aos="fade-up" data-aos-duration="2000">
       <h2 className="main-title" > SERVICES </h2>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">
         {

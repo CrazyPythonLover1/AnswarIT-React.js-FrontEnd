@@ -20,7 +20,7 @@ const About = () => {
         setAbout(aboutData.about.coreValue)
     }
     return (
-        <div id="about" className="container-fluid">
+        <div id="about" className="container-fluid" data-aos="fade-up" data-aos-duration="2000">
             <h2 className=" main-title "> ABOUT US </h2>
             <div className="about-section">
                 <div className="row">

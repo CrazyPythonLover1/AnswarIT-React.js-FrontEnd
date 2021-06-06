@@ -108,10 +108,11 @@ a,a:hover{color:$color-accent; text-decoration : none; font-weight:600;}
 
 
 .page-top {
-  background: linear-gradient(335.64deg, #5d10e344 -19.22%, #5d10e390 118.87%);
+  // background: linear-gradient(335.64deg, #5d10e344 -19.22%, #5d10e390 118.87%);
+  background: #5d10e344 linear-gradient(90deg, #5d10e344 0%, rgb(235, 82, 82) 18.23%, rgb(247, 143, 47) 34.37%, rgb(244, 193, 81) 48.96%, rgb(112, 230, 153) 66.15%, rgb(38, 165, 215) 82.29%, rgb(224, 105, 183) 100%) repeat scroll 0% 0%;
   min-height: 10px;
   padding: 0;
-  padding: 7px 0;
+  padding: 5px 0;
   position: relative;
   text-align: left;
 }
