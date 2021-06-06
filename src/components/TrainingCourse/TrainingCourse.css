@@ -4,7 +4,8 @@
   background-image: url('../../Image/course/bg_sub-header.png'), -moz-linear-gradient(#6726d685 0.01%, #5d10e386 100.01%); */
   background: #040d21 url('../../Image/course/hero-bg.svg') no-repeat center center;
   height: 600px;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 66% 93%, 27% 79%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 70%, 66% 93%, 27% 79%, 0 100%); */
+  clip-path: polygon(0 0, 100% 0%, 100% 81%, 0 100%);
   padding-top: 60px;
   /* margin-top: -400px; */
   
@@ -39,9 +40,9 @@
 
 .card {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   transition: 200ms linear;
-  margin-bottom: 80px !important;
+  /* margin-bottom: 80px !important; */
   border-radius: 8px;
 }
 .card:hover {

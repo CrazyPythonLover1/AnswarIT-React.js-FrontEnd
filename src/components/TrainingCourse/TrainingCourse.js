@@ -48,7 +48,7 @@ const AllCardData = [
     duration: '6+ month',
     totalClass: '72+ (each class 1.5 hours long)',
     discount: '50% Discount',
-    link: "/softwareCourse",
+    link: "/blockchainCourse",
   },
   {
     id: 3,
@@ -60,7 +60,7 @@ const AllCardData = [
     duration: '4 month',
     totalClass: '48+ (each class 1.5 hours long)',
     discount: '50% Discount',
-    link: "/softwareCourse",
+    link: "/digitalMarketing",
   },
 ];
 const TrainingCourse = () => {
@@ -104,11 +104,19 @@ const TrainingCourse = () => {
           </b>
         </h1>
       </div>
-      <div className="container" data-aos="fade-up" data-aos-duration="2000">
-        <div class="card-deck row">
+      <div className="container-fluid " 
+        style={{
+            width: "1290px",
+            margin: "auto",
+            padding: " 60px 0px"
+          }}
+        data-aos="fade-up" 
+        data-aos-duration="2000"
+        >
+        <div class="row row-cols-1 row-cols-md-3 g-4">
           {cardData.map((data, index) => (
-            <div className="col ">
-            <div key={index} class="card">
+            <div className="col">
+            <div key={index} class="card h-100">
               <div className="card-discount">
                 {data.discount}
               </div>
