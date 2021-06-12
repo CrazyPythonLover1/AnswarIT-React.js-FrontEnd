@@ -24,6 +24,7 @@ import CommingSoon from "./components/CommingSoon/CommingSoon";
 import TrainingCourse from "./components/TrainingCourse/TrainingCourse";
 import Blockchain from "./components/TrainingCourse/Blockchain";
 import DigitalMarketing from "./components/TrainingCourse/DigitalMarketing";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <TopNavbar />
         <Navbar />
         <div className="app">
+        <ScrollToTop>
           <Switch>
             <Route exact path="/">
               <Home />
@@ -104,6 +106,7 @@ function App() {
               <TermsOfUse />
             </Route>
           </Switch>
+        </ScrollToTop>
         </div>
 
         <Footer />
