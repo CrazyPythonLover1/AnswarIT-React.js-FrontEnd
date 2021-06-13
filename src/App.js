@@ -25,93 +25,104 @@ import TrainingCourse from "./components/TrainingCourse/TrainingCourse";
 import Blockchain from "./components/TrainingCourse/Blockchain";
 import DigitalMarketing from "./components/TrainingCourse/DigitalMarketing";
 import ScrollToTop from "./ScrollToTop";
+import { createContext } from "react";
+import { useState } from "react";
+import Login from "./components/Authentication/Login/Login";
 
+export const UserContext = createContext();
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <div className="" style={{ width: "100%" }}>
-      <Router>
-        <TopNavbar />
-        <Navbar />
-        <div className="app">
-        <ScrollToTop>
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+      <div className="" style={{ width: "100%" }}>
+        <Router>
+          <TopNavbar />
+          <Navbar />
+          <div className="app">
+            <ScrollToTop>
+              <Switch>
+                <Route exact path="/">
+                  <Home />
+                </Route>
 
-            <Route path="/overview">
-              <Overview />
-            </Route>
-            <Route path="/missionVision">
-              <MissionVision />
-            </Route>
-            <Route path="/core-value">
-              <CoreValue />
-            </Route>
-            <Route path="/course">
-              {/* <Course /> */}
-              <TrainingCourse />
-            </Route>
+                <Route path="/overview">
+                  <Overview />
+                </Route>
+                <Route path="/missionVision">
+                  <MissionVision />
+                </Route>
+                <Route path="/core-value">
+                  <CoreValue />
+                </Route>
+                <Route path="/course">
+                  {/* <Course /> */}
+                  <TrainingCourse />
+                </Route>
 
-            <Route path="/softwareCourse">
-              <Course />
-            </Route>
+                <Route path="/softwareCourse">
+                  <Course />
+                </Route>
 
-            <Route path="/managementConsulting">
-              <ManagementConsulting />
-            </Route>
-            <Route path="/technologyConsulting">
-              <TechnologyConsulting />
-            </Route>
-            <Route path="/staffAugmentation">
-              <StaffAugmentation />
-            </Route>
-            <Route path="/businessProcess">
-              <BusinessProcessAssurance />
-            </Route>
-            <Route path="/BpoKpo">
-              <BpoKpo />
-            </Route>
-            <Route path="/whyAnswarIT">
-              <WhyAnswarIT />
-            </Route>
-            <Route path="/contactUs">
-              <ContactUs />
-            </Route>
-            <Route path="/admin">
-              <Admin />
-            </Route>
+                <Route path="/managementConsulting">
+                  <ManagementConsulting />
+                </Route>
+                <Route path="/technologyConsulting">
+                  <TechnologyConsulting />
+                </Route>
+                <Route path="/staffAugmentation">
+                  <StaffAugmentation />
+                </Route>
+                <Route path="/businessProcess">
+                  <BusinessProcessAssurance />
+                </Route>
+                <Route path="/BpoKpo">
+                  <BpoKpo />
+                </Route>
+                <Route path="/whyAnswarIT">
+                  <WhyAnswarIT />
+                </Route>
+                <Route path="/contactUs">
+                  <ContactUs />
+                </Route>
+                <Route path="/admin">
+                  <Admin />
+                </Route>
 
-            <Route path="/softwareDevelopment">
-              <SoftwareDevelopment />
-            </Route>
+                <Route path="/softwareDevelopment">
+                  <SoftwareDevelopment />
+                </Route>
 
-            <Route exact path="/blockchainCourse">
-              <Blockchain title="Blockchain is" />
-            </Route>
+                <Route exact path="/blockchainCourse">
+                  <Blockchain title="Blockchain is" />
+                </Route>
 
-            <Route exact path="/digitalMarketing">
-              <DigitalMarketing title="Digital Marketing is" />
-            </Route>
+                <Route exact path="/digitalMarketing">
+                  <DigitalMarketing title="Digital Marketing is" />
+                </Route>
 
-            {/* <Route exact path="/training">
+                {/* <Route exact path="/training">
               <CommingSoon title="Software Development Course is"/>
             </Route> */}
 
-            <Route exact path="/career">
-              <CommingSoon title="Our company will appointed 100 expert software engineer and block chain developer" />
-            </Route>
+                <Route exact path="/career">
+                  <CommingSoon title="Our company will appointed 100 expert software engineer and block chain developer" />
+                </Route>
 
-            <Route path="/terms-of-use">
-              <TermsOfUse />
-            </Route>
-          </Switch>
-        </ScrollToTop>
-        </div>
+                <Route path="/terms-of-use">
+                  <TermsOfUse />
+                </Route>
 
-        <Footer />
-      </Router>
-    </div>
+                <Route path="/login">
+                  <Login />
+                </Route>
+              </Switch>
+            </ScrollToTop>
+          </div>
+
+          <Footer />
+        </Router>
+      </div>
+    </UserContext.Provider>
   );
 }
 
