@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import "./Course.scss";
-import data from "../TrainingCourse/CourseData";
-import CourseDetails from "./CourseDetails";
-import courseImg from "../../Image/header/course2.jpg";
-import headerImg from "../../Image/header/undraw_develop_app_re_bi4i.svg";
-import ModalDialog from "./Modal";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import CheckIcon from "@material-ui/icons/Check";
+import React, { useState } from "react";
+import headerImg from "../../Image/header/undraw_develop_app_re_bi4i.svg";
+import data from "../TrainingCourse/CourseData";
+import "./Course.scss";
+import CourseDetails from "./CourseDetails";
+import ModalDialog from "./Modal";
 
 const Course = () => {
   const [courseData, setCourseData] = useState(data);
@@ -80,6 +79,7 @@ const Course = () => {
                 position: "relative",
                 right: "-150px",
               }}
+              alt='header'
             />
           </div>
         </div>
