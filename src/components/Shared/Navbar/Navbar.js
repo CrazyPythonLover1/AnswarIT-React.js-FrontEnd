@@ -183,6 +183,21 @@ const Navbar = () => {
                 CONTACT US{" "}
               </NavLink>
             </li>
+
+            <li class="nav-item">
+              <NavLink
+                class="nav-link "
+                to="/login"
+                style={{ color: "#232323" }}
+              >
+                <button
+                  className="btn btn-primary"
+                  style={{ width: "100px", marginTop: "-7%" }}
+                >
+                  Login
+                </button>
+              </NavLink>
+            </li>
           </ul>
         </div>
       </nav>
