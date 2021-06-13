@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import "./ModalForm.css";
 const ModalForm = ({ id }) => {
   const history = useHistory();
@@ -111,16 +112,14 @@ const ModalForm = ({ id }) => {
         </fieldset>
 
         {/* this is question section */}
-        <h3 style={{ color: "#5d10e3", fontWeight: "700" }}>
-          Answer all the Question's:
-        </h3>
         <fieldset>
           <h5>1) What is the use of the computer port?</h5>
           <input
             onChange={handleChange}
             type="radio"
             value="Download the file via the internet"
-            name="Q1:1"
+            name="Q1"
+            required
             id="q1:1_s1"
           />
           <label for="q1:1_s1" style={{ marginLeft: "5px" }}>
@@ -131,7 +130,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="To connect with other devices"
-            name="Q1:2"
+            name="Q1"
+            required
             id="q1:2_s2"
           />
           <label for="q1:2_s2" style={{ marginLeft: "5px" }}>
@@ -142,7 +142,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="To connect with other devices"
-            name="Q1:3"
+            name="Q1"
+            required
             id="q1:3_s3"
           />
           <label for="q1:3_s3" style={{ marginLeft: "5px" }}>
@@ -154,7 +155,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="None of the these"
-            name="Q1:4"
+            name="Q1"
+            required
             id="q1:2_s24_s4"
           />
           <label for="q1:4_s4" style={{ marginLeft: "5px" }}>
@@ -168,7 +170,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Speaker"
-            name="Q2:1"
+            name="Q2"
+            required
             id="q2:3_s31_s5"
           />
           <label for="q2:1_s5" style={{ marginLeft: "5px" }}>
@@ -179,7 +182,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Mouse"
-            name="Q2:2"
+            name="Q2"
+            required
             id="q2:2_s6"
           />
           <label for="q2:2_s6" style={{ marginLeft: "5px" }}>
@@ -190,7 +194,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Joystick"
-            name="Q2:3"
+            name="Q2"
+            required
             id="q2:3_s7"
           />
           <label for="q2:3_s7" style={{ marginLeft: "5px" }}>
@@ -202,7 +207,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="None of the these"
-            name="Q2:4"
+            name="Q2"
+            required
             id="q2:4_s8"
           />
           <label for="q2:4_s8" style={{ marginLeft: "5px" }}>
@@ -218,7 +224,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Ctrl + L"
-            name="Q3:1"
+            name="Q3"
+            required
             id="q3:1_s9"
           />
           <label for="q3:1_s9" style={{ marginLeft: "5px" }}>
@@ -229,7 +236,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Copy"
-            name="Q3:2"
+            name="Q3"
+            required
             id="q3:2_s10"
           />
           <label for="q3:2_s10" style={{ marginLeft: "5px" }}>
@@ -240,7 +248,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Open"
-            name="Q3:3"
+            name="Q3"
+            required
             id="q3:3_s11"
           />
           <label for="q3:3_s11" style={{ marginLeft: "5px" }}>
@@ -252,7 +261,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Ctrl + Q"
-            name="Q3:4"
+            name="Q3"
+            required
             id="q3:4_s12"
           />
           <label for="q3:4_s12" style={{ marginLeft: "5px" }}>
@@ -266,7 +276,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Primary memory"
-            name="Q4:1"
+            name="Q4"
+            required
             id="q4:1_s13"
           />
           <label for="q4:1_s13" style={{ marginLeft: "5px" }}>
@@ -277,7 +288,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Secondary memory"
-            name="Q4:2"
+            name="Q4"
+            required
             id="q4:2_s14"
           />
           <label for="q4:2_s14" style={{ marginLeft: "5px" }}>
@@ -288,7 +300,9 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="RAM"
-            name="Q4:3_s15"
+            name="Q4"
+            required
+            identify="Q4:3_s15"
           />
           <label for="q4:3_s15" style={{ marginLeft: "5px" }}>
             RAM
@@ -299,7 +313,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="DRAM"
-            name="Q4:4"
+            name="Q4"
+            required
             id="q4:4_s16"
           />
           <label for="q4:4_s16" style={{ marginLeft: "5px" }}>
@@ -313,7 +328,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Writing an information"
-            name="Q5:1"
+            name="Q5"
+            required
             id="q5:1_s17"
           />
           <label for="q5:1_s17" style={{ marginLeft: "5px" }}>
@@ -324,7 +340,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Handling simple accounts"
-            name="Q5:2"
+            name="Q5"
+            required
             id="q5:2_s18"
           />
           <label for="q5:2_s18" style={{ marginLeft: "5px" }}>
@@ -335,7 +352,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Producing a grid-referenced map"
-            name="Q5:3"
+            name="Q5"
+            required
             id="q5:3_s19"
           />
           <label for="q5:3_s19" style={{ marginLeft: "5px" }}>
@@ -347,7 +365,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Keeping an inventory of equipment used"
-            name="Q5:4"
+            name="Q5"
+            required
             id="q5:4_s20"
           />
           <label for="q5:4_s20" style={{ marginLeft: "5px" }}>
@@ -361,7 +380,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="265"
-            name="Q6:1"
+            name="Q6"
+            required
             id="q6:1_s21"
           />
           <label for="q6:1_s21" style={{ marginLeft: "5px" }}>
@@ -372,7 +392,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="16"
-            name="Q6:2"
+            name="Q6"
+            required
             id="q6:2_s22"
           />
           <label for="q6:2_s22" style={{ marginLeft: "5px" }}>
@@ -383,7 +404,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="8"
-            name="Q6:3"
+            name="Q6"
+            required
             id="q6:3_s23"
           />
           <label for="q6:3_s23" style={{ marginLeft: "5px" }}>
@@ -395,7 +417,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="3"
-            name="Q6:4"
+            name="Q6"
+            required
             id="q6:4_s24"
           />
           <label for="q6:4_s24" style={{ marginLeft: "5px" }}>
@@ -412,7 +435,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="35.0065918"
-            name="Q7:1"
+            name="Q7"
+            required
             id="q7:1_s25"
           />
           <label for="q7:1_s25" style={{ marginLeft: "5px" }}>
@@ -423,7 +447,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="32.0065918"
-            name="Q7:2"
+            name="Q7"
+            required
             id="q7:2_s26"
           />
           <label for="q7:2_s26" style={{ marginLeft: "5px" }}>
@@ -434,7 +459,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="31.0065918"
-            name="Q7:3"
+            name="Q7"
+            required
             id="q7:3_s27"
           />
           <label for="q7:3_s27" style={{ marginLeft: "5px" }}>
@@ -446,7 +472,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="30.0065918"
-            name="Q7:4"
+            name="Q7"
+            required
             id="q7:4_s28"
           />
           <label for="q7:4_s28" style={{ marginLeft: "5px" }}>
@@ -460,7 +487,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Ink"
-            name="Q8:1"
+            name="Q8"
+            required
             id="q8:1_s29"
           />
           <label for="q8:1_s29" style={{ marginLeft: "5px" }}>
@@ -471,7 +499,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Laser bubbles"
-            name="Q8:2"
+            name="Q8"
+            required
             id="q8:2_s30"
           />
           <label for="q8:2_s30" style={{ marginLeft: "5px" }}>
@@ -482,7 +511,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Magnetism"
-            name="Q8:3"
+            name="Q8"
+            required
             id="q8:3_s31"
           />
           <label for="q8:3_s31" style={{ marginLeft: "5px" }}>
@@ -494,7 +524,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Circuits"
-            name="Q8:4"
+            name="Q8"
+            required
             id="q8:4_s32"
           />
           <label for="q8:4_s32" style={{ marginLeft: "5px" }}>
@@ -511,7 +542,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Character"
-            name="Q9:1"
+            name="Q9"
+            required
             id="q9:1_s33"
           />
           <label for="q9:1_s33" style={{ marginLeft: "5px" }}>
@@ -522,7 +554,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Pixel"
-            name="Q9:2"
+            name="Q9"
+            required
             id="q9:2_s34"
           />
           <label for="q9:2_s34" style={{ marginLeft: "5px" }}>
@@ -533,7 +566,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Byte"
-            name="Q9:3"
+            name="Q9"
+            required
             id="q9:3_s35"
           />
           <label for="q9:3_s35" style={{ marginLeft: "5px" }}>
@@ -545,7 +579,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Bit"
-            name="Q9:4"
+            name="Q9"
+            required
             id="q9:4_s36"
           />
           <label for="q9:4_s36" style={{ marginLeft: "5px" }}>
@@ -562,7 +597,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Silicon"
-            name="Q10:1"
+            name="Q10"
+            required
             id="q10:1_s37"
           />
           <label for="q10:1_s37" style={{ marginLeft: "5px" }}>
@@ -573,7 +609,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Carbon"
-            name="Q10:2"
+            name="Q10"
+            required
             id="q10:2_s38"
           />
           <label for="q10:2_s38" style={{ marginLeft: "5px" }}>
@@ -584,7 +621,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Iron"
-            name="Q10:3"
+            name="Q10"
+            required
             id="q10:3_s39"
           />
           <label for="q10:3_s39" style={{ marginLeft: "5px" }}>
@@ -596,7 +634,8 @@ const ModalForm = ({ id }) => {
             onChange={handleChange}
             type="radio"
             value="Uranium"
-            name="Q10:4"
+            name="Q10"
+            required
             id="q10:4_s40"
           />
           <label for="q10:4_s40" style={{ marginLeft: "5px" }}>
@@ -606,12 +645,14 @@ const ModalForm = ({ id }) => {
 
         {/* this is submit button */}
         <fieldset>
-          <input
-            className="btn btn-primary"
-            type="submit"
-            value="Registration"
-            required
-          />
+          <div style={{ display: "flex", position: "relative" }}>
+            <input
+              className="btn btn-primary"
+              type="submit"
+              value="Registration"
+              style={{ width: "100%" }}
+            />
+          </div>
         </fieldset>
       </form>
     </div>
