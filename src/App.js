@@ -1,30 +1,30 @@
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
-import Home from "./components/Home/Home";
-
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import ContactUs from "./components/ContactUs/ContactUs";
-import TopNavbar from "./components/Shared/TopNavbar/TopNavbar";
-import Navbar from "./components/Shared/Navbar/Navbar";
-import Footer from "./components/Shared/Footer/Footer";
-import Overview from "./components/About/Overview/Overview";
-import MissionVision from "./components/About/MissionVision/MissionVision";
 import CoreValue from "./components/About/CoreValue/CoreValue";
-import Services from "./components/Services/Services/Services";
-import TermsOfUse from "./components/TermsOfUse/TermsOfUse";
+import MissionVision from "./components/About/MissionVision/MissionVision";
+import Overview from "./components/About/Overview/Overview";
 import Admin from "./components/Admin/Admin";
-import SoftwareDevelopment from "./components/Services/SoftwareDevelopment/SoftwareDevelopment";
-import ManagementConsulting from "./components/Services/ManagementConsulting/ManagementConsulting";
-import TechnologyConsulting from "./components/Services/TechnologyConsulting/TechnologyConsulting";
-import StaffAugmentation from "./components/Services/StaffAugmentation/StaffAugmentation";
-import BusinessProcessAssurance from "./components/Services/BusinessProcessAssurance/BusinessProcessAssurance";
-import BpoKpo from "./components/Services/BpoKpo/BpoKpo";
-import WhyAnswarIT from "./components/Services/WhyAnswarIT/WhyAnswarIT";
-import Course from "./components/TrainingCourse/Course";
 import CommingSoon from "./components/CommingSoon/CommingSoon";
-import TrainingCourse from "./components/TrainingCourse/TrainingCourse";
+import ContactUs from "./components/ContactUs/ContactUs";
+import Home from "./components/Home/Home";
+import BpoKpo from "./components/Services/BpoKpo/BpoKpo";
+import BusinessProcessAssurance from "./components/Services/BusinessProcessAssurance/BusinessProcessAssurance";
+import ManagementConsulting from "./components/Services/ManagementConsulting/ManagementConsulting";
+import SoftwareDevelopment from "./components/Services/SoftwareDevelopment/SoftwareDevelopment";
+import StaffAugmentation from "./components/Services/StaffAugmentation/StaffAugmentation";
+import TechnologyConsulting from "./components/Services/TechnologyConsulting/TechnologyConsulting";
+import WhyAnswarIT from "./components/Services/WhyAnswarIT/WhyAnswarIT";
+import Footer from "./components/Shared/Footer/Footer";
+import Navbar from "./components/Shared/Navbar/Navbar";
+import TopNavbar from "./components/Shared/TopNavbar/TopNavbar";
+import TermsOfUse from "./components/TermsOfUse/TermsOfUse";
 import Blockchain from "./components/TrainingCourse/Blockchain";
+import Course from "./components/TrainingCourse/Course";
 import DigitalMarketing from "./components/TrainingCourse/DigitalMarketing";
+import TrainingCourse from "./components/TrainingCourse/TrainingCourse";
 import ScrollToTop from "./ScrollToTop";
+
 
 function App() {
   return (
@@ -108,7 +108,11 @@ function App() {
           </Switch>
         </ScrollToTop>
         </div>
-
+        <MessengerCustomerChat
+          pageId="100961108288258"
+          appId="155546436606054"
+          // htmlRef="fb-customer-chat"
+        />,
         <Footer />
       </Router>
     </div>
