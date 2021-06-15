@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+import MessengerCustomerChat from "react-messenger-customer-chat";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import CoreValue from "./components/About/CoreValue/CoreValue";
@@ -120,7 +120,8 @@ function App() {
             pageId="100961108288258"
             appId="155546436606054"
             // htmlRef="fb-customer-chat"
-          />,
+          />
+          ,
           <Footer />
         </Router>
       </div>

@@ -2,10 +2,14 @@ import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.scss";
 import logo from "../../../Image/logo/Answar-IT.jpg";
+import { useContext } from "react";
+import { UserContext } from "../../../App";
+import { Avatar } from "@material-ui/core";
 
 const Navbar = () => {
   let { pathname } = useLocation();
 
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   return (
     <div className="mainNavbar" style={{ width: "100%" }}>
       <nav
@@ -184,19 +188,43 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li class="nav-item">
-              <NavLink
-                class="nav-link "
-                to="/login"
-                style={{ color: "#232323" }}
-              >
+            <li style={{ margin: "auto 5px" }}>
+              <NavLink to="/login">
                 <button
                   className="btn btn-primary"
-                  style={{ width: "100px", marginTop: "-7%" }}
+                  style={{
+                    width: "115px",
+                    marginTop: "-7%",
+                  }}
                 >
-                  Login
+                  Login in
                 </button>
               </NavLink>
+            </li>
+
+            <li
+              style={{
+                color: "black",
+                fontWeight: "bold",
+                margin: "auto 5px",
+              }}
+            >
+              {loggedInUser.name}
+            </li>
+
+            <li
+              style={{
+                color: "black",
+                fontWeight: "bold",
+                margin: "auto 5px",
+              }}
+            >
+              <img
+                className="rounded-circle"
+                style={{ height: "35px" }}
+                src={loggedInUser.picture}
+                alt=""
+              />
             </li>
           </ul>
         </div>
