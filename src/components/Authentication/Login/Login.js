@@ -30,6 +30,7 @@ const Login = () => {
         console.log(result.user);
         const signedInUser = { name: displayName, email, picture: photoURL };
         setLoggedInUser(signedInUser);
+        sessionStorage.setItem("loggedInUser", JSON.stringify(signedInUser));
         setUserToken();
         history.push("/");
       })

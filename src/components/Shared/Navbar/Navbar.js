@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useCallback, useContext, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { UserContext } from "../../../App";
 import logo from "../../../Image/logo/Answar-IT.jpg";
@@ -8,17 +8,22 @@ const Navbar = () => {
   let { pathname } = useLocation();
 
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-  const [loginToken, setLoginToken] = useState('')
-  useEffect(() => {
-    const token = sessionStorage.getItem('token')
-    return () => {
-      setLoginToken(token)
-    }
-  }, [loggedInUser])
+  const [loginToken, setLoginToken] = useState(false)
+  const token = sessionStorage.getItem('token')
+  
+  const handleLogin = useCallback(
+    () => {
+      if (loggedInUser?.name) {
+        setLoginToken(!loginToken)
+      }
+    },
+    [loggedInUser, loginToken],
+  )
   
   const handleLogout = () => {
-    setLoginToken('')
-    // sessionStorage.setItem('token','')
+    setLoginToken(!loginToken)
+    sessionStorage.setItem('token','')
+    sessionStorage.setItem('loggedInUser', JSON.stringify({"name":"logout"}))
     setLoggedInUser({})
   }
   console.log(loginToken)
@@ -200,7 +205,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            { !loginToken? <li style={{ margin: "auto 5px" }}>
+            { !loggedInUser?.name ? <li style={{ margin: "auto 5px" }}>
               <NavLink to="/login">
                 <button
                   className="btn btn-primary"
@@ -208,6 +213,7 @@ const Navbar = () => {
                     width: "115px",
                     marginTop: "-7%",
                   }}
+                  onClick={() => handleLogin()}
                 >
                   Login
                 </button>
@@ -237,7 +243,7 @@ const Navbar = () => {
                 margin: "auto 5px",
               }}
             >
-              {loggedInUser.name}
+              {loggedInUser?.name}
             </li>
 
             <li
@@ -250,7 +256,7 @@ const Navbar = () => {
               <img
                 className="rounded-circle"
                 style={{ height: "35px" }}
-                src={loggedInUser.picture}
+                src={loggedInUser?.picture}
                 alt=""
               />
             </li>
