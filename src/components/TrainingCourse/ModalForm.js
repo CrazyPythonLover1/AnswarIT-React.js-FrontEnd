@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
-import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import { Link } from "react-router-dom";
 import "./ModalForm.css";
 const ModalForm = ({ id }) => {
   const history = useHistory();
@@ -657,6 +657,21 @@ const ModalForm = ({ id }) => {
         ) : (
           <h3>Marketing related question will come soon!</h3>
         )}
+
+        <fieldset>
+          <input
+            onChange={handleChange}
+            type="checkbox"
+            value="Silicon"
+            name="Q10"
+            required
+            id="q10:1_s37"
+          />
+          <label for="q10:1_s37" style={{ marginLeft: "5px" }}>
+            I agree to the <Link to=""> <b style={{color: "rgb(92, 16, 227)"}}> terms and conditions </b> </Link> 
+          </label>
+          <br />
+        </fieldset>
 
         {/* this is submit button */}
         <fieldset>

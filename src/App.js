@@ -29,7 +29,9 @@ import ScrollToTop from "./ScrollToTop";
 
 export const UserContext = createContext();
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState({});
+  const userInfo = sessionStorage.getItem('loggedInUser')
+  console.log("🚀 ~ file: App.js ~ line 33 ~ App ~ userInfo", userInfo)
+  const [loggedInUser, setLoggedInUser] = useState(userInfo.name !== 'logout' ? JSON.parse(userInfo): '');
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <div className="" style={{ width: "100%" }}>

@@ -1,16 +1,13 @@
 import React, { useState } from "react";
-import course1 from "../../Image/course/Software Development Course.jpg";
+import { Link } from "react-router-dom";
 import course2 from "../../Image/course/Blockchain training Course.jpg";
 import course3 from "../../Image/course/Digital marketing course.jpg";
-import topbg from "../../Image/course/bg_sub-header.png";
-import topbg1 from "../../Image/course/hero-bg.svg";
-import topImg from "../../Image/header/1.6.jpg";
+import course1 from "../../Image/course/Software Development Course.jpg";
+import ModalDialog from "./Modal";
 // import ModalForm from "./ModalForm";
 // import Modal from "react-modal";
 // import CloseIcon from "@material-ui/icons/Close";
 import "./TrainingCourse.css";
-import { Link } from "react-router-dom";
-import ModalDialog from "./Modal";
 
 const customStyles = {
   content: {
@@ -31,11 +28,11 @@ const AllCardData = [
     image: course1,
     title: "Software Development Course",
     description: "Take your developer skills to the next level with courses on the most popular programming languages, best practices and application development and gain essential skill for a successful career.",
-    price: '13,000',
+    price: '26,000',
     discountPrice: '6,500',
     duration: '6-8 month',
     totalClass: '90+ (each class 1.5 hours long)',
-    discount: '50% Discount',
+    discount: '75% Discount',
     link: "/softwareCourse",
   },
   {
@@ -43,11 +40,11 @@ const AllCardData = [
     image: course2,
     title: "Blockchain Training Course",
     description: "Demand for blockchain developers is skyrocketing. In this program, you'll work with the Bitcoin and Ethereum protocols, build projects for real-world application, and gain the essential skills for a career in this dynamic space.",
-    price: '13,000',
+    price: '26,000',
     discountPrice: '6,500',
     duration: '6+ month',
     totalClass: '72+ (each class 1.5 hours long)',
-    discount: '50% Discount',
+    discount: '75% Discount',
     link: "/blockchainCourse",
   },
   {
