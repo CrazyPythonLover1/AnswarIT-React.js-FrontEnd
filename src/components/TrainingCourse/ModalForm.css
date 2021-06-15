@@ -11,6 +11,8 @@
   background: #f9f9f9;
   overflow-y: scroll;
   height: 400px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 #contact h3 {
