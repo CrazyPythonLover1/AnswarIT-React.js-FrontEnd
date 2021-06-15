@@ -121,10 +121,6 @@ function App() {
             appId="155546436606054"
             // htmlRef="fb-customer-chat"
           />
-<<<<<<< HEAD
-          ,
-=======
->>>>>>> f1b73336b4680af2f311c4348336d836d1b659b5
           <Footer />
         </Router>
       </div>

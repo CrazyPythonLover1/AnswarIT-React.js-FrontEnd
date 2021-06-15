@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import "./Navbar.scss";
-import logo from "../../../Image/logo/Answar-IT.jpg";
-import { useContext } from "react";
 import { UserContext } from "../../../App";
-import { Avatar } from "@material-ui/core";
+import logo from "../../../Image/logo/Answar-IT.jpg";
+import "./Navbar.scss";
 
 const Navbar = () => {
   let { pathname } = useLocation();
 
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const [loginToken, setLoginToken] = useState('')
+  useEffect(() => {
+    const token = sessionStorage.getItem('token')
+    return () => {
+      setLoginToken(token)
+    }
+  }, [loggedInUser])
+  
+  const handleLogout = () => {
+    setLoginToken('')
+    // sessionStorage.setItem('token','')
+    setLoggedInUser({})
+  }
+  console.log(loginToken)
   return (
     <div className="mainNavbar" style={{ width: "100%" }}>
       <nav
@@ -188,7 +200,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li style={{ margin: "auto 5px" }}>
+            { !loginToken? <li style={{ margin: "auto 5px" }}>
               <NavLink to="/login">
                 <button
                   className="btn btn-primary"
@@ -197,10 +209,26 @@ const Navbar = () => {
                     marginTop: "-7%",
                   }}
                 >
-                  Login in
+                  Login
+                </button>
+              </NavLink>
+            </li> : 
+              <li style={{ margin: "auto 5px" }}>
+              <NavLink to="">
+                <button
+                  className="btn btn-primary"
+                  style={{
+                    width: "115px",
+                    marginTop: "-7%",
+                  }}
+                  onClick={() => handleLogout()}
+                >
+                  logout
                 </button>
               </NavLink>
             </li>
+
+            }
 
             <li
               style={{

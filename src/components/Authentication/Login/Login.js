@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
-import { Link, useHistory, useLocation } from "react-router-dom";
-import "./Login.css";
-import googleLogo from "../../../Image/logo/google-logo.png";
-import logo from "../../../Image/logo/Answar-IT.jpg";
 import firebase from "firebase/app";
 import "firebase/auth";
-import firebaseConfig from "../../Authentication/firebase.config";
+import React, { useContext } from "react";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import { UserContext } from "../../../App";
+import logo from "../../../Image/logo/Answar-IT.jpg";
+import googleLogo from "../../../Image/logo/google-logo.png";
+import firebaseConfig from "../../Authentication/firebase.config";
+import "./Login.css";
 
 const Login = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -69,14 +69,14 @@ const Login = () => {
           </div>
 
           <div>
-            <p>
+            {/* <p>
               {" "}
               Don't have an account?{" "}
               <Link to="/create-account" style={{ color: "#3F90FC" }}>
                 {" "}
                 Create an account{" "}
               </Link>
-            </p>
+            </p> */}
           </div>
         </form>
       </div>
