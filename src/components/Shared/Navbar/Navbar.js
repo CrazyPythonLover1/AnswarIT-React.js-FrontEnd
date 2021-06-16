@@ -8,25 +8,22 @@ const Navbar = () => {
   let { pathname } = useLocation();
 
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-  const [loginToken, setLoginToken] = useState(false)
-  const token = sessionStorage.getItem('token')
-  
-  const handleLogin = useCallback(
-    () => {
-      if (loggedInUser?.name) {
-        setLoginToken(!loginToken)
-      }
-    },
-    [loggedInUser, loginToken],
-  )
-  
+  const [loginToken, setLoginToken] = useState(false);
+  const token = sessionStorage.getItem("token");
+
+  const handleLogin = useCallback(() => {
+    if (loggedInUser?.name) {
+      setLoginToken(!loginToken);
+    }
+  }, [loggedInUser, loginToken]);
+
   const handleLogout = () => {
-    setLoginToken(!loginToken)
-    sessionStorage.setItem('token','')
-    sessionStorage.setItem('loggedInUser', JSON.stringify({"name":"logout"}))
-    setLoggedInUser({})
-  }
-  console.log(loginToken)
+    setLoginToken(!loginToken);
+    sessionStorage.setItem("token", "");
+    sessionStorage.setItem("loggedInUser", JSON.stringify({ name: "logout" }));
+    setLoggedInUser({});
+  };
+  console.log(loginToken);
   return (
     <div className="mainNavbar" style={{ width: "100%" }}>
       <nav
@@ -205,36 +202,37 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            { !loggedInUser?.name ? <li style={{ margin: "auto 5px" }}>
-              <NavLink to="/login">
-                <button
-                  className="btn btn-primary"
-                  style={{
-                    width: "115px",
-                    marginTop: "-7%",
-                  }}
-                  onClick={() => handleLogin()}
-                >
-                  Login
-                </button>
-              </NavLink>
-            </li> : 
+            {!loggedInUser?.name ? (
               <li style={{ margin: "auto 5px" }}>
-              <NavLink to="">
-                <button
-                  className="btn btn-primary"
-                  style={{
-                    width: "115px",
-                    marginTop: "-7%",
-                  }}
-                  onClick={() => handleLogout()}
-                >
-                  logout
-                </button>
-              </NavLink>
-            </li>
-
-            }
+                <NavLink to="/login">
+                  <button
+                    className="btn btn-primary"
+                    style={{
+                      width: "115px",
+                      marginTop: "-7%",
+                    }}
+                    onClick={() => handleLogin()}
+                  >
+                    Login
+                  </button>
+                </NavLink>
+              </li>
+            ) : (
+              <li style={{ margin: "auto 5px" }}>
+                <NavLink to="">
+                  <button
+                    className="btn btn-primary"
+                    style={{
+                      width: "115px",
+                      marginTop: "-7%",
+                    }}
+                    onClick={() => handleLogout()}
+                  >
+                    logout
+                  </button>
+                </NavLink>
+              </li>
+            )}
 
             <li
               style={{

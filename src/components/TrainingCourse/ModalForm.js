@@ -668,7 +668,14 @@ const ModalForm = ({ id }) => {
             id="q10:1_s37"
           />
           <label for="q10:1_s37" style={{ marginLeft: "5px" }}>
-            I agree to the <Link to=""> <b style={{color: "rgb(92, 16, 227)"}}> terms and conditions </b> </Link> 
+            I agree to the{" "}
+            <Link to="/termsOfUse">
+              {" "}
+              <b style={{ color: "rgb(92, 16, 227)" }}>
+                {" "}
+                terms and conditions{" "}
+              </b>{" "}
+            </Link>
           </label>
           <br />
         </fieldset>

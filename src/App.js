@@ -29,9 +29,11 @@ import ScrollToTop from "./ScrollToTop";
 
 export const UserContext = createContext();
 function App() {
-  const userInfo = sessionStorage.getItem('loggedInUser')
-  console.log("🚀 ~ file: App.js ~ line 33 ~ App ~ userInfo", userInfo)
-  const [loggedInUser, setLoggedInUser] = useState(userInfo?.name !== 'logout' ? JSON.parse(userInfo): '');
+  const userInfo = sessionStorage.getItem("loggedInUser");
+  console.log("🚀 ~ file: App.js ~ line 33 ~ App ~ userInfo", userInfo);
+  const [loggedInUser, setLoggedInUser] = useState(
+    userInfo?.name !== "logout" ? JSON.parse(userInfo) : ""
+  );
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <div className="" style={{ width: "100%" }}>
@@ -108,7 +110,7 @@ function App() {
                   <CommingSoon title="Our company will appointed 100 expert software engineer and block chain developer" />
                 </Route>
 
-                <Route path="/terms-of-use">
+                <Route path="/termsOfUse">
                   <TermsOfUse />
                 </Route>
 
