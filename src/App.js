@@ -114,7 +114,7 @@ function App() {
                   <TermsOfUse />
                 </Route>
 
-                <Route path="/training-terms-and-condition">
+                <Route exact path="/training-terms-and-condition">
                   <TrainingTerms />
                 </Route>
 

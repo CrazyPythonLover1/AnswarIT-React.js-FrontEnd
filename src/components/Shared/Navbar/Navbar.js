@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { UserContext } from "../../../App";
 import logo from "../../../Image/logo/Answar-IT.jpg";
@@ -11,11 +11,11 @@ const Navbar = () => {
   const [loginToken, setLoginToken] = useState(false);
   const token = sessionStorage.getItem("token");
 
-  const handleLogin = useCallback(() => {
-    if (loggedInUser?.name) {
-      setLoginToken(!loginToken);
-    }
-  }, [loggedInUser, loginToken]);
+  // const handleLogin = useCallback(() => {
+  //   if (loggedInUser?.name) {
+  //     setLoginToken(!loginToken);
+  //   }
+  // }, [loggedInUser, loginToken]);
 
   const handleLogout = () => {
     setLoginToken(!loginToken);
@@ -202,7 +202,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            {!loggedInUser?.name ? (
+            {loggedInUser?.name !== "logout" ? (
               <li style={{ margin: "auto 5px" }}>
                 <NavLink to="/login">
                   <button
@@ -211,7 +211,7 @@ const Navbar = () => {
                       width: "115px",
                       marginTop: "-7%",
                     }}
-                    onClick={() => handleLogin()}
+                    // onClick={() => handleLogin()}
                   >
                     Login
                   </button>
