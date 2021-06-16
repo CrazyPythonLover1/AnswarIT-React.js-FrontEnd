@@ -1,50 +1,49 @@
 .software-development-header {
-    background: linear-gradient(107.07deg,#684efb -6.64%,#5a00dd 89.11%);
-    background: #040d21 url('../../Image/course/hero-bg.svg') no-repeat center;
-    padding: 60px 0px 200px 0px;
+  background: linear-gradient(107.07deg, #684efb -6.64%, #5a00dd 89.11%);
+  background: #040d21 url("../../Image/course/hero-bg.svg") no-repeat center;
+  padding: 60px 0px 200px 0px;
 }
 
 .header-text-section {
-    color: white;
+  color: white;
 
-    h1 {
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
+  h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
 
-    p {
-        text-align: justify;
-        font-size: 1.2rem;
-    }
+  p {
+    text-align: justify;
+    font-size: 1.2rem;
+  }
 }
 
 .enroll-btn {
-    background: linear-gradient(45deg,#3868ce 6.64%,#ee458b 79.11%);
-    &:hover {
-        // background: linear-gradient(45deg,#c401ff 0.01%, #5c10e3 100.01%);
-        background: linear-gradient(45deg,#ee458b 6.64%,#3868ce 79.11%);
-    }
+  background: linear-gradient(45deg, #3868ce 6.64%, #ee458b 79.11%);
+  &:hover {
+    // background: linear-gradient(45deg,#c401ff 0.01%, #5c10e3 100.01%);
+    background: linear-gradient(45deg, #ee458b 6.64%, #3868ce 79.11%);
+  }
 }
 
 .what-you-will-learn {
-    height: 450px;
-    background: white;
-    margin-top: -100px !important;
-    padding: 40px 40px;
-    border-radius: 16px;
-    z-index: 3;
+  height: 450px;
+  background: white;
+  margin-top: -100px !important;
+  padding: 40px 40px;
+  border-radius: 16px;
+  z-index: 3;
 
-    h1 {
-        padding:  0px 0px 16px 16px;
-        color: #5c10e3;
-        font-weight: 700;
-        
-    }
-    .row .left-col{
-        padding-right: 20px;
-    }
+  h1 {
+    padding: 0px 0px 16px 16px;
+    color: #5c10e3;
+    font-weight: 700;
+  }
+  .row .left-col {
+    padding-right: 20px;
+  }
 
-    .row .right-col{
-        padding-left: 20px;
-    }
+  .row .right-col {
+    padding-left: 20px;
+  }
 }

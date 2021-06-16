@@ -219,13 +219,14 @@ const Navbar = () => {
                 </button>
               </NavLink>
             </li> : 
-              <li style={{ margin: "auto 5px" }}>
+              <li style={{ margin: "auto -10px auto 5px" }}>
               <NavLink to="">
                 <button
                   className="btn btn-primary"
                   style={{
                     width: "115px",
                     marginTop: "-7%",
+                    marginRight: "-30px"
                   }}
                   onClick={() => handleLogout()}
                 >

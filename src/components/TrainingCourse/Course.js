@@ -29,13 +29,14 @@ const Course = () => {
           alt=""
         /> */}
         <div
-          class="row"
+          class="row "
           style={{
             width: "1410px",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
             margin: "auto",
+            padding: " 0px 60px"
           }}
         >
           <div

@@ -25,21 +25,23 @@ import Blockchain from "./components/TrainingCourse/Blockchain";
 import Course from "./components/TrainingCourse/Course";
 import DigitalMarketing from "./components/TrainingCourse/DigitalMarketing";
 import TrainingCourse from "./components/TrainingCourse/TrainingCourse";
+import TrainingTerms from "./components/TrainingTerms/TrainingTerms";
 import ScrollToTop from "./ScrollToTop";
 
 export const UserContext = createContext();
 function App() {
   const userInfo = sessionStorage.getItem('loggedInUser')
-  console.log("🚀 ~ file: App.js ~ line 33 ~ App ~ userInfo", userInfo)
+  
   const [loggedInUser, setLoggedInUser] = useState(userInfo?.name !== 'logout' ? JSON.parse(userInfo): '');
+  
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <div className="" style={{ width: "100%" }}>
         <Router>
+          <ScrollToTop>
           <TopNavbar />
           <Navbar />
           <div className="app">
-            <ScrollToTop>
               <Switch>
                 <Route exact path="/">
                   <Home />
@@ -112,18 +114,22 @@ function App() {
                   <TermsOfUse />
                 </Route>
 
+                <Route path="/training-terms-and-condition">
+                  <TrainingTerms />
+                </Route>
+
                 <Route path="/login">
                   <Login />
                 </Route>
               </Switch>
-            </ScrollToTop>
           </div>
           <MessengerCustomerChat
             pageId="100961108288258"
             appId="155546436606054"
             // htmlRef="fb-customer-chat"
-          />
+            />
           <Footer />
+          </ScrollToTop>
         </Router>
       </div>
     </UserContext.Provider>
