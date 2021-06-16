@@ -110,7 +110,7 @@ function App() {
                   <CommingSoon title="Our company will appointed 100 expert software engineer and block chain developer" />
                 </Route>
 
-                <Route path="/terms-of-use">
+                <Route path="/termsOfUse">
                   <TermsOfUse />
                 </Route>
 
