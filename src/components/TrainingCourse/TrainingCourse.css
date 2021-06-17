@@ -119,6 +119,8 @@
   border-radius: 8px !important;
   z-index: 3 !important;
 }
+
+/* for responsive trainingCourse  */
 @media (max-width: 1200px) {
   .traning-header {
     height: 600px;
