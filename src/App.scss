@@ -1,128 +1,140 @@
-$color-base:#fff;
-$color-text:#222;
-$color-accent: desaturate(navy,80%);
+$color-base: #fff;
+$color-text: #222;
+$color-accent: desaturate(navy, 80%);
 
-
-.app{
-    color: $color-text;
-    background-color: #f3f5f9;
+.app {
+  color: $color-text;
+  background-color: #f3f5f9;
 }
 
-.about{
-    .row{
-        padding-top: 40px!important;
-        margin: 0;
-    }
+.about {
+  .row {
+    padding-top: 40px !important;
+    margin: 0;
+  }
 }
-
 
 @media only screen and (max-width: 768px) {
-    .topnavbar {
-      display: none;
-    }
-    .nav-container{
-        background: #5c10e3;
-        a{
-            color: white !important;
-        }
-        
-        .navbar-toggler{
-            border: 2px solid #9b9b9b;
-        }
-
-        .navbar-toggler-icon{
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(250, 250, 250)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-        }
-
-        .nav-item{
-            
-            a{
-                color: #f9f9f9 !important;
-                .arrow{
-                    border-color: #f9f9f9 transparent;
-                }
-            }
-        }
-            
-    }
-
-    .featured-box{
-        flex-direction: column;
-
-        .thumbnail{
-            margin: 10px  auto ;
-        }
-
-        .box-content{
-            margin-left: 0 !important;
-        }
-    }
-
-    .service-details, .about{
-        .title{
-            margin-top: 30px !important;
-        }
-        
-    }
-
-    #footer{
-        .f-social{
-            padding-top: 10px;
-            padding-left: 5px;
-        }
-    }
-
-    
+  .topnavbar {
+    display: none;
   }
+  .nav-container {
+    background: #5c10e3;
+    a {
+      color: white !important;
+    }
 
-  @media only screen and (max-width: 600px) {
-      #about, #services{
-          padding: 40px 20px !important;
+    .navbar-toggler {
+      border: 2px solid #9b9b9b;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(250, 250, 250)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    .nav-item {
+      a {
+        color: #f9f9f9 !important;
+        .arrow {
+          border-color: #f9f9f9 transparent;
+        }
       }
-
-      #header {
-        .header-text{
-            padding: 20px 20px !important;
-        }
     }
-
-    .about{
-        .row{
-            padding: 40px 20px !important;
-            margin: 0;
-        }
-
-        .title{
-            margin-top: 20px !important;
-        }
-    }
-
-    .services{
-        padding: 40px 20px !important;
-    }
-
-    .service-details, .about{
-        .title{
-            margin-top: 30px !important;
-        }
-        
-    }
-
-    .contact{
-        padding: 40px 10px !important;
-
-        .row{
-            flex-direction: column;
-        }
-    }
-
-    .terms-of-use{
-        padding: 20px 20px !important;
-    }
-
-    .nav-container{
-        padding: 0 20px !important;
-    }
-    
   }
 
+  .featured-box {
+    flex-direction: column;
+
+    .thumbnail {
+      margin: 10px auto;
+    }
+
+    .box-content {
+      margin-left: 0 !important;
+    }
+  }
+
+  .service-details,
+  .about {
+    .title {
+      margin-top: 30px !important;
+    }
+  }
+
+  #footer {
+    .f-social {
+      padding-top: 10px;
+      padding-left: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #about,
+  #services {
+    padding: 40px 20px !important;
+  }
+
+  #header {
+    .header-text {
+      padding: 20px 20px !important;
+    }
+  }
+
+  .about {
+    .row {
+      padding: 40px 20px !important;
+      margin: 0;
+    }
+
+    .title {
+      margin-top: 20px !important;
+    }
+  }
+
+  .services {
+    padding: 40px 20px !important;
+  }
+
+  .service-details,
+  .about {
+    .title {
+      margin-top: 30px !important;
+    }
+  }
+
+  .contact {
+    padding: 40px 10px !important;
+
+    .row {
+      flex-direction: column;
+    }
+  }
+
+  .terms-of-use {
+    padding: 20px 20px !important;
+  }
+
+  .nav-container {
+    padding: 0 20px !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9b9b9b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #707070;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #483f5a91;
+  border-radius: 10px;
+}

@@ -36,7 +36,7 @@ const Course = () => {
             alignItems: "center",
             justifyContent: "space-between",
             margin: "auto",
-            padding: " 0px 60px"
+            padding: " 0px 45px"
           }}
         >
           <div
@@ -200,7 +200,7 @@ const Course = () => {
         >
           <h1 style={{ fontWeight: "700" }}>Course content</h1>
         </div>
-        <div>
+        <div className="course-detail">
           {courseData.map((dt) => (
             <CourseDetails key={dt.id} singleCourse={dt}></CourseDetails>
           ))}
