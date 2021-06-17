@@ -9,13 +9,6 @@ const Navbar = () => {
 
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const [loginToken, setLoginToken] = useState(false);
-  const token = sessionStorage.getItem("token");
-
-  // const handleLogin = useCallback(() => {
-  //   if (loggedInUser?.name) {
-  //     setLoginToken(!loginToken);
-  //   }
-  // }, [loggedInUser, loginToken]);
 
   const handleLogout = () => {
     setLoginToken(!loginToken);
@@ -211,7 +204,6 @@ const Navbar = () => {
                       width: "115px",
                       marginTop: "-7%",
                     }}
-                    // onClick={() => handleLogin()}
                   >
                     Login
                   </button>
