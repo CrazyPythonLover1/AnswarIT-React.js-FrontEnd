@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
-import { Link } from "react-router-dom";
 import "./ModalForm.css";
 const ModalForm = ({ id }) => {
   const history = useHistory();
@@ -668,7 +667,7 @@ const ModalForm = ({ id }) => {
             id="q10:1_s37"
           />
           <label for="q10:1_s37" style={{ marginLeft: "5px" }}>
-            I agree to the <Link to="/training-terms-and-condition" > <b style={{color: "rgb(92, 16, 227)"}}> terms and conditions </b> </Link> 
+            I agree to the <a href="/training-terms-and-condition" > <b style={{color: "rgb(92, 16, 227)"}}> terms and conditions </b> </a> 
           </label>
           <br />
         </fieldset>

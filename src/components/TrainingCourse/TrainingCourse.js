@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import course2 from "../../Image/course/Blockchain training Course.jpg";
-import course3 from "../../Image/course/Digital marketing course.jpg";
-import course1 from "../../Image/course/Software Development Course.jpg";
+import course2 from "../../Image/course/Blockchain training Course.png";
+import course3 from "../../Image/course/Digital marketing course.png";
+import course1 from "../../Image/course/Software Development Course-2.png";
 import ModalDialog from "./Modal";
 // import ModalForm from "./ModalForm";
 // import Modal from "react-modal";
