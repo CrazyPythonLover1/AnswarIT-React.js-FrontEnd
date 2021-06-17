@@ -12,9 +12,9 @@ const Login = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   console.log(loggedInUser);
   const history = useHistory();
-  const location = useLocation();
+  // const location = useLocation();
 
-  const { from } = location.state || { from: { pathName: "/" } };
+  // const { from } = location.state || { from: { pathName: "/" } };
 
   if (firebase.apps.length === 0) {
     firebase.initializeApp(firebaseConfig);
@@ -31,7 +31,6 @@ const Login = () => {
         const signedInUser = { name: displayName, email, picture: photoURL };
         setLoggedInUser(signedInUser);
         sessionStorage.setItem("loggedInUser", JSON.stringify(signedInUser));
-        setUserToken();
         history.push("/");
       })
       .catch(function (error) {
@@ -41,18 +40,6 @@ const Login = () => {
       });
   };
 
-  //this section for sesseion stroge data saving
-  const setUserToken = () => {
-    firebase
-      .auth()
-      .currentUser.getIdToken(/* forceRefresh */ true)
-      .then(function (idToken) {
-        sessionStorage.setItem("token", idToken);
-      })
-      .catch(function (error) {
-        // Handle error
-      });
-  };
   return (
     <div className="container-fluid">
       <div className="login">
