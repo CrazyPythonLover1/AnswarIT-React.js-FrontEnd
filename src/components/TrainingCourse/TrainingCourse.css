@@ -2,22 +2,22 @@
   /* background: linear-gradient(#6726d6 0.01%, #5c10e3 100.01%); */
   /* background-image: url('../../Image/course/bg_sub-header.png'), linear-gradient(#6726d685 0.01%, #5d10e386 100.01%);
   background-image: url('../../Image/course/bg_sub-header.png'), -moz-linear-gradient(#6726d685 0.01%, #5d10e386 100.01%); */
-  background: #040d21 url('../../Image/course/hero-bg.svg') no-repeat center center;
+  background: #040d21 url("../../Image/course/hero-bg.svg") no-repeat center
+    center;
   height: 600px;
   /* clip-path: polygon(0 0, 100% 0, 100% 70%, 66% 93%, 27% 79%, 0 100%); */
   clip-path: polygon(0 0, 100% 0%, 100% 81%, 0 100%);
   padding-top: 60px;
   /* margin-top: -400px; */
-  
 }
 
-.text-section{
+.text-section {
   color: #c0cce0;
   text-align: center;
   padding: 50px 20px;
   width: 67%;
   margin: auto;
-  
+
   background-color: #8193b234;
   border-radius: 16px;
 }
@@ -35,7 +35,7 @@
 
 .text-section > p {
   font-size: 24px;
-  padding: 10px 120px 0px 120px
+  padding: 10px 120px 0px 120px;
 }
 
 .card {
@@ -73,16 +73,17 @@
 }
 
 .card .card-discount::after {
-  content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #c2004a #c2004a transparent transparent;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #c2004a #c2004a transparent transparent;
 }
 
-.card-img, .card-img-top {
+.card-img,
+.card-img-top {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -110,7 +111,6 @@
   padding-right: 10px;
 }
 
-
 .ReactModal__Overlay {
   background-color: rgba(20, 0, 34, 0.75) !important;
 }
@@ -118,4 +118,26 @@
 .ReactModal__Content {
   border-radius: 8px !important;
   z-index: 3 !important;
+}
+@media (max-width: 1200px) {
+  .traning-header {
+    height: 600px;
+  }
+  .text-section > p {
+    font-size: 18px;
+    padding: 0 !important;
+  }
+  .text-section > h1 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .text-section > h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .traning-header {
+    height: 700px;
+  }
 }
