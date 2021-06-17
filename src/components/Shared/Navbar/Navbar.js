@@ -8,15 +8,12 @@ const Navbar = () => {
   let { pathname } = useLocation();
 
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-  const [loginToken, setLoginToken] = useState(false);
 
   const handleLogout = () => {
-    setLoginToken(!loginToken);
-    sessionStorage.setItem("token", "");
     sessionStorage.setItem("loggedInUser", JSON.stringify({ name: "logout" }));
     setLoggedInUser({});
   };
-  console.log(loginToken);
+
   return (
     <div className="mainNavbar" style={{ width: "100%" }}>
       <nav
@@ -233,7 +230,7 @@ const Navbar = () => {
                 margin: "auto 5px",
               }}
             >
-              {loggedInUser?.name === 'logout'? '' : loggedInUser?.name}
+              {loggedInUser?.name === "logout" ? "" : loggedInUser?.name}
             </li>
 
             <li
