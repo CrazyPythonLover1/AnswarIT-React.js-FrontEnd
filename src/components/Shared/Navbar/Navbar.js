@@ -202,7 +202,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            {loggedInUser?.name !== "logout" ? (
+            {loggedInUser?.name === "logout" || !loggedInUser?.name ? (
               <li style={{ margin: "auto 5px" }}>
                 <NavLink to="/login">
                   <button
@@ -241,7 +241,7 @@ const Navbar = () => {
                 margin: "auto 5px",
               }}
             >
-              {loggedInUser?.name}
+              {loggedInUser?.name === 'logout'? '' : loggedInUser?.name}
             </li>
 
             <li
