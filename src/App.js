@@ -36,12 +36,12 @@ function App() {
   
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <div className="" style={{ width: "100%" }}>
+      <div className="wrapper" style={{ width: "100%", height: "100vh" }}>
         <Router>
           <ScrollToTop>
-          <TopNavbar />
-          <Navbar />
-          <div className="app">
+            <TopNavbar />
+            <Navbar />
+            <div className="app">
               <Switch>
                 <Route exact path="/">
                   <Home />
@@ -102,9 +102,9 @@ function App() {
                   <DigitalMarketing title="Digital Marketing is" />
                 </Route>
 
-                {/* <Route exact path="/training">
-              <CommingSoon title="Software Development Course is"/>
-            </Route> */}
+                    {/* <Route exact path="/training">
+                  <CommingSoon title="Software Development Course is"/>
+                </Route> */}
 
                 <Route exact path="/career">
                   <CommingSoon title="Our company will appointed 100 expert software engineer and block chain developer" />
@@ -122,13 +122,13 @@ function App() {
                   <Login />
                 </Route>
               </Switch>
-          </div>
-          <MessengerCustomerChat
-            pageId="100961108288258"
-            appId="155546436606054"
-            // htmlRef="fb-customer-chat"
+            </div>
+            <MessengerCustomerChat
+              pageId="100961108288258"
+              appId="155546436606054"
+              // htmlRef="fb-customer-chat"
             />
-          <Footer />
+            <Footer />
           </ScrollToTop>
         </Router>
       </div>

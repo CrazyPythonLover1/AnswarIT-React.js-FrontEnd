@@ -192,6 +192,7 @@ a:hover {
     &.login-logout {
       margin-top: 4%;
       > .nav-link {
+        margin-top: 10px;
         > button {
           font-size: 0.8rem !important;
           padding: 7px 30px !important;
@@ -208,5 +209,9 @@ a:hover {
     .arrow {
       right: 3px;
     }
+  }
+
+  .page-top {
+    display: none;
   }
 }

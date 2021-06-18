@@ -1,7 +1,7 @@
 import firebase from "firebase/app";
 import "firebase/auth";
 import React, { useContext } from "react";
-import { Link, useHistory, useLocation } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { UserContext } from "../../../App";
 import logo from "../../../Image/logo/Answar-IT.jpg";
 import googleLogo from "../../../Image/logo/google-logo.png";
@@ -41,11 +41,10 @@ const Login = () => {
   };
 
   return (
-    <div className="container-fluid">
+    <div className="">
       <div className="login">
         <Link to="/" className="logo mb-5">
-          {" "}
-          <img className="logoIcon" src={logo} alt="" />{" "}
+          <img className="logoIcon" src={logo} alt="" />
         </Link>
 
         <form className=" container login-form px-4" action="">
@@ -58,11 +57,11 @@ const Login = () => {
 
           <div>
             {/* <p>
-              {" "}
-              Don't have an account?{" "}
+              
+              Don't have an account?
               <Link to="/create-account" style={{ color: "#3F90FC" }}>
-                {" "}
-                Create an account{" "}
+                
+                Create an account
               </Link>
             </p> */}
           </div>

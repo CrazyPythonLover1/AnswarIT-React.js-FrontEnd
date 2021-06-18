@@ -1,10 +1,10 @@
-import React from 'react';
-import './Footer.scss';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import './Footer.scss';
 
 const Footer = () => {
     return (
