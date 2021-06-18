@@ -95,7 +95,7 @@ const TrainingCourse = () => {
           </p>
         </div>
       </div>
-      <div>
+      <div >
         <h1
           style={{
             textAlign: "center",
@@ -104,6 +104,7 @@ const TrainingCourse = () => {
           }}
         >
           <b
+            className="all-course-header-text"
             style={{
               borderBottom: "3px solid rgb(92,16,227)",
             }}
@@ -114,9 +115,10 @@ const TrainingCourse = () => {
       </div>
 
       <div
-        className="container-fluid"
+        className="container-fluid all-course-section"
         style={{
-          padding: " 60px 0px",
+          padding: " 60px 60px",
+          maxWidth: "1410px"
         }}
         data-aos="fade-up"
         data-aos-duration="2000"

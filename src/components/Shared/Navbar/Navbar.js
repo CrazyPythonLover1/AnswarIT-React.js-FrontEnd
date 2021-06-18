@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { UserContext } from "../../../App";
 import logo from "../../../Image/logo/Answar-IT.jpg";
@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className="mainNavbar" style={{ width: "100%" }}>
       <nav
-        class="navbar navbar-expand-md navbar-light text-white nav-container "
+        class="navbar navbar-expand-lg navbar-light text-white nav-container "
         style={{ backgroundColor: "" }}
       >
         <div style={{ display: "flex", alignItems: "center" }}>
@@ -35,9 +35,7 @@ const Navbar = () => {
             class="navbar-brand  "
             to="/"
             style={{ color: "#232323", fontWeight: "900", fontSize: "1.6rem" }}
-          >
-            {" "}
-          </NavLink>
+          ></NavLink>
         </div>
         <button
           class="navbar-toggler"
@@ -83,8 +81,7 @@ const Navbar = () => {
             </li>
             <li class="nav-item dropdown">
               <NavLink class="nav-link " to="/overview" class="trigger-drop">
-                {" "}
-                ABOUT US <i class="arrow"></i>{" "}
+                ABOUT US <i class="arrow"></i>
               </NavLink>
               <ul class="drop">
                 <li>
@@ -104,38 +101,30 @@ const Navbar = () => {
                 to="/softwareDevelopment"
                 class="trigger-drop"
               >
-                {" "}
-                SERVICES{" "}
+                SERVICES <i class="arrow"></i>
               </NavLink>
               <ul class="drop">
                 <li>
                   <NavLink to="/softwareDevelopment">
-                    {" "}
-                    SOFTWARE DEVELOPMENT{" "}
+                    SOFTWARE DEVELOPMENT
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/managementConsulting">
-                    {" "}
-                    MANAGEMENT CONSULTING{" "}
+                    MANAGEMENT CONSULTING
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/technologyConsulting">
-                    {" "}
                     TECHNOLOGY CONSULTING
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/staffAugmentation">
-                    {" "}
-                    STAFF AUGMENTATION{" "}
-                  </NavLink>
+                  <NavLink to="/staffAugmentation">STAFF AUGMENTATION</NavLink>
                 </li>
                 <li>
                   <NavLink to="/businessProcess">
-                    {" "}
-                    BUSINESS PROCESS ASSURANCE{" "}
+                    BUSINESS PROCESS ASSURANCE
                   </NavLink>
                 </li>
                 <li>
@@ -157,16 +146,6 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            {/* <li class="nav-item">
-              <NavLink
-                class="nav-link "
-                to="/training"
-                style={{ color: "#33334d", fontWeight: "500px", letterSpacing:"1px", padding: "0px 20px" }}
-              >
-                TRAINING
-              </NavLink>
-            </li> */}
-
             <li class="nav-item">
               <NavLink
                 class="nav-link "
@@ -187,125 +166,68 @@ const Navbar = () => {
                 to="/contactUs"
                 style={{ color: "#232323" }}
               >
-                {" "}
-                CONTACT US{" "}
+                CONTACT US
               </NavLink>
             </li>
 
             {loggedInUser?.name === "logout" || !loggedInUser?.name ? (
-              <li style={{ margin: "auto 5px" }}>
-                <NavLink to="/login">
+              <li class="nav-item login-logout">
+                <NavLink class="nav-link " to="/login">
                   <button
                     className="btn btn-primary"
                     style={{
-                      width: "115px",
-                      marginTop: "-7%",
+                      marginTop: "-10%",
                     }}
                   >
-                    Login
+                    LOGIN
                   </button>
                 </NavLink>
               </li>
             ) : (
-              <li style={{ margin: "auto 5px" }}>
-                <NavLink to="">
-                  <button
-                    className="btn btn-primary"
-                    style={{
-                      width: "115px",
-                      marginTop: "-7%",
-                    }}
-                    onClick={() => handleLogout()}
-                  >
-                    logout
-                  </button>
-                </NavLink>
-              </li>
+              <>
+                <li class="nav-item login-logout">
+                  <NavLink class="nav-link " to="">
+                    <button
+                      className="btn btn-primary"
+                      style={{
+                        marginTop: "-10%",
+                      }}
+                      onClick={() => handleLogout()}
+                    >
+                      LOGOUT
+                    </button>
+                  </NavLink>
+                </li>
+
+                {/* //  <li
+            // class="nav-item" 
+            //   style={{
+            //     color: "black",
+            //     fontWeight: "bold",
+            //     margin: "auto 5px",
+            //   }}
+            // >
+            //   {loggedInUser?.name === "logout" ? "" : loggedInUser?.name}
+            // </li>  */}
+
+                <li
+                  class="nav-item login-logout avatar"
+                  style={{
+                    margin: "-7px 5px",
+                  }}
+                >
+                  <img
+                    className="rounded-circle"
+                    style={{ height: "35px" }}
+                    src={loggedInUser?.picture}
+                    alt=""
+                  />
+                </li>
+              </>
             )}
-
-            <li
-              style={{
-                color: "black",
-                fontWeight: "bold",
-                margin: "auto 5px",
-              }}
-            >
-              {loggedInUser?.name === "logout" ? "" : loggedInUser?.name}
-            </li>
-
-            <li
-              style={{
-                color: "black",
-                fontWeight: "bold",
-                margin: "auto 5px",
-              }}
-            >
-              <img
-                className="rounded-circle"
-                style={{ height: "35px" }}
-                src={loggedInUser?.picture}
-                alt=""
-              />
-            </li>
           </ul>
         </div>
       </nav>
-      {/* <nav class="navbar navbar-expand-md navbar-light text-white" style={{backgroundColor:"#",color:"#232323", height:"70px"}}>
-          <NavLink class="navbar-brand " to="/" style={{color: "#232323",fontWeight:"900", fontSize:"1.6rem"}} > ANSWARIT </NavLink>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavMain" aria-controls="navbarNavMain" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse " style={{maxWidth:"1200px",margin: "0 auto", padding: " 0 15px", }} id="navbarNavMain">
-
-    <ul class="navbar-nav ml-auto" style={{color: "white"}}>
-    
-      <li class="nav-item active">
-        <NavLink to="/">Home</NavLink>
-      </li>
-      <li class="nav-item">
-        <NavLink to="/overview">About</NavLink>
-      </li>
-      <li class="nav-item dropdown">
-        <NavLink to="/SoftwareDevelopment" class="trigger-drop" > Services<i class="arrow"></i></NavLink>
-        <ul class="drop">
-        <li><NavLink to="/SoftwareDevelopment"> Software Development </NavLink></li>
-        <li><NavLink to="#"> Management Consulting </NavLink></li>
-        <li><NavLink to="#"> Technology Consulting </NavLink></li>
-        <li><NavLink to="#"> Staff Augmentation </NavLink></li>
-      </ul>
-      </li>
-      <li class="nav-item">
-        <NavLink to="/contactUs"> Contact Us</NavLink>
-      </li>
-    </ul>
-  </div>
-</nav> */}
-      {/* <nav id="navigation">
-                <div className="inner-nav-container">
-                <Link to="#" class="logo"> AnswarIT <span>+</span></Link>
-  <ul class="links">
-    <li><Link to="/">Home</Link></li>
-    <li> <Link to="/overview">About</Link> </li>
-    <li class="dropdown"><Link to="/SoftwareDevelopment" class="trigger-drop"> Services<i class="arrow"></i></Link>
-      <ul class="drop">
-        <li><Link to="/SoftwareDevelopment"> Software Development </Link></li>
-        <li><Link to="#"> Management Consulting </Link></li>
-        <li><Link to="#"> Technology Consulting </Link></li>
-        <li><Link to="#"> Staff Augmentation </Link></li>
-      </ul>
-    </li>
-    <li> <Link to="/contactUs"> Contact Us</Link> </li>
-
-    <li class="dropdown"><Link to="#" class="trigger-drop">Contact Us<i class="arrow"></i></Link>
-      <ul class="drop">
-        <li><Link to="#">Email</Link></li>
-        <li><Link to="#">Phone</Link></li>
-      </ul>
-    </li>
-  </ul>
-</div>
-
-</nav> */}
 
       {pathname !== "/" && (
         <section class="page-top">

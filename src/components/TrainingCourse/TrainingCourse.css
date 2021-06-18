@@ -138,8 +138,31 @@
   }
 }
 
+@media (max-width: 500px) {
+  .all-course-header-text {
+    font-size: 2rem !important;
+  }
+
+  .all-course-section {
+    padding: 60px 30px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .all-course-header-text {
+    font-size: 1.5rem !important;
+  }
+
+  .all-course-section {
+    padding: 60px 10px !important;
+  }
+}
+
 @media (max-width: 360px) {
   .traning-header {
     height: 700px;
+  }
+  .all-course-section {
+    padding: 60px 0px !important;
   }
 }

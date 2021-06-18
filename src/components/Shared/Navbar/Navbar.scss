@@ -1,115 +1,119 @@
 @import "../../style/variables";
 
-
-*{
-  box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
 
-.mainNavbar{
-  
-}
-
-.nav-container{
-  color:$color-text;
-  font-size:16px;
-  font-family:sans-serif;
+.nav-container {
+  color: $color-text;
+  font-size: 16px;
+  font-family: sans-serif;
   max-width: $max-width;
   margin: 0 auto;
-  padding: 0  60px ;
-  
+  padding: 0 60px;
 }
 
-a,a:hover{color:$color-accent; text-decoration : none; font-weight:600;}
+a,
+a:hover {
+  color: $color-accent;
+  text-decoration: none;
+  font-weight: 600;
+}
 
-
-
- .mainNavbar  .nav-item{
-    padding: 22px 0;
-    a{
-      padding: 0 20px;
-      text-transform: uppercase;
-      font-size: 1rem;
-    }
-    &:hover{
-      background:#5d10e3;
-      >a{
-        color: #f9f9f9 !important;
-
-        .arrow{
-          border-color: #f9f9f9 transparent;
-        }
-      }
-    }
-    
-    
-    &[class^="trigger-"]{padding-right:40px;}
-              
-      .arrow{
-        position:absolute;
-        width:10px;
-        height:10px;   
-        top:45%;
-        text-align:center;          
-        right:7px;
-        border-width: 5px 5px 0 5px;
-        border-style:solid;
-        border-color: rgba(#000, .3) transparent;
-        
-      }
-  
-    ul{
-      position:absolute;          
-      left:0; 
-      top:68px;
-      margin:0;
-      padding-left: 0px;
-      background:$color-base;
-      border-radius:2px;          
-      box-shadow:0 0 5px rgba(#000, .15);
-      display:none;
-      width: max-content;
-      background-color: #5d10e3;
-      z-index: 2000;
-    
-      >li{
-        clear:both;            
-        list-style:none;            
-        display:block;
-        padding: 8px 10px;
-        margin:0;
-        width:100%;
-        border-bottom: 1px solid #8157ca;
-        
-        a{
-          color: #f9f9f9;
-          font-size: 14px;
-        }
-        
-        &:hover{
-          background:#6a2ad8;
-          a{
-            
-          }
-        }
-      }         
-      
-    }
-  
+.mainNavbar .nav-item {
+  padding: 22px 0;
+  a {
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
   &:hover {
-      >.drop{
-        display:block;
-        animation:fadeInRight .3s ease;
-        -webkit-animation:fadeInRight .3s ease;
+    background: #5d10e3;
+    > a {
+      color: #f9f9f9 !important;
+
+      .arrow {
+        border-color: #f9f9f9 transparent;
+      }
+    }
+    &.login-logout {
+      background: none !important;
     }
   }
+
+  &[class^="trigger-"] {
+    padding-right: 40px;
   }
 
+  .arrow {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 42%;
+    text-align: center;
+    right: 7px;
+    border-width: 5px 5px 0 5px;
+    border-style: solid;
+    border-color: rgba(#000, 0.3) transparent;
+  }
 
+  ul {
+    position: absolute;
+    left: 0;
+    top: 68px;
+    margin: 0;
+    padding-left: 0px;
+    background: $color-base;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(#000, 0.15);
+    display: none;
+    width: max-content;
+    background-color: #5d10e3;
+    z-index: 2000;
 
+    > li {
+      clear: both;
+      list-style: none;
+      display: block;
+      padding: 8px 10px;
+      margin: 0;
+      width: 100%;
+      border-bottom: 1px solid #8157ca;
+
+      a {
+        color: #f9f9f9;
+        font-size: 14px;
+      }
+
+      &:hover {
+        background: #6a2ad8;
+      }
+    }
+  }
+
+  &:hover {
+    > .drop {
+      display: block;
+      animation: fadeInRight 0.3s ease;
+      -webkit-animation: fadeInRight 0.3s ease;
+    }
+  }
+}
 
 .page-top {
   // background: linear-gradient(335.64deg, #5d10e344 -19.22%, #5d10e390 118.87%);
-  background: #5d10e344 linear-gradient(90deg, #5d10e344 0%, rgb(235, 82, 82) 18.23%, rgb(247, 143, 47) 34.37%, rgb(244, 193, 81) 48.96%, rgb(112, 230, 153) 66.15%, rgb(38, 165, 215) 82.29%, rgb(224, 105, 183) 100%) repeat scroll 0% 0%;
+  background: #5d10e344
+    linear-gradient(
+      90deg,
+      #5d10e344 0%,
+      rgb(235, 82, 82) 18.23%,
+      rgb(247, 143, 47) 34.37%,
+      rgb(244, 193, 81) 48.96%,
+      rgb(112, 230, 153) 66.15%,
+      rgb(38, 165, 215) 82.29%,
+      rgb(224, 105, 183) 100%
+    )
+    repeat scroll 0% 0%;
   min-height: 10px;
   padding: 0;
   padding: 5px 0;
@@ -117,13 +121,92 @@ a,a:hover{color:$color-accent; text-decoration : none; font-weight:600;}
   text-align: left;
 }
 
-@keyframes fadeInRight{
-    0%{
-        opacity:0;
-        transform:translate3d(100%,0,0)
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 1176px) {
+  .mainNavbar .nav-item {
+    a {
+      padding: 0 1rem;
+      font-size: 0.9rem;
     }
-    100%{
-        opacity:1;
-        transform:none
+
+    &.login-logout {
+      > .nav-link {
+        > button {
+          font-size: 0.9rem !important;
+          padding: 5px !important;
+        }
+      }
     }
+
+    .arrow {
+      right: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  .mainNavbar .nav-item {
+    padding: 1rem 0;
+    a {
+      padding: 0 0.8rem;
+      font-size: 0.8rem;
+    }
+
+    &.login-logout {
+      > .nav-link {
+        > button {
+          font-size: 0.8rem !important;
+          padding: 5px !important;
+        }
+      }
+    }
+
+    .arrow {
+      right: 3px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .mainNavbar {
+    padding: 3px 0;
+  }
+  .mainNavbar .nav-item {
+    padding: 0.7rem 0 !important;
+    text-align: left !important;
+    a {
+      padding: 0 0.8rem !important;
+      font-size: 0.8rem;
+    }
+
+    &.login-logout {
+      margin-top: 40px;
+      > .nav-link {
+        > button {
+          font-size: 0.8rem !important;
+          padding: 7px 30px !important;
+        }
+      }
+
+      &.avatar {
+        margin-top: -40px !important;
+        margin-bottom: 20px !important;
+        margin-left: 15px !important;
+      }
+    }
+
+    .arrow {
+      right: 3px;
+    }
+  }
 }
