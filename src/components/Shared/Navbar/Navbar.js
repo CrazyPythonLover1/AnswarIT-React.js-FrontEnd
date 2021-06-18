@@ -31,11 +31,11 @@ const Navbar = () => {
               marginRight: " 3px",
             }}
           />
-          <NavLink
+          {/* <NavLink
             class="navbar-brand  "
             to="/"
             style={{ color: "#232323", fontWeight: "900", fontSize: "1.6rem" }}
-          ></NavLink>
+          ></NavLink> */}
         </div>
         <button
           class="navbar-toggler"

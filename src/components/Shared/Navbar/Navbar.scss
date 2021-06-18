@@ -156,7 +156,7 @@ a:hover {
 
 @media only screen and (max-width: 1090px) {
   .mainNavbar .nav-item {
-    padding: 1rem 0;
+    padding: 1rem 0 !important;
     a {
       padding: 0 0.8rem;
       font-size: 0.8rem;
@@ -177,7 +177,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .mainNavbar {
     padding: 3px 0;
   }
@@ -190,7 +190,7 @@ a:hover {
     }
 
     &.login-logout {
-      margin-top: 40px;
+      margin-top: 4%;
       > .nav-link {
         > button {
           font-size: 0.8rem !important;
@@ -199,7 +199,7 @@ a:hover {
       }
 
       &.avatar {
-        margin-top: -40px !important;
+        margin-top: -4% !important;
         margin-bottom: 20px !important;
         margin-left: 15px !important;
       }

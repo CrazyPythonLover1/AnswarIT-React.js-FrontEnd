@@ -21,8 +21,14 @@ $color-accent: desaturate(navy, 80%);
   .topnavbar {
     display: none;
   }
+
+  .mainNavbar {
+    padding: 5px 0 !important;
+    background-color: #5c10e3;
+  }
+
   .nav-container {
-    background: #5c10e3;
+    background: linear-gradient(#7132df 0.01%, #5c10e3 100.01%);
     a {
       color: white !important;
     }
@@ -43,6 +49,10 @@ $color-accent: desaturate(navy, 80%);
         }
       }
     }
+  }
+
+  .page-top {
+    display: none;
   }
 
   .featured-box {
