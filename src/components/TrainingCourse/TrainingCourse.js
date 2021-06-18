@@ -87,7 +87,7 @@ const TrainingCourse = () => {
           data-aos-duration="1000"
         >
           <h1> Build your career </h1>
-          <h3> Improve your skill with AnswarIT Training </h3>
+          <h3> Improve your skill with Answar IT Training </h3>
           <p>
             {" "}
             Get Hands On Experience in Real World Software Development from
