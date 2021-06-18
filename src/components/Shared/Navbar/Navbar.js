@@ -172,7 +172,13 @@ const Navbar = () => {
 
             {loggedInUser?.name === "logout" || !loggedInUser?.name ? (
               <li class="nav-item login-logout">
-                <NavLink class="nav-link " to="/login">
+                <NavLink 
+                  class="nav-link " 
+                  to="/login"
+                  style={{
+                    paddingRight: "10px",
+                  }}
+                  >
                   <button
                     className="btn btn-primary"
                     style={{
