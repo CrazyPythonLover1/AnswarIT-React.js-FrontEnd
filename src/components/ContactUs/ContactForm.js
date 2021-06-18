@@ -9,7 +9,7 @@ const ContactForm = () => {
     userInfo[e.target.name] = e.target.value;
     setContactInfo(userInfo);
   };
-  console.log(contactInfo, "hey im here");
+
   const handleSubmit = (event) => {
     fetch("http://localhost:5000/addContactInfo", {
       method: "POST",
@@ -26,7 +26,7 @@ const ContactForm = () => {
       });
 
     alert("Message Send Successfully");
-    // event.preventDefault();
+    //event.preventDefault();
   };
   return (
     <div>
