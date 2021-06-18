@@ -114,3 +114,13 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
+@media (max-width: 576px) {
+  .ReactModal__Content {
+    width: 360px !important;
+  }
+}
+@media (max-width: 361px) {
+  .ReactModal__Content {
+    width: 300px !important;
+  }
+}
