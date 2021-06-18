@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import './About.scss';
 import aboutData from '../../../data/about.json';
-import { Link } from 'react-router-dom';
+import './About.scss';
 
 
 const About = () => {
@@ -20,7 +19,7 @@ const About = () => {
         setAbout(aboutData.about.coreValue)
     }
     return (
-        <div id="about" className="container-fluid" data-aos="fade-up" data-aos-duration="2000">
+        <div id="about" className="container-fluid" data-aos="fade-up" data-aos-duration="1000">
             <h2 className=" main-title "> ABOUT US </h2>
             <div className="about-section">
                 <div className="row">
