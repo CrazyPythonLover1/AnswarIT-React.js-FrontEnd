@@ -114,3 +114,14 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
+/* this is for modal responsive */
+@media (max-width: 576px) {
+  .ReactModal__Content {
+    width: 360px !important;
+  }
+}
+@media (max-width: 361px) {
+  .ReactModal__Content {
+    width: 300px !important;
+  }
+}
