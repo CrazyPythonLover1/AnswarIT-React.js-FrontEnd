@@ -84,7 +84,7 @@ const TrainingCourse = () => {
         <div
           className="text-section"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <h1> Build your career </h1>
           <h3> Improve your skill with AnswarIT Training </h3>
@@ -121,7 +121,7 @@ const TrainingCourse = () => {
           maxWidth: "1410px"
         }}
         data-aos="fade-up"
-        data-aos-duration="2000"
+        data-aos-duration="1000"
       >
         <div class="card-deck">
           {cardData.map((data, index) => (

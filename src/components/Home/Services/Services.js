@@ -1,7 +1,6 @@
 import React from "react";
-import "./Services.scss"
 import services from "../../../data/services.json";
-import { Link } from "react-router-dom";
+import "./Services.scss";
 
 
 
@@ -9,7 +8,7 @@ import { Link } from "react-router-dom";
 const Services = () => {
 
   return (
-    <div id="services" className="container-fluid" data-aos="fade-up" data-aos-duration="2000">
+    <div id="services" className="container-fluid" data-aos="fade-up" data-aos-duration="1000">
       <h2 className="main-title" > SERVICES </h2>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">
         {
