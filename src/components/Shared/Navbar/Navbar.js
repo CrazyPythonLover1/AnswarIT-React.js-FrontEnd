@@ -142,7 +142,7 @@ const Navbar = () => {
                 to="/course"
                 style={{ color: "#232323" }}
               >
-                Training & Course
+                Training
               </NavLink>
             </li>
 
