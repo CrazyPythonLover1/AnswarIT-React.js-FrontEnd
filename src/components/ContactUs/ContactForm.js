@@ -11,7 +11,7 @@ const ContactForm = () => {
   };
 
   const handleSubmit = (event) => {
-    fetch("http://localhost:5000/addContactInfo", {
+    fetch("https://answarit-server.herokuapp.com/addContactInfo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

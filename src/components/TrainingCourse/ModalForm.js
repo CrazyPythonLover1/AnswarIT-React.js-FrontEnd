@@ -23,7 +23,7 @@ const ModalForm = ({ id }) => {
   };
 
   const handleSubmit = () => {
-    fetch("http://localhost:5000/addOrder", {
+    fetch("https://answarit-server.herokuapp.com/addOrder", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
