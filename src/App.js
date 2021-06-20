@@ -27,13 +27,16 @@ import DigitalMarketing from "./components/TrainingCourse/DigitalMarketing";
 import TrainingCourse from "./components/TrainingCourse/TrainingCourse";
 import TrainingTerms from "./components/TrainingTerms/TrainingTerms";
 import ScrollToTop from "./ScrollToTop";
+import Product from "./components/Product/Product.js";
 
 export const UserContext = createContext();
 function App() {
-  const userInfo = sessionStorage.getItem('loggedInUser')
-  
-  const [loggedInUser, setLoggedInUser] = useState(userInfo?.name !== 'logout' ? JSON.parse(userInfo): '');
-  
+  const userInfo = sessionStorage.getItem("loggedInUser");
+
+  const [loggedInUser, setLoggedInUser] = useState(
+    userInfo?.name !== "logout" ? JSON.parse(userInfo) : ""
+  );
+
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <div className="wrapper" style={{ width: "100%", height: "100vh" }}>
@@ -102,7 +105,7 @@ function App() {
                   <DigitalMarketing title="Digital Marketing is" />
                 </Route>
 
-                    {/* <Route exact path="/training">
+                {/* <Route exact path="/training">
                   <CommingSoon title="Software Development Course is"/>
                 </Route> */}
 
@@ -112,6 +115,10 @@ function App() {
 
                 <Route path="/terms-of-use">
                   <TermsOfUse />
+                </Route>
+
+                <Route path="/product">
+                  <Product />
                 </Route>
 
                 <Route exact path="/training-terms-and-condition">

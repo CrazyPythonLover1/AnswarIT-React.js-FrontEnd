@@ -163,6 +163,15 @@ const Navbar = () => {
             <li class="nav-item">
               <NavLink
                 class="nav-link "
+                to="/product"
+                style={{ color: "#232323" }}
+              >
+                PRODUCT
+              </NavLink>
+            </li>
+            <li class="nav-item">
+              <NavLink
+                class="nav-link "
                 to="/contactUs"
                 style={{ color: "#232323" }}
               >
@@ -172,13 +181,13 @@ const Navbar = () => {
 
             {loggedInUser?.name === "logout" || !loggedInUser?.name ? (
               <li class="nav-item login-logout">
-                <NavLink 
-                  class="nav-link " 
+                <NavLink
+                  class="nav-link "
                   to="/login"
                   style={{
                     paddingRight: "10px",
                   }}
-                  >
+                >
                   <button
                     className="btn btn-primary"
                     style={{
