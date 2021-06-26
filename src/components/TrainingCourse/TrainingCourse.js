@@ -42,10 +42,10 @@ const AllCardData = [
     title: "Blockchain Training Course",
     description:
       "Demand for blockchain developers is skyrocketing. In this program, you'll work with the Bitcoin and Ethereum protocols, build projects for real-world application, and gain the essential skills for a career in this dynamic space.",
-    price: "26,000",
-    discountPrice: "6,500",
-    duration: "6+ month",
-    totalClass: "72+ (each class 1.5 hours long)",
+    price: "1,00,000",
+    discountPrice: "25,000",
+    duration: "12 month",
+    totalClass: "120+ (each class 1.5 hours long)",
     discount: "75% Discount",
     link: "/blockchainCourse",
   },
@@ -95,7 +95,7 @@ const TrainingCourse = () => {
           </p>
         </div>
       </div>
-      <div >
+      <div>
         <h1
           style={{
             textAlign: "center",
@@ -118,7 +118,7 @@ const TrainingCourse = () => {
         className="container-fluid all-course-section"
         style={{
           padding: " 60px 60px",
-          maxWidth: "1410px"
+          maxWidth: "1410px",
         }}
         data-aos="fade-up"
         data-aos-duration="1000"

@@ -44,7 +44,7 @@ const ContactForm = () => {
               class="form-control"
             >
               <option selected> </option>
-              <option> BANGLADESH </option>
+              <option> USA </option>
               <option> UK </option>
               <option> CANADA </option>
               <option> AUSTRALIA </option>
