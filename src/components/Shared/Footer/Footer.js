@@ -86,7 +86,7 @@ const Footer = () => {
 
               <span>
                 <i class="fa fa-envelope-o" aria-hidden="true"></i> Email:
-                info@answarit.com, shownahmed6666@gmail.com{" "}
+                info@answarit.com, shownahmed6666@gmail.com
               </span>
             </div>
           </div>
@@ -94,29 +94,29 @@ const Footer = () => {
         <div style={{ zIndex: "1" }} class="row m-0 copyright">
           <div style={{ zIndex: "1" }} class="col-md-6">
             <div class="">
-              © Copyright 2019 - 2020. Developed by{" "}
+              © Copyright 2019 - 2020. Developed by
               <Link to="#" target="">
-                Answar IT Software{" "}
+                Answar IT Software
               </Link>
             </div>
           </div>
           <div class="col-md-6">
             <div class="row f-social">
               <a href="https://www.facebook.com/answarit" target="blank">
-                {" "}
-                <FacebookIcon />{" "}
+                
+                <FacebookIcon />
               </a>
               <Link to="/">
-                {" "}
-                <LinkedInIcon />{" "}
+                
+                <LinkedInIcon />
               </Link>
               <Link to="/">
-                {" "}
-                <InstagramIcon />{" "}
+                
+                <InstagramIcon />
               </Link>
               <Link to="/">
-                {" "}
-                <TwitterIcon />{" "}
+                
+                <TwitterIcon />
               </Link>
             </div>
           </div>
