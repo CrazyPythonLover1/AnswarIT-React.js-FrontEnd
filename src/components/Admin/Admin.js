@@ -20,8 +20,8 @@ const projects = [
     title: "Director",
     image: armanSir,
     description:
-      "Mr. Md. Arman Hollain Shokin Molla was born on 23 October in the year 1994 in Gopalgonj district. His father late Mohammad Ali Molla and his mother Mrs: Amena Begum is also a housewife.",
-    desc2: "He studied at 18 Nong Gopinathpur Shorifpara Government Primary School, Gopenathpur Buhimukhi High School, Govt. Bangabandhu College and Govt. Titumir University College from complete M.A. Master of Arts. He started an export and import business with several countries like China, Dubai, Koria and established “Amior Interior”, “Sadman Interior”, “Captain Cafe Restaurant”, “Answar IT” in Dhaka. IT company branch office is United State of America: 40-20 39th Avenue, Suite #400 Long Island City, NY 11101. He has been working relentlessly to fetch agriculture and make freelancer all student’s under technology with creating employment for the people of the country. He seeks the aid and blessings of everybody.",
+      "Mr. Md. Arman Hossain Shokin Molla was born on 23 October in the year 1994 in Gopalgonj district. His father late Mohammad Ali Molla and his mother Mrs: Amena Begum is also a housewife.",
+    desc2: "He studied at 5 Nong Gopinathpur Shorifpara Government Primary School, Gopenathpur Buhimukhi High School, Govt. Bangabandhu College and Govt. Titumir University College from complete M.A. Master of Arts. He started an export and import business with several countries like China, Dubai, Koria and established “Amior Interior”, “Sadman Interior”, “Captain Cafe Restaurant”, “Answar IT” in Dhaka. IT company branch office is United State of America: 40-20 39th Avenue, Suite #400 Long Island City, NY 11101. He has been working relentlessly to fetch agriculture and make freelancer all student’s under technology with creating employment for the people of the country. He seeks the aid and blessings of everybody.",
   },
   {
     id: 3,
