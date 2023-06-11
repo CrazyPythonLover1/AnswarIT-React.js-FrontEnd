@@ -29,7 +29,7 @@ const TopNavbar = () => {
               href="#"
               style={{ color: "white" }}
             >
-              out of thinking...
+              Blockchain Development Company in Bangladesh 
             </a>
             <ul class="navbar-nav ml-auto" style={{ color: "white" }}>
               <li class="nav-item active">

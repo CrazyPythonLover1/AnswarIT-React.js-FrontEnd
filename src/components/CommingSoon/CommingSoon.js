@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CommingSoon = ({title}) => {
+const CommingSoon = ({title, commingSoon}) => {
     return (
       <div
         style={{
@@ -15,7 +15,8 @@ const CommingSoon = ({title}) => {
         }}
       >
         <h2> {title} </h2>
-        <h1> Comming Soon..........</h1>
+        {commingSoon && <h1> Comming Soon..........</h1>}
+        
       </div>
     );
 };

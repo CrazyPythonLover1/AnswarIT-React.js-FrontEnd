@@ -86,7 +86,7 @@ const Footer = () => {
 
               <span>
                 <i class="fa fa-envelope-o" aria-hidden="true"></i> Email:
-                info@answarit.com, shownahmed6666@gmail.com
+                theanswarit@gmail.com, shownahmed6666@gmail.com
               </span>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import MessengerCustomerChat from "react-messenger-customer-chat";
+// import MessengerCustomerChat from "react-messenger-customer-chat";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import CoreValue from "./components/About/CoreValue/CoreValue";
@@ -61,7 +61,8 @@ function App() {
                 </Route>
                 <Route path="/course">
                   {/* <Course /> */}
-                  <TrainingCourse />
+                  {/* <TrainingCourse /> */}
+                  <CommingSoon title="This page is under construction, বিস্তারিত 01710 504 157 " commingSoon={false} />
                 </Route>
 
                 <Route path="/softwareCourse">
@@ -110,7 +111,7 @@ function App() {
                 </Route> */}
 
                 <Route exact path="/career">
-                  <CommingSoon title="Our company will appointed 100 expert software engineer and block chain developer" />
+                  <CommingSoon title="ব্লকচেইন ডেভেলপার নিয়োগ চলছে। সিভি পাঠানোর ঠিকানা: theanswarit@gmail.com (শুধুমাত্র বাংলাদেশী নাগরিক আবেদন করতে পারবেন। বিস্তারিত: +88 01710 504 157)" commingSoon={false} />
                 </Route>
 
                 <Route path="/terms-of-use">
@@ -130,11 +131,11 @@ function App() {
                 </Route>
               </Switch>
             </div>
-            <MessengerCustomerChat
+            {/* <MessengerCustomerChat
               pageId="100961108288258"
               appId="155546436606054"
               // htmlRef="fb-customer-chat"
-            />
+            /> */}
             <Footer />
           </ScrollToTop>
         </Router>

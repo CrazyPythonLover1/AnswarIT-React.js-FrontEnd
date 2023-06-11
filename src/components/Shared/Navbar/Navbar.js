@@ -25,8 +25,8 @@ const Navbar = () => {
             src={logo}
             alt="logo"
             style={{
-              width: "1.6rem",
-              height: "1.6rem",
+              width: "1.8rem",
+              height: "1.8rem",
               borderRadius: "100%",
               marginRight: " 3px",
             }}
@@ -142,7 +142,7 @@ const Navbar = () => {
                 to="/course"
                 style={{ color: "#232323" }}
               >
-                Training
+                COURSE 
               </NavLink>
             </li>
 

@@ -95,7 +95,7 @@ const Header = () => {
       )}
 
       <p className="header-text">
-        AnswarIT is a global IT and Engineering solutions provider whose
+        Answar iT is a global IT and Engineering solutions provider whose
         business focus is in Development, Outsourcing, and Consulting. We are a
         Global Technology company with Customer Focus as one of our Core Values.
         We are Agile. We are always present with the right solutions at the

@@ -1,5 +1,5 @@
 {
-  "name": "answar-it-react.js",
+  "name": "answar-it",
   "homepage": "https://answarit.com",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +13,6 @@
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-messenger-customer-chat": "^0.8.0",
     "react-modal": "^3.14.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.0",
