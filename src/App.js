@@ -59,7 +59,7 @@ function App() {
                 <Route path="/core-value">
                   <CoreValue />
                 </Route>
-                <Route path="/course">
+                <Route path="/training">
                   {/* <Course /> */}
                   {/* <TrainingCourse /> */}
                   <CommingSoon title="This page is under construction, বিস্তারিত 01710 504 157 " commingSoon={false} />
