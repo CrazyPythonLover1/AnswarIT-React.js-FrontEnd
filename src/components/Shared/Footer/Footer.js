@@ -74,8 +74,8 @@ const Footer = () => {
             <div class="f-contact">
               <span>
                 <i class="fa fa-location-arrow" aria-hidden="true"></i> Address:
-                House: 8/A (1st Floor), Road No: 9, Baridhara, Gulshan,
-                Dhaka-1212
+                House 67, Madani Avenue, 100 Feet, Vatara, Gulshan, Dhaka,
+                Bangladesh.
               </span>
               <br />
               <span>
@@ -103,19 +103,15 @@ const Footer = () => {
           <div class="col-md-6">
             <div class="row f-social">
               <a href="https://www.facebook.com/answarit" target="blank">
-                
                 <FacebookIcon />
               </a>
               <Link to="/">
-                
                 <LinkedInIcon />
               </Link>
               <Link to="/">
-                
                 <InstagramIcon />
               </Link>
               <Link to="/">
-                
                 <TwitterIcon />
               </Link>
             </div>

@@ -142,7 +142,7 @@ const Navbar = () => {
                 to="/training"
                 style={{ color: "#232323" }}
               >
-                TRAINING 
+                TRAINING
               </NavLink>
             </li>
 
@@ -160,7 +160,7 @@ const Navbar = () => {
                 CAREER
               </NavLink>
             </li>
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <NavLink
                 class="nav-link "
                 to="/product"
@@ -168,7 +168,7 @@ const Navbar = () => {
               >
                 PRODUCT
               </NavLink>
-            </li>
+            </li> */}
             <li class="nav-item">
               <NavLink
                 class="nav-link "

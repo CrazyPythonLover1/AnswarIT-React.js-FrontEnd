@@ -23,8 +23,8 @@ const ContactUs = () => {
                   {" "}
                   <LocationOnIcon /> Address:{" "}
                 </b>{" "}
-                House: 8/A(1st Floor), Road No: 9, Baridhara, Gulshan,
-                Dhaka-1212{" "}
+                House 67, Madani Avenue, 100 Feet, Vatara, Gulshan, Dhaka,
+                Bangladesh.
               </div>
               <div>
                 {" "}
