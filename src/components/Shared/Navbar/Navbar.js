@@ -20,23 +20,25 @@ const Navbar = () => {
         class="navbar navbar-expand-lg navbar-light text-white nav-container "
         style={{ backgroundColor: "" }}
       >
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <img
-            src={logo}
-            alt="logo"
-            style={{
-              width: "2.5rem",
-              height: "2.5rem",
-              borderRadius: "100%",
-              marginRight: " 3px",
-            }}
-          />
-          {/* <NavLink
+        <NavLink to="/">
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <img
+              src={logo}
+              alt="logo"
+              style={{
+                width: "2.5rem",
+                height: "2.5rem",
+                borderRadius: "100%",
+                marginRight: " 3px",
+              }}
+            />
+            {/* <NavLink
             class="navbar-brand  "
             to="/"
             style={{ color: "#232323", fontWeight: "900", fontSize: "1.6rem" }}
           ></NavLink> */}
-        </div>
+          </div>
+        </NavLink>
         <button
           class="navbar-toggler"
           type="button"
