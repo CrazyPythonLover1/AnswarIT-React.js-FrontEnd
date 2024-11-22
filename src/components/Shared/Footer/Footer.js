@@ -80,13 +80,13 @@ const Footer = () => {
               <br />
               <span>
                 <i class="fa fa-phone" aria-hidden="true"></i> Phone:
-                +8801710504157 (Consulting & Recruiting)
+                +8801710504157, +8801890803803 (Consulting & Recruiting)
               </span>
               <br />
 
               <span>
                 <i class="fa fa-envelope-o" aria-hidden="true"></i> Email:
-                theanswarit@gmail.com, shownahmed6666@gmail.com
+                theanswarit@gmail.com, dotmailit@gmail.com, info@dotmailit.com
               </span>
             </div>
           </div>
@@ -94,10 +94,12 @@ const Footer = () => {
         <div style={{ zIndex: "1" }} class="row m-0 copyright">
           <div style={{ zIndex: "1" }} class="col-md-6">
             <div class="">
-              © Copyright 2019 - 2020. Developed by
-              <Link to="#" target="">
-                Answar IT Software
-              </Link>
+              © Copyright 2019 - 2020. Developed by{""}
+              {/* <Link to="#" target=""> */}
+              {""} Answar IT Software {""}
+              {/* </Link> */}
+              {/* <Link to="https://dotmailit.com/">{""}  */}& DotMailIT
+              {/* </Link> */}
             </div>
           </div>
           <div class="col-md-6">

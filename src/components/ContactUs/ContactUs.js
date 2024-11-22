@@ -32,7 +32,7 @@ const ContactUs = () => {
                   {" "}
                   <PhoneIcon /> Phone:{" "}
                 </b>{" "}
-                +8801710504157 (Consulting & Recruiting)
+                +8801710504157, +8801890803803 (Consulting & Recruiting)
               </div>
               <div>
                 {" "}
@@ -48,7 +48,15 @@ const ContactUs = () => {
                   {" "}
                   <EmailIcon /> Email:{" "}
                 </b>{" "}
-                shownahmed6666@gmail.com{" "}
+                dotmailit@gmail.com{" "}
+              </div>
+              <div>
+                {" "}
+                <b>
+                  {" "}
+                  <EmailIcon /> Email:{" "}
+                </b>{" "}
+                info@dotmailit.com{" "}
               </div>
               <br />
               <img className="img-fluid" src={contactImg} alt="" />
@@ -78,7 +86,9 @@ const ContactUs = () => {
                 " 40-20 39th Avenue, Suite #400 Long Island City, NY 11101 "
               }
               phone={" +1 855-562-7867 "}
-              email={" theanswarit@gmail.com, shownahmed6666@gmail.com"}
+              email={
+                " theanswarit@gmail.com, dotmailit@gmail.com, info@dotmailit.com"
+              }
             />
             {/* <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} />
                         <Locations title={" "} address={" "} phone={" "} fax={" "} email={" "} />
